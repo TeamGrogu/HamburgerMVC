@@ -2,9 +2,11 @@
 {
 	public class Order:BaseEntity
 	{
-		public int UserID { get; set; }
+		public int? UserID { get; set; }
 		public decimal TotalPrice { get; set; }
-        public int Status { get; set; }
-		public ICollection<OrderDetails> OrderDetails { get; set; }
-	}
+        public int? StatusID { get; set; }
+		public ICollection<OrderDetails>? OrderDetails { get; set; }
+		public User? User { get; set; }
+        public Status? Status { get; set; }
+    }
 }
