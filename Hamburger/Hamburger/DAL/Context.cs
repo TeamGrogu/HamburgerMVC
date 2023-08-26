@@ -1,4 +1,5 @@
-﻿using Hamburger.Models.Entities;
+﻿using Hamburger.DAL.EntityConfigurations;
+using Hamburger.Models.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,7 +24,10 @@ namespace Hamburger.DAL
 
 		protected override void OnModelCreating(ModelBuilder builder)
 		{
-			
+            builder.ApplyConfiguration<User>(new UserCFG());
+            builder.ApplyConfiguration<Role>(new RoleCFG());
+
+            base.OnModelCreating(builder);
 		}
 	}
 }
