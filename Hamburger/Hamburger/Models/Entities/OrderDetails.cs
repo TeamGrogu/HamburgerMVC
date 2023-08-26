@@ -10,6 +10,6 @@
 		public decimal Price { get; set; }
 		public Order? Order { get; set; }
 		public Size? Size { get; set; }
-        public ICollection<Product>? Products { get; set; }
+        public Product? Products { get; set; }
     }
 }
