@@ -12,7 +12,7 @@ namespace Hamburger.Controllers
         {
             _logger = logger;
         }
-
+        //Omer
         public IActionResult Index()
         {
             return View();

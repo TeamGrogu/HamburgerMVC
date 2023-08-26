@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omerf\\source\\repos\\Hamburger\\Hamburger\\Hamburger.csproj": {}
+    "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\omerf\\source\\repos\\Hamburger\\Hamburger\\Hamburger.csproj": {
+    "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omerf\\source\\repos\\Hamburger\\Hamburger\\Hamburger.csproj",
+        "projectUniqueName": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
         "projectName": "Hamburger",
-        "projectPath": "C:\\Users\\omerf\\source\\repos\\Hamburger\\Hamburger\\Hamburger.csproj",
+        "projectPath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
         "packagesPath": "C:\\Users\\omerf\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omerf\\source\\repos\\Hamburger\\Hamburger\\obj\\",
+        "outputPath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\omerf\\AppData\\Roaming\\NuGet\\NuGet.Config",

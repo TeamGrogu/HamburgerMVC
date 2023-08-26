@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/J0NfVDIJsPQneOKcAY1Dig1xPBCLgfSioHp1yP0To5Gx0B+dxp30LX3nm/T/kGcGLO2x0M1RfLeXy7QSuqoZw==",
+  "dgSpecHash": "orhepydWMtLayTK7nIxsMG8NVv9r2ZXnJFohgkyO4rhyMCM5ag1denYi0V0ptlewZSpLmtO7fP8LBnYfdJKFYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\omerf\\source\\repos\\Hamburger\\Hamburger\\Hamburger.csproj",
+  "projectFilePath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
