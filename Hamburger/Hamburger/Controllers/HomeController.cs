@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
 namespace Hamburger.Controllers
-{//selam ben ömer
+{
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
