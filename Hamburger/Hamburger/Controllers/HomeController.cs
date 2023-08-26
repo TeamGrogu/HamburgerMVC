@@ -12,6 +12,10 @@ namespace Hamburger.Controllers
         {
             _logger = logger;
         }
+        //public IActionResult Result()
+        //{
+        //    return View();
+        //}
         public IActionResult Index()
         {
             return View();
