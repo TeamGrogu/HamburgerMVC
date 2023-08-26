@@ -5,17 +5,15 @@ using System.Diagnostics;
 namespace Hamburger.Controllers
 {
     public class HomeController : Controller
-    {//2. commitim
+    {
         private readonly ILogger<HomeController> _logger;
 
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
-        //Omer
         public IActionResult Index()
         {
-            // yeni yorum
             return View();
         }
 
