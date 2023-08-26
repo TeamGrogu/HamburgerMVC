@@ -15,6 +15,7 @@ namespace Hamburger.Controllers
         //Omer
         public IActionResult Index()
         {
+            // yeni yorum
             return View();
         }
 
