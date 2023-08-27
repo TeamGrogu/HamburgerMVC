@@ -21,11 +21,16 @@ namespace Hamburger.DAL
         DbSet<Size> Sizes { get; set; }
         DbSet<Status> Statuses { get; set; }
         DbSet<User> Users { get; set; }
+        DbSet<MenuProduct> MenuProducts { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder builder)
 		{
             builder.ApplyConfiguration<User>(new UserCFG());
             builder.ApplyConfiguration<Role>(new RoleCFG());
+
+            builder.Entity<User>().HasData(
+                new User { UserName = "memo", }
+                );
 
             base.OnModelCreating(builder);
 		}
