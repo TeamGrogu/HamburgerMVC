@@ -4,7 +4,6 @@ namespace Hamburger.Models.Entities
 {
 	public class Menu:BaseEntity
 	{
-		public int MenuID { get; set; }
 		public ICollection<MenuProduct> MenuProducts { get; set; }
         public string? MenuImage { get; set; }
         public decimal Price { get; set; }

@@ -27,8 +27,11 @@ namespace Hamburger.DAL
 		{
 			builder.ApplyConfiguration<User>(new UserCFG());
             builder.ApplyConfiguration<Role>(new RoleCFG());
-
             builder.ApplyConfiguration<Size>(new SizeCFG());
+
+            
+
+
             builder.Entity<Role>().HasData(
                     new Role { Id = 1, Name = "Admin", NormalizedName = "ADMIN" }
                 );
@@ -43,6 +46,9 @@ namespace Hamburger.DAL
             builder.Entity<IdentityUserRole<int>>().HasData(
                     new IdentityUserRole<int>{ RoleId =1, UserId = 1}
                 );
+
+			builder.Entity<Category>().HasData(new Category { ID = 1, CategoryName = "Hamburger" });
+			builder.Entity<Product>().HasData(new Product { ID = 1, ProductName = "Hamburger", Price = 10, });
 
 			base.OnModelCreating(builder);
 		}
