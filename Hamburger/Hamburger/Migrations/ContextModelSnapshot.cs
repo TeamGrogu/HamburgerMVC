@@ -245,6 +245,15 @@ namespace Hamburger.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcurrencyStamp = "527de0a2-cc0c-453f-9053-9e4e164c43f8",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Size", b =>
@@ -370,7 +379,7 @@ namespace Hamburger.Migrations
                             AccessFailedCount = 0,
                             Address = "Kadikoy",
                             BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ConcurrencyStamp = "5d068044-87c6-4a4c-a25d-a026eb2fef1b",
+                            ConcurrencyStamp = "7d140240-3898-4611-ae34-70b62533bfcc",
                             Email = "overthinkerst@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "overthinkers",
@@ -378,41 +387,10 @@ namespace Hamburger.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "OVERTHINKERST@GMAIL.COM",
                             NormalizedUserName = "OVERTHINKERS",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOtNoI7QOrI4EsKuIchQzszE24UD2YQccCDuv51tCdl2hCFtLbFAkiUVb4inW5FrrQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEEVXO5Hr1r2ayqCPnwauBe0BPbCkHBHSfJna5Zf6R+MAs7mslOOgSqWTBYFzY0Kilg==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "overthinkers"
-                        });
-                });
-
-            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<int>", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("ConcurrencyStamp")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("NormalizedName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("IdentityRole<int>");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            ConcurrencyStamp = "b36bdc53-a276-4e56-a319-43de55adb2c5",
-                            Name = "Admin",
-                            NormalizedName = "ADMIN"
                         });
                 });
 

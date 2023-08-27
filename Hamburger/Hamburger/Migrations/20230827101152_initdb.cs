@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Hamburger.Migrations
 {
-    public partial class initial : Migration
+    public partial class initdb : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -68,21 +68,6 @@ namespace Hamburger.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Categories", x => x.ID);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "IdentityRole<int>",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NormalizedName = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    ConcurrencyStamp = table.Column<string>(type: "nvarchar(max)", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_IdentityRole<int>", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -349,14 +334,14 @@ namespace Hamburger.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "AspNetUsers",
-                columns: new[] { "Id", "AccessFailedCount", "Address", "BirthDate", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { 1, 0, "Kadikoy", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "5d068044-87c6-4a4c-a25d-a026eb2fef1b", "overthinkerst@gmail.com", false, "overthinkers", "team", false, null, "OVERTHINKERST@GMAIL.COM", "OVERTHINKERS", "AQAAAAEAACcQAAAAEOtNoI7QOrI4EsKuIchQzszE24UD2YQccCDuv51tCdl2hCFtLbFAkiUVb4inW5FrrQ==", null, false, null, false, "overthinkers" });
+                table: "AspNetRoles",
+                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                values: new object[] { 1, "527de0a2-cc0c-453f-9053-9e4e164c43f8", "Admin", "ADMIN" });
 
             migrationBuilder.InsertData(
-                table: "IdentityRole<int>",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { 1, "b36bdc53-a276-4e56-a319-43de55adb2c5", "Admin", "ADMIN" });
+                table: "AspNetUsers",
+                columns: new[] { "Id", "AccessFailedCount", "Address", "BirthDate", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
+                values: new object[] { 1, 0, "Kadikoy", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "7d140240-3898-4611-ae34-70b62533bfcc", "overthinkerst@gmail.com", false, "overthinkers", "team", false, null, "OVERTHINKERST@GMAIL.COM", "OVERTHINKERS", "AQAAAAEAACcQAAAAEEVXO5Hr1r2ayqCPnwauBe0BPbCkHBHSfJna5Zf6R+MAs7mslOOgSqWTBYFzY0Kilg==", null, false, null, false, "overthinkers" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
@@ -459,9 +444,6 @@ namespace Hamburger.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
-
-            migrationBuilder.DropTable(
-                name: "IdentityRole<int>");
 
             migrationBuilder.DropTable(
                 name: "MenuProducts");
