@@ -7,12 +7,15 @@
             switch (ID)
             {
                 case < 10:
-                    ID = int.Parse(CategoryID.ToString() + "00" + ID.ToString());
+                    ID = int.Parse(CategoryID.ToString() + "000" + ID.ToString());
                     break;
                 case < 100:
-                    ID = int.Parse(CategoryID.ToString() + "0" + ID.ToString());
+                    ID = int.Parse(CategoryID.ToString() + "00" + ID.ToString());
                     break;
                 case < 1000:
+                    ID = int.Parse(CategoryID.ToString() + "0" + ID.ToString());
+                    break;
+                case < 10000:
                     ID = int.Parse(CategoryID.ToString() + ID.ToString());
                     break;
             }
