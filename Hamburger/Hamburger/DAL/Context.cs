@@ -1,5 +1,6 @@
 ﻿using Hamburger.DAL.EntityConfigurations;
 using Hamburger.Models.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -28,8 +29,19 @@ namespace Hamburger.DAL
             builder.ApplyConfiguration<User>(new UserCFG());
             builder.ApplyConfiguration<Role>(new RoleCFG());
 
-            builder.Entity<User>().HasData(
-                new User { UserName = "memo", }
+            builder.Entity<IdentityRole>().HasData(
+                    new IdentityRole { Id = "1", Name = "Admin", NormalizedName = "ADMIN" }
+                );
+            
+            List<User> admins = new List<User>() { new User { Id = 1, FirstName = "overthinkers", LastName = "team", Email = "overthinkerst@gmail.com", NormalizedEmail = "OVERTHINKERST@GMAIL.COM", UserName = "overthinkers", NormalizedUserName = "OVERTHINKERS", Address="Kadikoy" } };
+
+            builder.Entity<User>().HasData(admins);
+
+            var passwordHasher = new PasswordHasher<User>();
+            admins[0].PasswordHash = passwordHasher.HashPassword(admins[0],"Overthinkers2000");
+
+            builder.Entity<IdentityUserRole<int>>().HasData(
+                    new IdentityUserRole<int>{ RoleId = 1, UserId = 1}
                 );
 
             base.OnModelCreating(builder);
