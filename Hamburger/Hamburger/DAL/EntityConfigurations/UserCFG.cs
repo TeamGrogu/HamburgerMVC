@@ -6,9 +6,9 @@ namespace Hamburger.DAL.EntityConfigurations
 {
 	public class UserCFG : IEntityTypeConfiguration<User>
 	{
-		public void Configure(EntityTypeBuilder<User> builder)
+		public async void Configure(EntityTypeBuilder<User> builder)
 		{
-			builder.HasKey(x => x.Id);
+
 		}
 	}
 }

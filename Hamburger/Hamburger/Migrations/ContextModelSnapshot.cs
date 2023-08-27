@@ -62,17 +62,14 @@ namespace Hamburger.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DrinkID")
+                    b.Property<int>("MenuID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("HamburgerID")
-                        .HasColumnType("int");
+                    b.Property<string>("MenuImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<int?>("SideID")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
@@ -82,13 +79,30 @@ namespace Hamburger.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("DrinkID");
-
-                    b.HasIndex("HamburgerID");
-
-                    b.HasIndex("SideID");
-
                     b.ToTable("Menus");
+                });
+
+            modelBuilder.Entity("Hamburger.Models.Entities.MenuProduct", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<int>("MenuID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("MenuID");
+
+                    b.HasIndex("ProductID");
+
+                    b.ToTable("MenuProducts");
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Order", b =>
@@ -101,6 +115,9 @@ namespace Hamburger.Migrations
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("StatusID")
                         .HasColumnType("int");
@@ -180,6 +197,9 @@ namespace Hamburger.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<string>("ProductImage")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ProductName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -225,6 +245,15 @@ namespace Hamburger.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcurrencyStamp = "8e30e05b-4cc2-4623-9dce-ca65149cccb3",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Size", b =>
@@ -242,6 +271,23 @@ namespace Hamburger.Migrations
                     b.HasKey("SizeID");
 
                     b.ToTable("Sizes");
+
+                    b.HasData(
+                        new
+                        {
+                            SizeID = 1,
+                            SizeName = "Küçük Boy"
+                        },
+                        new
+                        {
+                            SizeID = 2,
+                            SizeName = "Orta Boy"
+                        },
+                        new
+                        {
+                            SizeID = 3,
+                            SizeName = "Büyük Boy"
+                        });
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Status", b =>
@@ -321,6 +367,9 @@ namespace Hamburger.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("RoleId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -341,7 +390,30 @@ namespace Hamburger.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccessFailedCount = 0,
+                            Address = "Kadikoy",
+                            BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ConcurrencyStamp = "b44050de-43d0-4a2f-9dcf-d2d1897ed111",
+                            Email = "overthinkerst@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "overthinkers",
+                            LastName = "team",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "OVERTHINKERST@GMAIL.COM",
+                            NormalizedUserName = "OVERTHINKERS",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMUyTvhy62WCgoQB8tu+ciaNyn0knc0W/4WSd5LzwRxndmaopBbVa6h6ZDDfNI59Og==",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "overthinkers"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -426,6 +498,13 @@ namespace Hamburger.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            RoleId = 1
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
@@ -447,25 +526,23 @@ namespace Hamburger.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Hamburger.Models.Entities.Menu", b =>
+            modelBuilder.Entity("Hamburger.Models.Entities.MenuProduct", b =>
                 {
-                    b.HasOne("Hamburger.Models.Entities.Product", "Drink")
-                        .WithMany()
-                        .HasForeignKey("DrinkID");
+                    b.HasOne("Hamburger.Models.Entities.Menu", "Menu")
+                        .WithMany("MenuProducts")
+                        .HasForeignKey("MenuID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Hamburger.Models.Entities.Product", "Hamburger")
-                        .WithMany()
-                        .HasForeignKey("HamburgerID");
+                    b.HasOne("Hamburger.Models.Entities.Product", "Product")
+                        .WithMany("MenuProducts")
+                        .HasForeignKey("ProductID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Hamburger.Models.Entities.Product", "Side")
-                        .WithMany()
-                        .HasForeignKey("SideID");
+                    b.Navigation("Menu");
 
-                    b.Navigation("Drink");
-
-                    b.Navigation("Hamburger");
-
-                    b.Navigation("Side");
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Order", b =>
@@ -511,6 +588,15 @@ namespace Hamburger.Migrations
                         .HasForeignKey("CategoryID");
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("Hamburger.Models.Entities.User", b =>
+                {
+                    b.HasOne("Hamburger.Models.Entities.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId");
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -569,6 +655,11 @@ namespace Hamburger.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("Hamburger.Models.Entities.Menu", b =>
+                {
+                    b.Navigation("MenuProducts");
+                });
+
             modelBuilder.Entity("Hamburger.Models.Entities.Order", b =>
                 {
                     b.Navigation("OrderDetails");
@@ -576,6 +667,8 @@ namespace Hamburger.Migrations
 
             modelBuilder.Entity("Hamburger.Models.Entities.Product", b =>
                 {
+                    b.Navigation("MenuProducts");
+
                     b.Navigation("OrderDetails");
                 });
 
