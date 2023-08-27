@@ -23,6 +23,8 @@ namespace Hamburger.DAL
         DbSet<Status> Statuses { get; set; }
         DbSet<User> Users { get; set; }
         DbSet<MenuProduct> MenuProducts { get; set; }
+        DbSet<Topping> Toppings { get; set; }
+        DbSet<ProductTopping> ProductToppings { get; set; }
 		protected override async void OnModelCreating(ModelBuilder builder)
 		{
 			builder.ApplyConfiguration<User>(new UserCFG());
