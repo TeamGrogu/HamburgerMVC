@@ -2,7 +2,14 @@
 {
 	public class Product:BaseEntity
 	{
-        public string ProductName { get; set; }
+        public Product()
+        {
+            if (ID < 10)
+                ID = int.Parse(CategoryID.ToString() + "0" + ID);
+            else
+				ID = int.Parse(CategoryID.ToString() + ID);
+		}
+		public string ProductName { get; set; }
         public int? CategoryID { get; set; }
         public decimal Price { get; set; }
         public string? ProductImage { get; set; }

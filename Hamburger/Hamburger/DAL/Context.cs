@@ -1,5 +1,6 @@
 ﻿using Hamburger.DAL.EntityConfigurations;
 using Hamburger.Models.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -22,17 +23,14 @@ namespace Hamburger.DAL
         DbSet<Status> Statuses { get; set; }
         DbSet<User> Users { get; set; }
         DbSet<MenuProduct> MenuProducts { get; set; }
-
-		protected override void OnModelCreating(ModelBuilder builder)
+		protected override async void OnModelCreating(ModelBuilder builder)
 		{
-            builder.ApplyConfiguration<User>(new UserCFG());
+			builder.ApplyConfiguration<User>(new UserCFG());
             builder.ApplyConfiguration<Role>(new RoleCFG());
 
-            builder.Entity<User>().HasData(
-                new User { UserName = "memo", }
-                );
+            builder.ApplyConfiguration<Size>(new SizeCFG());
 
-            base.OnModelCreating(builder);
+			base.OnModelCreating(builder);
 		}
 	}
 }
