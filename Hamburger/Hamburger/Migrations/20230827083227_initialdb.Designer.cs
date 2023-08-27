@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hamburger.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230826153316_initialdb")]
+    [Migration("20230827083227_initialdb")]
     partial class initialdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -64,17 +64,14 @@ namespace Hamburger.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DrinkID")
+                    b.Property<int>("MenuID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("HamburgerID")
-                        .HasColumnType("int");
+                    b.Property<string>("MenuImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<int?>("SideID")
-                        .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
@@ -84,13 +81,30 @@ namespace Hamburger.Migrations
 
                     b.HasKey("ID");
 
-                    b.HasIndex("DrinkID");
-
-                    b.HasIndex("HamburgerID");
-
-                    b.HasIndex("SideID");
-
                     b.ToTable("Menus");
+                });
+
+            modelBuilder.Entity("Hamburger.Models.Entities.MenuProduct", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"), 1L, 1);
+
+                    b.Property<int>("MenuID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductID")
+                        .HasColumnType("int");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("MenuID");
+
+                    b.HasIndex("ProductID");
+
+                    b.ToTable("MenuProducts");
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Order", b =>
@@ -103,6 +117,9 @@ namespace Hamburger.Migrations
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("OrderImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("StatusID")
                         .HasColumnType("int");
@@ -181,6 +198,9 @@ namespace Hamburger.Migrations
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ProductImage")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
@@ -449,25 +469,23 @@ namespace Hamburger.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Hamburger.Models.Entities.Menu", b =>
+            modelBuilder.Entity("Hamburger.Models.Entities.MenuProduct", b =>
                 {
-                    b.HasOne("Hamburger.Models.Entities.Product", "Drink")
-                        .WithMany()
-                        .HasForeignKey("DrinkID");
+                    b.HasOne("Hamburger.Models.Entities.Menu", "Menu")
+                        .WithMany("MenuProducts")
+                        .HasForeignKey("MenuID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Hamburger.Models.Entities.Product", "Hamburger")
-                        .WithMany()
-                        .HasForeignKey("HamburgerID");
+                    b.HasOne("Hamburger.Models.Entities.Product", "Product")
+                        .WithMany("MenuProducts")
+                        .HasForeignKey("ProductID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Hamburger.Models.Entities.Product", "Side")
-                        .WithMany()
-                        .HasForeignKey("SideID");
+                    b.Navigation("Menu");
 
-                    b.Navigation("Drink");
-
-                    b.Navigation("Hamburger");
-
-                    b.Navigation("Side");
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Order", b =>
@@ -571,6 +589,11 @@ namespace Hamburger.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("Hamburger.Models.Entities.Menu", b =>
+                {
+                    b.Navigation("MenuProducts");
+                });
+
             modelBuilder.Entity("Hamburger.Models.Entities.Order", b =>
                 {
                     b.Navigation("OrderDetails");
@@ -578,6 +601,8 @@ namespace Hamburger.Migrations
 
             modelBuilder.Entity("Hamburger.Models.Entities.Product", b =>
                 {
+                    b.Navigation("MenuProducts");
+
                     b.Navigation("OrderDetails");
                 });
 

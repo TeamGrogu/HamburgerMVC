@@ -71,6 +71,25 @@ namespace Hamburger.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Menus",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    MenuID = table.Column<int>(type: "int", nullable: false),
+                    MenuImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    isActive = table.Column<bool>(type: "bit", nullable: false),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Menus", x => x.ID);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Sizes",
                 columns: table => new
                 {
@@ -211,6 +230,7 @@ namespace Hamburger.Migrations
                     ProductName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CategoryID = table.Column<int>(type: "int", nullable: true),
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ProductImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     isActive = table.Column<bool>(type: "bit", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -234,6 +254,7 @@ namespace Hamburger.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     UserID = table.Column<int>(type: "int", nullable: true),
                     TotalPrice = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    OrderImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     StatusID = table.Column<int>(type: "int", nullable: true),
                     isActive = table.Column<bool>(type: "bit", nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
@@ -255,38 +276,29 @@ namespace Hamburger.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Menus",
+                name: "MenuProducts",
                 columns: table => new
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    HamburgerID = table.Column<int>(type: "int", nullable: true),
-                    SideID = table.Column<int>(type: "int", nullable: true),
-                    DrinkID = table.Column<int>(type: "int", nullable: true),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    isActive = table.Column<bool>(type: "bit", nullable: false),
-                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    MenuID = table.Column<int>(type: "int", nullable: false),
+                    ProductID = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Menus", x => x.ID);
+                    table.PrimaryKey("PK_MenuProducts", x => x.ID);
                     table.ForeignKey(
-                        name: "FK_Menus_Products_DrinkID",
-                        column: x => x.DrinkID,
-                        principalTable: "Products",
-                        principalColumn: "ID");
+                        name: "FK_MenuProducts_Menus_MenuID",
+                        column: x => x.MenuID,
+                        principalTable: "Menus",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Menus_Products_HamburgerID",
-                        column: x => x.HamburgerID,
+                        name: "FK_MenuProducts_Products_ProductID",
+                        column: x => x.ProductID,
                         principalTable: "Products",
-                        principalColumn: "ID");
-                    table.ForeignKey(
-                        name: "FK_Menus_Products_SideID",
-                        column: x => x.SideID,
-                        principalTable: "Products",
-                        principalColumn: "ID");
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -361,19 +373,14 @@ namespace Hamburger.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Menus_DrinkID",
-                table: "Menus",
-                column: "DrinkID");
+                name: "IX_MenuProducts_MenuID",
+                table: "MenuProducts",
+                column: "MenuID");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Menus_HamburgerID",
-                table: "Menus",
-                column: "HamburgerID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Menus_SideID",
-                table: "Menus",
-                column: "SideID");
+                name: "IX_MenuProducts_ProductID",
+                table: "MenuProducts",
+                column: "ProductID");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrderDetails_OrderID",
@@ -424,13 +431,16 @@ namespace Hamburger.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Menus");
+                name: "MenuProducts");
 
             migrationBuilder.DropTable(
                 name: "OrderDetails");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
+                name: "Menus");
 
             migrationBuilder.DropTable(
                 name: "Orders");
