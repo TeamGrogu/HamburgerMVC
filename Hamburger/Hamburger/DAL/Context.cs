@@ -32,7 +32,8 @@ namespace Hamburger.DAL
 
             builder.ApplyConfiguration<Size>(new SizeCFG());
             builder.Entity<Role>().HasData(
-                    new Role { Id = 1, Name = "Admin", NormalizedName = "ADMIN" }
+                    new Role { Id = 1, Name = "Admin", NormalizedName = "ADMIN" },
+                    new Role { Id = 2, Name = "Standard", NormalizedName = "STANDARD"}
                 );
             
             List<User> admins = new List<User>() { new User { Id = 1, FirstName = "overthinkers", LastName = "team", Email = "overthinkerst@gmail.com", NormalizedEmail = "OVERTHINKERST@GMAIL.COM", UserName = "overthinkers", NormalizedUserName = "OVERTHINKERS", Address="Kadikoy" } };

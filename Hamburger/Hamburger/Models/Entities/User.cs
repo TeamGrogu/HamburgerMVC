@@ -9,7 +9,6 @@ namespace Hamburger.Models.Entities
         public string LastName { get; set; }
         public DateTime BirthDate { get; set; }
         public string Address { get; set; }
-        public Role? Role { get; set; }// son çözüm
         public ICollection<Order>? Orders { get; set; }
     }
 }
