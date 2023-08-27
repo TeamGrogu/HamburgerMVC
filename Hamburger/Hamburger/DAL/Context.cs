@@ -28,9 +28,7 @@ namespace Hamburger.DAL
 			builder.ApplyConfiguration<User>(new UserCFG());
             builder.ApplyConfiguration<Role>(new RoleCFG());
 
-<<<<<<< HEAD
             builder.ApplyConfiguration<Size>(new SizeCFG());
-=======
             builder.Entity<Role>().HasData(
                     new Role { Id = 1, Name = "Admin", NormalizedName = "ADMIN" }
                 );
@@ -45,7 +43,6 @@ namespace Hamburger.DAL
             builder.Entity<IdentityUserRole<int>>().HasData(
                     new IdentityUserRole<int>{ RoleId =1, UserId = 1}
                 );
->>>>>>> f7c2ff5a5934ee77d0662c69de55392bbd956504
 
 			base.OnModelCreating(builder);
 		}
