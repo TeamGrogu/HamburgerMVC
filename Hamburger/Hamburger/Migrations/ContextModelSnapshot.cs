@@ -245,6 +245,15 @@ namespace Hamburger.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ConcurrencyStamp = "527de0a2-cc0c-453f-9053-9e4e164c43f8",
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        });
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Size", b =>
@@ -362,6 +371,27 @@ namespace Hamburger.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccessFailedCount = 0,
+                            Address = "Kadikoy",
+                            BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            ConcurrencyStamp = "7d140240-3898-4611-ae34-70b62533bfcc",
+                            Email = "overthinkerst@gmail.com",
+                            EmailConfirmed = false,
+                            FirstName = "overthinkers",
+                            LastName = "team",
+                            LockoutEnabled = false,
+                            NormalizedEmail = "OVERTHINKERST@GMAIL.COM",
+                            NormalizedUserName = "OVERTHINKERS",
+                            PasswordHash = "AQAAAAEAACcQAAAAEEVXO5Hr1r2ayqCPnwauBe0BPbCkHBHSfJna5Zf6R+MAs7mslOOgSqWTBYFzY0Kilg==",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "overthinkers"
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
@@ -446,6 +476,13 @@ namespace Hamburger.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            RoleId = 1
+                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>

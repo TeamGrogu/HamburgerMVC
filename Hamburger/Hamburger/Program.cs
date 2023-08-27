@@ -1,5 +1,6 @@
 using Hamburger.DAL;
 using Hamburger.Models.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,8 +14,8 @@ builder.Services.AddIdentity<User, Role>
 	(x =>
 	{
 		x.SignIn.RequireConfirmedEmail = true;
-		x.Password.RequiredLength = 16;
-	}).AddRoles<Role>().AddEntityFrameworkStores<Context>();	
+		x.Password.RequiredLength = 6;
+	}).AddRoles<Role>().AddEntityFrameworkStores<Context>();
 
 var app = builder.Build();
 
