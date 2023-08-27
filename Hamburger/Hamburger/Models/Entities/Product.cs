@@ -9,5 +9,6 @@
 		public string? Description { get; set; }
 		public Category? Category { get; set; }
         public ICollection<OrderDetails>? OrderDetails { get; set; }
+        public ICollection<MenuProduct> MenuProducts { get; set; }
     }
 }
