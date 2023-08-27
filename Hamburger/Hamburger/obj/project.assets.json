@@ -2421,34 +2421,19 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\omerf\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\sabri\\.nuget\\packages\\": {}
->>>>>>> 285bcab1e1f4f3b7fc60df73e6a9a9970a3d860e
+    "C:\\Users\\DELL\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
       "projectName": "Hamburger",
-      "projectPath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
-      "packagesPath": "C:\\Users\\omerf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\",
+      "projectPath": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\omerf\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj",
-      "projectName": "Hamburger",
-      "projectPath": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj",
-      "packagesPath": "C:\\Users\\sabri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\sabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 285bcab1e1f4f3b7fc60df73e6a9a9970a3d860e
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2456,7 +2441,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2523,11 +2507,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
->>>>>>> 285bcab1e1f4f3b7fc60df73e6a9a9970a3d860e
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
