@@ -250,7 +250,7 @@ namespace Hamburger.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "527de0a2-cc0c-453f-9053-9e4e164c43f8",
+                            ConcurrencyStamp = "8e30e05b-4cc2-4623-9dce-ca65149cccb3",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });
@@ -271,6 +271,23 @@ namespace Hamburger.Migrations
                     b.HasKey("SizeID");
 
                     b.ToTable("Sizes");
+
+                    b.HasData(
+                        new
+                        {
+                            SizeID = 1,
+                            SizeName = "Küçük Boy"
+                        },
+                        new
+                        {
+                            SizeID = 2,
+                            SizeName = "Orta Boy"
+                        },
+                        new
+                        {
+                            SizeID = 3,
+                            SizeName = "Büyük Boy"
+                        });
                 });
 
             modelBuilder.Entity("Hamburger.Models.Entities.Status", b =>
@@ -350,6 +367,9 @@ namespace Hamburger.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
+                    b.Property<int?>("RoleId")
+                        .HasColumnType("int");
+
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -370,6 +390,8 @@ namespace Hamburger.Migrations
                         .HasDatabaseName("UserNameIndex")
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("AspNetUsers", (string)null);
 
                     b.HasData(
@@ -379,7 +401,7 @@ namespace Hamburger.Migrations
                             AccessFailedCount = 0,
                             Address = "Kadikoy",
                             BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ConcurrencyStamp = "7d140240-3898-4611-ae34-70b62533bfcc",
+                            ConcurrencyStamp = "b44050de-43d0-4a2f-9dcf-d2d1897ed111",
                             Email = "overthinkerst@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "overthinkers",
@@ -387,7 +409,7 @@ namespace Hamburger.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "OVERTHINKERST@GMAIL.COM",
                             NormalizedUserName = "OVERTHINKERS",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEVXO5Hr1r2ayqCPnwauBe0BPbCkHBHSfJna5Zf6R+MAs7mslOOgSqWTBYFzY0Kilg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMUyTvhy62WCgoQB8tu+ciaNyn0knc0W/4WSd5LzwRxndmaopBbVa6h6ZDDfNI59Og==",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
                             UserName = "overthinkers"
@@ -566,6 +588,15 @@ namespace Hamburger.Migrations
                         .HasForeignKey("CategoryID");
 
                     b.Navigation("Category");
+                });
+
+            modelBuilder.Entity("Hamburger.Models.Entities.User", b =>
+                {
+                    b.HasOne("Hamburger.Models.Entities.Role", "Role")
+                        .WithMany()
+                        .HasForeignKey("RoleId");
+
+                    b.Navigation("Role");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
