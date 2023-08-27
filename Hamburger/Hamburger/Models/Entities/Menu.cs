@@ -1,4 +1,6 @@
-﻿namespace Hamburger.Models.Entities
+﻿using System.ComponentModel;
+
+namespace Hamburger.Models.Entities
 {
 	public class Menu:BaseEntity
 	{
