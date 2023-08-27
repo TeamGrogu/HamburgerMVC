@@ -4,10 +4,18 @@
 	{
         public Product()
         {
-            if (ID < 10)
-                ID = int.Parse(CategoryID.ToString() + "0" + ID);
-            else
-				ID = int.Parse(CategoryID.ToString() + ID);
+            switch (ID)
+            {
+                case < 10:
+                    ID = int.Parse(CategoryID.ToString() + "00" + ID.ToString());
+                    break;
+                case < 100:
+                    ID = int.Parse(CategoryID.ToString() + "0" + ID.ToString());
+                    break;
+                case < 1000:
+                    ID = int.Parse(CategoryID.ToString() + ID.ToString());
+                    break;
+            }
 		}
 		public string ProductName { get; set; }
         public int? CategoryID { get; set; }
