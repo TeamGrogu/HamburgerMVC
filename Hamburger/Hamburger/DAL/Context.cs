@@ -13,18 +13,18 @@ namespace Hamburger.DAL
             
         }
 
-        DbSet<Category> Categories { get; set; }
-        DbSet<Menu> Menus { get; set; }
-        DbSet<Order> Orders { get; set; }
-        DbSet<OrderDetails> OrderDetails { get; set; }
-        DbSet<Product> Products { get; set; }
-        DbSet<Role> Roles { get; set; }
-        DbSet<Size> Sizes { get; set; }
-        DbSet<Status> Statuses { get; set; }
-        DbSet<User> Users { get; set; }
-        DbSet<MenuProduct> MenuProducts { get; set; }
-        DbSet<Topping> Toppings { get; set; }
-        DbSet<ProductTopping> ProductToppings { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Menu> Menus { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetails> OrderDetails { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Size> Sizes { get; set; }
+        public DbSet<Status> Statuses { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<MenuProduct> MenuProducts { get; set; }
+        public DbSet<Topping> Toppings { get; set; }
+        public DbSet<ProductTopping> ProductToppings { get; set; }
 		protected override async void OnModelCreating(ModelBuilder builder)
 		{
 			builder.ApplyConfiguration<User>(new UserCFG());
