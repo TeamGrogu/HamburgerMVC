@@ -33,14 +33,18 @@ namespace Hamburger.Controllers
             {
                 User appUser = new User()
                 {
+                    FirstName = vm.FirstName,
+                    LastName = vm.LastName,
                     UserName = vm.UserName,
                     Email = vm.Email,
+                    Address = vm.Address,
+                    PhoneNumber = vm.PhoneNumber,
                 };
                 IdentityResult identityResult = await userManager.CreateAsync(appUser, vm.Password);
-                await userManager.AddToRoleAsync(appUser, "Standart");
+                await userManager.AddToRoleAsync(appUser, "Standard");
                 if (identityResult.Succeeded)
                 {
-                    return RedirectToAction("Login");
+                    return RedirectToAction("Register");
                 }
                 else
                 {
@@ -51,6 +55,11 @@ namespace Hamburger.Controllers
                 }
             }
             return View(vm);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login()
+        {
+            return View();
         }
     }
 }
