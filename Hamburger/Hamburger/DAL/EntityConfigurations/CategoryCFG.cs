@@ -13,8 +13,8 @@ namespace Hamburger.DAL.EntityConfigurations
                 new Category { ID=2,CategoryName="Sides",isActive=true},
                 new Category { ID=3,CategoryName="Beverages",isActive=true},
                 new Category { ID=4,CategoryName="Deserts",isActive=true},            
-                new Category { ID=5,CategoryName="Sauces",isActive=true},            
-                new Category { ID=6,CategoryName="Topppings",isActive=true}            
+                new Category { ID=5,CategoryName="Sauces",isActive=true} 
+                       
                 
                 );
         }
