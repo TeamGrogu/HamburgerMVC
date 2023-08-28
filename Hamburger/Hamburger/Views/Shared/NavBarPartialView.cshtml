@@ -1,0 +1,36 @@
+﻿<link rel="stylesheet" href="~/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<section id="Home" style="height:10vh;">
+
+    <nav>
+        <div class="logo">
+            <img src="~/image/logo.png">
+        </div>
+
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Menu">Menu</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Review">Review</a></li>
+            <li><a href="#Order">Order</a></li>
+        </ul>
+
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-user">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    @User.Identity.Name
+
+                }
+                else
+                {
+                    <label>Login</label>
+                }
+            </i>
+        </div>
+    </nav>
+</section>
