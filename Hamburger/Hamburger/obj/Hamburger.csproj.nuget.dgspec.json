@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+    "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+        "projectName": "Hamburger",
+        "projectPath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+        "packagesPath": "C:\\Users\\omerf\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\omerf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e52f164066dc35b003cab4e6f43a41565902c6be
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,7 +110,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+>>>>>>> e52f164066dc35b003cab4e6f43a41565902c6be
         }
       }
     }

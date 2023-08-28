@@ -11095,11 +11095,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\sabri\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\omerf\\.nuget\\packages\\": {}
+>>>>>>> e52f164066dc35b003cab4e6f43a41565902c6be
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj",
       "projectName": "Hamburger",
       "projectPath": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj",
@@ -11108,6 +11113,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+      "projectName": "Hamburger",
+      "projectPath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+      "packagesPath": "C:\\Users\\omerf\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\omerf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> e52f164066dc35b003cab4e6f43a41565902c6be
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11186,8 +11201,20 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+>>>>>>> e52f164066dc35b003cab4e6f43a41565902c6be
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
