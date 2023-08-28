@@ -29,9 +29,14 @@ namespace Hamburger.DAL
 		{
 			builder.ApplyConfiguration<User>(new UserCFG());
             builder.ApplyConfiguration<Role>(new RoleCFG());
+            builder.ApplyConfiguration<Topping>(new ToppingCFG());
             builder.ApplyConfiguration<Category>(new CategoryCFG());
             builder.ApplyConfiguration<Product>(new ProductCFG());
+            builder.ApplyConfiguration<ProductTopping>(new ProductToppingCFG());
+            builder.ApplyConfiguration<MenuProduct>(new MenuProductCFG());
+            builder.ApplyConfiguration<Menu>(new MenuCFG());         
             builder.ApplyConfiguration<Size>(new SizeCFG());
+           
 
             builder.Entity<Role>().HasData(
                     new Role { Id = 1, Name = "Admin", NormalizedName = "ADMIN" },
