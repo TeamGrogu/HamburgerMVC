@@ -10,39 +10,7 @@
 </head>
 <body>
     <header>
-        <section id="Home" style="height:10vh;">
-            <nav>
-                <div class="logo">
-                    <img src="image/logo.png">
-                </div>
-
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Menu">Menu</a></li>
-                    <li><a href="#Gallary">Gallery</a></li>
-                    <li><a href="#Review">Review</a></li>
-                    <li><a href="#Order">Order</a></li>
-                </ul>
-
-                <div class="icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-solid fa-user">
-                        @if (User.Identity.IsAuthenticated)
-                        {
-                            @User.Identity.Name
-
-                        }
-                        else
-                        {
-                            <label>Login</label>
-                        }
-                    </i>
-                </div>
-            </nav>
-        </section>
+        <partial name="~/Views/Shared/NavBarPartialView.cshtml" />
     </header>
 
     <div class="container">
@@ -56,11 +24,7 @@
 
             <div class="footer_tag">
                 <h2>Location</h2>
-                <p>Sri Lanka</p>
-                <p>USA</p>
-                <p>India</p>
-                <p>Japan</p>
-                <p>Italy</p>
+                <p>Turkiye</p>
             </div>
 
             <div class="footer_tag">
@@ -74,10 +38,10 @@
 
             <div class="footer_tag">
                 <h2>Contact</h2>
-                <p>+94 12 3456 789</p>
-                <p>+94 25 5568456</p>
-                <p>johndeo123@gmail.com</p>
-                <p>foodshop123@gmail.com</p>
+                <p>sabrisen97@gmail.com</p>
+                <p>talhaaksoyy@gmail.com</p>
+                <p>yolcuuomer@gmail.com</p>
+                <p>omerfdev@gmail.com</p>
             </div>
 
             <div class="footer_tag">
@@ -97,6 +61,11 @@
 
         </div>
 
+<<<<<<< HEAD
+=======
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> Team Overthinkers</span></p>
+
+>>>>>>> 021fbaf1225ef48c56903fdec701d169667b8587
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

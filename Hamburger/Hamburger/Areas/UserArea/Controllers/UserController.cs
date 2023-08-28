@@ -1,9 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Hamburger.Models.Entities;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Hamburger.Areas.UserArea.Controllers
 {
     public class UserController : Controller
     {
+
         [Area("UserArea")]
         public IActionResult Index()
         {

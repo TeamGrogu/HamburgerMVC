@@ -11095,11 +11095,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\DELL\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\sabri\\.nuget\\packages\\": {}
+>>>>>>> 021fbaf1225ef48c56903fdec701d169667b8587
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
       "projectName": "Hamburger",
       "projectPath": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
@@ -11108,6 +11113,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj",
+      "projectName": "Hamburger",
+      "projectPath": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj",
+      "packagesPath": "C:\\Users\\sabri\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\sabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 021fbaf1225ef48c56903fdec701d169667b8587
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11115,6 +11130,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -11185,7 +11201,11 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+>>>>>>> 021fbaf1225ef48c56903fdec701d169667b8587
       }
     }
   }
