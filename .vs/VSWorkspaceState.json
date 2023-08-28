@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Hamburger",
+    "\\Hamburger\\Hamburger",
+    "\\Hamburger\\Hamburger\\DAL",
+    "\\Hamburger\\Hamburger\\DAL\\EntityConfigurations"
   ],
-  "SelectedNode": "\\Hamburger.sln",
+  "SelectedNode": "\\Hamburger\\Hamburger\\DAL\\EntityConfigurations\\CategoryCFG.cs",
   "PreviewInSolutionExplorer": false
 }

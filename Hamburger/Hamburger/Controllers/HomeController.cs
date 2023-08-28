@@ -23,6 +23,7 @@ namespace Hamburger.Controllers
 
         public IActionResult Index()
         {
+            menuProductVM.Categories=_context.Categories.ToList();
             menuProductVM.Products = _context.Products.ToList();
             menuProductVM.Menus = _context.Menus.ToList();
             return View(menuProductVM);
