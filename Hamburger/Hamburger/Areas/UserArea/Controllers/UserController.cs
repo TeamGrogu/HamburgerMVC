@@ -9,5 +9,11 @@ namespace Hamburger.Areas.UserArea.Controllers
         {
             return View();
         }
+
+        public IActionResult AddCart()
+        {
+
+            return View();
+        }
     }
 }
