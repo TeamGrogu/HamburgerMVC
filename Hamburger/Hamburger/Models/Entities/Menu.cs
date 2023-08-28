@@ -21,5 +21,6 @@ namespace Hamburger.Models.Entities
         public decimal Price { get; set; }
         public string? Description { get; set; }
         public ICollection<OrderDetails>? OrderDetails { get; set; }
+        public ICollection<UserFavorites>? UserFavorites { get; set; }
     }
 }

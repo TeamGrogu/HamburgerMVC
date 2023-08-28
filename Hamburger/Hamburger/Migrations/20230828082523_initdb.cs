@@ -95,7 +95,8 @@ namespace Hamburger.Migrations
                 {
                     SizeID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    SizeName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    SizeName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -121,7 +122,8 @@ namespace Hamburger.Migrations
                 {
                     ID = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ToppingName = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    ToppingName = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -341,6 +343,42 @@ namespace Hamburger.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "UserFavorites",
+                columns: table => new
+                {
+                    ID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    UserID = table.Column<int>(type: "int", nullable: false),
+                    ProductID = table.Column<int>(type: "int", nullable: false),
+                    MenuID = table.Column<int>(type: "int", nullable: false),
+                    isActive = table.Column<bool>(type: "bit", nullable: false),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserFavorites", x => x.ID);
+                    table.ForeignKey(
+                        name: "FK_UserFavorites_AspNetUsers_UserID",
+                        column: x => x.UserID,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UserFavorites_Menus_MenuID",
+                        column: x => x.MenuID,
+                        principalTable: "Menus",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UserFavorites_Products_ProductID",
+                        column: x => x.ProductID,
+                        principalTable: "Products",
+                        principalColumn: "ID",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "OrderDetails",
                 columns: table => new
                 {
@@ -383,36 +421,36 @@ namespace Hamburger.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { 1, "bb9e2820-74ee-4277-adc5-338a701e0c3d", "Admin", "ADMIN" },
-                    { 2, "9f22a40d-70dc-4684-90c7-a1cd10a3bee3", "Standard", "STANDARD" }
+                    { 1, "b631a43b-28b1-4af2-97be-e4735e20d037", "Admin", "ADMIN" },
+                    { 2, "09dbb7ba-0084-4f98-992a-24fe7c8e3719", "Standard", "STANDARD" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "Address", "BirthDate", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { 1, 0, "Kadikoy", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "66f443fc-1700-42ab-91b5-6dc74c5fadb4", "overthinkerst@gmail.com", false, "overthinkers", "team", false, null, "OVERTHINKERST@GMAIL.COM", "OVERTHINKERS", "AQAAAAEAACcQAAAAEBE1IS13Qo2xl9VZ0sWuX4V25Wy9vTI0IRsSelee459wcPG2Wee1Ww2A0sz9SPAQhQ==", null, false, null, false, "overthinkers" });
+                values: new object[] { 1, 0, "Kadikoy", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "4d15dc5d-51a7-4324-aa8f-99285159cf8d", "overthinkerst@gmail.com", false, "overthinkers", "team", false, null, "OVERTHINKERST@GMAIL.COM", "OVERTHINKERS", "AQAAAAEAACcQAAAAEGjfFAFJdYV0RxwIcTGBRg0Lc6pvJj3N2pEPDlkHvVkF+yQRwVCyGMTPKwYaTwcx3g==", null, false, null, false, "overthinkers" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
                 columns: new[] { "ID", "CategoryName", "CreateDate", "UpdateDate", "isActive" },
                 values: new object[,]
                 {
-                    { 1, "Hamburgers", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6241), new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6251), true },
-                    { 2, "Sides", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6255), new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6256), true },
-                    { 3, "Beverages", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6257), new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6258), true },
-                    { 4, "Deserts", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6258), new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6259), true },
-                    { 5, "Sauces", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6260), new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6260), true },
-                    { 6, "Topppings", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6261), new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6262), true }
+                    { 1, "Hamburgers", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3123), new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3136), true },
+                    { 2, "Sides", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3139), new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3139), true },
+                    { 3, "Beverages", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3140), new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3141), true },
+                    { 4, "Deserts", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3141), new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3142), true },
+                    { 5, "Sauces", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3143), new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3143), true },
+                    { 6, "Topppings", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3144), new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3145), true }
                 });
 
             migrationBuilder.InsertData(
                 table: "Sizes",
-                columns: new[] { "SizeID", "SizeName" },
+                columns: new[] { "SizeID", "Price", "SizeName" },
                 values: new object[,]
                 {
-                    { 1, "Küçük Boy" },
-                    { 2, "Orta Boy" },
-                    { 3, "Büyük Boy" }
+                    { 1, 0m, "Küçük Boy" },
+                    { 2, 0m, "Orta Boy" },
+                    { 3, 0m, "Büyük Boy" }
                 });
 
             migrationBuilder.InsertData(
@@ -425,47 +463,47 @@ namespace Hamburger.Migrations
                 columns: new[] { "ID", "CategoryID", "CreateDate", "Description", "Price", "ProductImage", "ProductName", "UpdateDate", "isActive" },
                 values: new object[,]
                 {
-                    { 101, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6589), "Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan bir Burger King® klasiği.", 134.99m, "https://www.burgerking.com.tr/cmsfiles/products/whopper.png?v=285", "Whopper Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6590), true },
-                    { 102, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6622), "King Chicken eti, susamlı sandviç ekmeği, mayonez ve doğranmış maruldan oluşan son derece sade bir lezzet alternatifi.", 124.99m, "https://www.burgerking.com.tr/cmsfiles/products/king-chicken-1.png?v=285", "King Chicken Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6622), true },
-                    { 103, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6626), "Kocaman Steakhouse eti, özel sosu, cheddar peyniri, domatesi, mayonezi, marulu ve çıtır kaplamalı soğanlarıyla sabrınızı zorlayacak bir lezzet.", 174.99m, "https://www.burgerking.com.tr/cmsfiles/products/bk-steakhouse-burger.png?v=285", "Steakhouse Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6626), true },
-                    { 104, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6629), "4 adet Hamburger eti, 3 katlı özel ekmeği, cheddar peyniri, salatalık turşusu, doğranmış marul ve soğana eşlik eden özel Big King® sosun birleşimi", 194.99m, "https://www.burgerking.com.tr/cmsfiles/products/double-big-king.png?v=285", "Double Big King Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6630), true },
-                    { 105, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6633), "Whopper® eti, büyük boy susamlı sandviç ekmeği, mayonez, doğranmış marul, soğan halkaları, nefis barbekü sosu ve 2 adet cheddar peynirinden oluşan Whopper® lezzeti.", 159.99m, "https://www.burgerking.com.tr/cmsfiles/products/rodeo-whopper.png?v=285", "Rodeo Whopper Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6634), true },
-                    { 106, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6636), "İki adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğanla klasik Whopper® lezzetini ikiye katlamak için ideal.", 194.99m, "https://www.burgerking.com.tr/cmsfiles/products/double-whopper-1.png?v=285", "Double Whopper Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6637), true },
-                    { 107, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6642), "Hamburger eti, küçük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan, Whopper® lezzetinden vazgeçemeyenlere nefis bir seçim.", 109.99m, "https://www.burgerking.com.tr/cmsfiles/products/whopper-jr.png?v=285", "Whopper Jr. Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6642), true },
-                    { 108, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6645), "Özel kaplamasıyla tavuk göğüs fileto, mısır irmiği ile süslemeli özel ekmeği, spicy sosu, domatesi ve doğranmış maruldan oluşan yeni bir lezzet.", 109.99m, "https://www.burgerking.com.tr/cmsfiles/products/spicy-gurme-tavuk.png?v=285", "Spicy Gurme Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6646), true },
-                    { 109, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6648), "Fish Royale® eti, küçük boy susamlı sandviç ekmeği, doğranmış marul ile burger klasiğine lezzetini veren tartar sosun birleşimi.", 159.99m, "https://www.burgerking.com.tr/cmsfiles/products/fish-royale-1.png?v=285", "Fish Royale Burger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6649), true },
-                    { 110, 1, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6651), "2 adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, 4 adet cheddar peyniri, hardal ve ketçaptan oluşan lezzet.", 159.99m, "https://www.burgerking.com.tr/cmsfiles/products/mega-double-cheeseburger.png?v=285", "Mega Double CheeseBurger", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6652), true },
-                    { 201, 2, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6655), "Doğal, soyulmuş, gevrek kızarmış patates", 59.99m, "https://www.burgerking.com.tr/cmsfiles/products/patates.png?v=285", "Patates", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6656), true },
-                    { 202, 2, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6658), "Çıtır Mı Çıtır Altın Sarısı Tırtıklı Patates", 69.99m, "https://www.burgerking.com.tr/cmsfiles/products/tirtikli-patates.png?v=285", "Tırtıklı  Patates", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6659), true },
-                    { 203, 2, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6661), "Çıtır çıtır 8’li, 12’li ya da 16’lı Soğan Halka lezzeti", 79.99m, "https://www.burgerking.com.tr/cmsfiles/products/sogan-halkasi.png?v=285", "Soğan Halkası", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6662), true },
-                    { 204, 2, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6664), "Dışı çıtır çıtır, içi sıcacık peyniriyle Çıtır Peynir!", 75.99m, "https://www.burgerking.com.tr/cmsfiles/products/citir-peynir.png?v=285", "Çıtır Peynir", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6665), true },
-                    { 205, 2, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6668), "Dışı çıtır çıtır, Nuggets...", 75.99m, "https://www.burgerking.com.tr/cmsfiles/products/bk-king-nuggets-1.png?v=285", "Çıtır Nuggets", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6668), true },
-                    { 206, 2, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6672), "Özel harcıyla nar gibi kızarmış  beyaz tavuk eti.", 85.99m, "https://www.burgerking.com.tr/cmsfiles/products/chicken-tenders.png?v=285", "Çıtır Tavuk Tenders", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6672), true },
-                    { 301, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6675), "Şeftalili Fuse Tea ve Limonlu Fuse Tea seçenekleri ile", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/fuse-tea.png?v=285", "Fuse Tea", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6676), true },
-                    { 302, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6678), "Cola cola ", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/coca-cola.png?v=285", "Coca Cola", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6679), true },
-                    { 303, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6681), "Cola cola Zero ", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/coca-cola-zero-sugar.png?v=285", "Coca Cola Zero", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6682), true },
-                    { 304, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6685), "Fanta", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/fanta.png?v=285", "Fanta", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6685), true },
-                    { 305, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6688), "Sprite", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/sprite.png?v=285", "Sprite", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6688), true },
-                    { 306, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6691), "Ayran", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/sprite.png?v=285", "Ayran", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6692), true },
-                    { 307, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6695), "Elma Suyu", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/elma-suyu.png?v=285", "Cappy Elma Suyu", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6695), true },
-                    { 308, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6700), "Atom Suyu", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/cappy-atom-200-ml.png?v=285", "Cappy Atom", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6700), true },
-                    { 309, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6703), "Kahve Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/espresso.png?v=285", "Espresso", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6703), true },
-                    { 310, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6705), "Kahve Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/nescafe-black.png?v=285", "Filtre Kahve", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6706), true },
-                    { 311, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6709), "Karadeniz Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/cay.png?v=285", "Çay", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6710), true },
-                    { 312, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6714), "Karadeniz Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/vanilyali-cappuccino.png?v=285", "Cappuccino", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6715), true },
-                    { 313, 3, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6783), "Çikolata Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/nestle-sicak-cikolata.png?v=285", "Sıcak Çikolata", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6784), true },
-                    { 401, 4, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6788), "Çikolata Lezzeti", 45.99m, "https://www.burgerking.com.tr/cmsfiles/products/cikolatali-cookie.png?v=285", "Çikolatalı Cookie", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6789), true },
-                    { 402, 4, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6791), "Çikolata Lezzeti", 45.99m, "https://www.burgerking.com.tr/cmsfiles/products/sufle.png?v=285", "Sufle", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6792), true },
-                    { 403, 4, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6795), "Vişne Lezzeti", 55.99m, "https://www.burgerking.com.tr/cmsfiles/products/visneli-tatli.png?v=285", "Vişneli Tatlı", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6795), true },
-                    { 404, 4, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6797), "Vanilyalı, Çilekli, Çikolatalı, Espressolu, Limonlu çeşitleriyle.", 55.99m, "https://www.burgerking.com.tr/cmsfiles/products/espressolu-milkshake.png?v=285", "Vişneli Tatlı", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6798), true },
-                    { 405, 4, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6801), "Vanilyalı, Çilekli, Çikolatalı, Espressolu, Limonlu çeşitleriyle.", 55.99m, "https://www.burgerking.com.tr/cmsfiles/products/espressolu-milkshake.png?v=285", "Vişneli Tatlı", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6801), true },
-                    { 406, 4, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6804), "Vanilyalı, Çikolata Soslu, Böğürtlen Soslu, Karamel Soslu, Çilek Soslu, Limonlu", 65.99m, "https://www.burgerking.com.tr/cmsfiles/products/king-sundae.png?v=285", "King Sundae", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6804), true },
-                    { 407, 4, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6807), "Çikolata Parçacıklı, Renkli Çikolata Drajeleri, Limonlu", 75.99m, "https://www.burgerking.com.tr/cmsfiles/products/bkool.png?v=285", "Bkool", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6808), true },
-                    { 501, 5, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6810), "Acı Sos", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-aci-sos.png?v=285", "Mini Acı Sos", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6811), true },
-                    { 502, 5, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6813), "Mayonez", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-mayonez.png?v=285", "Mayonez", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6814), true },
-                    { 503, 5, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6816), "Ranch Sos", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-ranch.png?v=285", "Mini Ranch", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6817), true },
-                    { 504, 5, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6820), "Sarımsaklı Sos", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-sarimsakli-mayonez-1.png?v=285", "Sarımsaklı Sos", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6820), true },
-                    { 505, 5, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6823), "Mini Ketçap", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-ketcap.png?v=285", "Mini Ketçap", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6824), true }
+                    { 101, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3383), "Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan bir Burger King® klasiği.", 134.99m, "https://www.burgerking.com.tr/cmsfiles/products/whopper.png?v=285", "Whopper Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3383), true },
+                    { 102, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3420), "King Chicken eti, susamlı sandviç ekmeği, mayonez ve doğranmış maruldan oluşan son derece sade bir lezzet alternatifi.", 124.99m, "https://www.burgerking.com.tr/cmsfiles/products/king-chicken-1.png?v=285", "King Chicken Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3421), true },
+                    { 103, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3423), "Kocaman Steakhouse eti, özel sosu, cheddar peyniri, domatesi, mayonezi, marulu ve çıtır kaplamalı soğanlarıyla sabrınızı zorlayacak bir lezzet.", 174.99m, "https://www.burgerking.com.tr/cmsfiles/products/bk-steakhouse-burger.png?v=285", "Steakhouse Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3424), true },
+                    { 104, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3426), "4 adet Hamburger eti, 3 katlı özel ekmeği, cheddar peyniri, salatalık turşusu, doğranmış marul ve soğana eşlik eden özel Big King® sosun birleşimi", 194.99m, "https://www.burgerking.com.tr/cmsfiles/products/double-big-king.png?v=285", "Double Big King Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3426), true },
+                    { 105, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3428), "Whopper® eti, büyük boy susamlı sandviç ekmeği, mayonez, doğranmış marul, soğan halkaları, nefis barbekü sosu ve 2 adet cheddar peynirinden oluşan Whopper® lezzeti.", 159.99m, "https://www.burgerking.com.tr/cmsfiles/products/rodeo-whopper.png?v=285", "Rodeo Whopper Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3429), true },
+                    { 106, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3431), "İki adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğanla klasik Whopper® lezzetini ikiye katlamak için ideal.", 194.99m, "https://www.burgerking.com.tr/cmsfiles/products/double-whopper-1.png?v=285", "Double Whopper Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3431), true },
+                    { 107, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3433), "Hamburger eti, küçük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan, Whopper® lezzetinden vazgeçemeyenlere nefis bir seçim.", 109.99m, "https://www.burgerking.com.tr/cmsfiles/products/whopper-jr.png?v=285", "Whopper Jr. Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3433), true },
+                    { 108, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3436), "Özel kaplamasıyla tavuk göğüs fileto, mısır irmiği ile süslemeli özel ekmeği, spicy sosu, domatesi ve doğranmış maruldan oluşan yeni bir lezzet.", 109.99m, "https://www.burgerking.com.tr/cmsfiles/products/spicy-gurme-tavuk.png?v=285", "Spicy Gurme Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3436), true },
+                    { 109, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3439), "Fish Royale® eti, küçük boy susamlı sandviç ekmeği, doğranmış marul ile burger klasiğine lezzetini veren tartar sosun birleşimi.", 159.99m, "https://www.burgerking.com.tr/cmsfiles/products/fish-royale-1.png?v=285", "Fish Royale Burger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3439), true },
+                    { 110, 1, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3441), "2 adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, 4 adet cheddar peyniri, hardal ve ketçaptan oluşan lezzet.", 159.99m, "https://www.burgerking.com.tr/cmsfiles/products/mega-double-cheeseburger.png?v=285", "Mega Double CheeseBurger", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3441), true },
+                    { 201, 2, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3443), "Doğal, soyulmuş, gevrek kızarmış patates", 59.99m, "https://www.burgerking.com.tr/cmsfiles/products/patates.png?v=285", "Patates", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3444), true },
+                    { 202, 2, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3445), "Çıtır Mı Çıtır Altın Sarısı Tırtıklı Patates", 69.99m, "https://www.burgerking.com.tr/cmsfiles/products/tirtikli-patates.png?v=285", "Tırtıklı  Patates", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3446), true },
+                    { 203, 2, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3447), "Çıtır çıtır 8’li, 12’li ya da 16’lı Soğan Halka lezzeti", 79.99m, "https://www.burgerking.com.tr/cmsfiles/products/sogan-halkasi.png?v=285", "Soğan Halkası", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3448), true },
+                    { 204, 2, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3450), "Dışı çıtır çıtır, içi sıcacık peyniriyle Çıtır Peynir!", 75.99m, "https://www.burgerking.com.tr/cmsfiles/products/citir-peynir.png?v=285", "Çıtır Peynir", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3451), true },
+                    { 205, 2, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3453), "Dışı çıtır çıtır, Nuggets...", 75.99m, "https://www.burgerking.com.tr/cmsfiles/products/bk-king-nuggets-1.png?v=285", "Çıtır Nuggets", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3453), true },
+                    { 206, 2, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3455), "Özel harcıyla nar gibi kızarmış  beyaz tavuk eti.", 85.99m, "https://www.burgerking.com.tr/cmsfiles/products/chicken-tenders.png?v=285", "Çıtır Tavuk Tenders", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3455), true },
+                    { 301, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3457), "Şeftalili Fuse Tea ve Limonlu Fuse Tea seçenekleri ile", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/fuse-tea.png?v=285", "Fuse Tea", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3458), true },
+                    { 302, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3459), "Cola cola ", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/coca-cola.png?v=285", "Coca Cola", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3460), true },
+                    { 303, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3462), "Cola cola Zero ", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/coca-cola-zero-sugar.png?v=285", "Coca Cola Zero", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3462), true },
+                    { 304, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3465), "Fanta", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/fanta.png?v=285", "Fanta", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3465), true },
+                    { 305, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3467), "Sprite", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/sprite.png?v=285", "Sprite", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3468), true },
+                    { 306, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3469), "Ayran", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/sprite.png?v=285", "Ayran", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3470), true },
+                    { 307, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3471), "Elma Suyu", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/elma-suyu.png?v=285", "Cappy Elma Suyu", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3472), true },
+                    { 308, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3474), "Atom Suyu", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/cappy-atom-200-ml.png?v=285", "Cappy Atom", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3474), true },
+                    { 309, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3476), "Kahve Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/espresso.png?v=285", "Espresso", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3476), true },
+                    { 310, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3478), "Kahve Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/nescafe-black.png?v=285", "Filtre Kahve", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3478), true },
+                    { 311, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3480), "Karadeniz Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/cay.png?v=285", "Çay", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3481), true },
+                    { 312, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3562), "Karadeniz Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/vanilyali-cappuccino.png?v=285", "Cappuccino", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3563), true },
+                    { 313, 3, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3565), "Çikolata Lezzeti", 35.99m, "https://www.burgerking.com.tr/cmsfiles/products/nestle-sicak-cikolata.png?v=285", "Sıcak Çikolata", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3566), true },
+                    { 401, 4, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3567), "Çikolata Lezzeti", 45.99m, "https://www.burgerking.com.tr/cmsfiles/products/cikolatali-cookie.png?v=285", "Çikolatalı Cookie", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3568), true },
+                    { 402, 4, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3570), "Çikolata Lezzeti", 45.99m, "https://www.burgerking.com.tr/cmsfiles/products/sufle.png?v=285", "Sufle", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3570), true },
+                    { 403, 4, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3572), "Vişne Lezzeti", 55.99m, "https://www.burgerking.com.tr/cmsfiles/products/visneli-tatli.png?v=285", "Vişneli Tatlı", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3572), true },
+                    { 404, 4, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3575), "Vanilyalı, Çilekli, Çikolatalı, Espressolu, Limonlu çeşitleriyle.", 55.99m, "https://www.burgerking.com.tr/cmsfiles/products/espressolu-milkshake.png?v=285", "Vişneli Tatlı", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3575), true },
+                    { 405, 4, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3577), "Vanilyalı, Çilekli, Çikolatalı, Espressolu, Limonlu çeşitleriyle.", 55.99m, "https://www.burgerking.com.tr/cmsfiles/products/espressolu-milkshake.png?v=285", "Vişneli Tatlı", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3577), true },
+                    { 406, 4, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3581), "Vanilyalı, Çikolata Soslu, Böğürtlen Soslu, Karamel Soslu, Çilek Soslu, Limonlu", 65.99m, "https://www.burgerking.com.tr/cmsfiles/products/king-sundae.png?v=285", "King Sundae", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3581), true },
+                    { 407, 4, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3583), "Çikolata Parçacıklı, Renkli Çikolata Drajeleri, Limonlu", 75.99m, "https://www.burgerking.com.tr/cmsfiles/products/bkool.png?v=285", "Bkool", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3583), true },
+                    { 501, 5, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3588), "Acı Sos", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-aci-sos.png?v=285", "Mini Acı Sos", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3588), true },
+                    { 502, 5, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3591), "Mayonez", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-mayonez.png?v=285", "Mayonez", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3591), true },
+                    { 503, 5, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3594), "Ranch Sos", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-ranch.png?v=285", "Mini Ranch", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3594), true },
+                    { 504, 5, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3596), "Sarımsaklı Sos", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-sarimsakli-mayonez-1.png?v=285", "Sarımsaklı Sos", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3596), true },
+                    { 505, 5, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3600), "Mini Ketçap", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-ketcap.png?v=285", "Mini Ketçap", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3600), true }
                 });
 
             migrationBuilder.InsertData(
@@ -473,14 +511,14 @@ namespace Hamburger.Migrations
                 columns: new[] { "ID", "CategoryID", "CreateDate", "Description", "Price", "ProductImage", "ProductName", "UpdateDate", "isActive" },
                 values: new object[,]
                 {
-                    { 506, 5, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6826), "Mini Ketçap", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-ketcap.png?v=285", "Mini Ketçap", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6827), true },
-                    { 507, 5, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6829), "Mini BBQ", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-bbq.png?v=285", "Mini BBQ", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6830), true },
-                    { 508, 5, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6832), "Buffalo Sos", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-buffalo-1.png?v=285", "Buffalo Sos", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6832), true },
-                    { 601, 6, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6835), "Marul", 5.99m, null, "Marul", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6835), true },
-                    { 602, 6, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6839), "Domates", 5.99m, null, "Domates", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6840), true },
-                    { 603, 6, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6843), "Cheddar Peyniri", 5.99m, null, "Cheddar Peyniri", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6844), true },
-                    { 604, 6, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6846), "Turşu", 5.99m, null, "Turşu", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6847), true },
-                    { 605, 6, new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6849), "Soğan", 5.99m, null, "Soğan", new DateTime(2023, 8, 27, 21, 14, 18, 799, DateTimeKind.Local).AddTicks(6850), true }
+                    { 506, 5, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3627), "Mini Ketçap", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-ketcap.png?v=285", "Mini Ketçap", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3627), true },
+                    { 507, 5, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3629), "Mini BBQ", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-bbq.png?v=285", "Mini BBQ", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3630), true },
+                    { 508, 5, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3632), "Buffalo Sos", 10.99m, "https://www.burgerking.com.tr/cmsfiles/products/mini-buffalo-1.png?v=285", "Buffalo Sos", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3632), true },
+                    { 601, 6, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3634), "Marul", 5.99m, null, "Marul", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3634), true },
+                    { 602, 6, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3636), "Domates", 5.99m, null, "Domates", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3637), true },
+                    { 603, 6, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3638), "Cheddar Peyniri", 5.99m, null, "Cheddar Peyniri", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3639), true },
+                    { 604, 6, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3641), "Turşu", 5.99m, null, "Turşu", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3641), true },
+                    { 605, 6, new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3643), "Soğan", 5.99m, null, "Soğan", new DateTime(2023, 8, 28, 11, 25, 23, 43, DateTimeKind.Local).AddTicks(3643), true }
                 });
 
             migrationBuilder.CreateIndex(
@@ -576,6 +614,21 @@ namespace Hamburger.Migrations
                 name: "IX_ProductToppings_ToppingID",
                 table: "ProductToppings",
                 column: "ToppingID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserFavorites_MenuID",
+                table: "UserFavorites",
+                column: "MenuID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserFavorites_ProductID",
+                table: "UserFavorites",
+                column: "ProductID");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_UserFavorites_UserID",
+                table: "UserFavorites",
+                column: "UserID");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -605,10 +658,10 @@ namespace Hamburger.Migrations
                 name: "ProductToppings");
 
             migrationBuilder.DropTable(
-                name: "AspNetRoles");
+                name: "UserFavorites");
 
             migrationBuilder.DropTable(
-                name: "Menus");
+                name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "Orders");
@@ -617,10 +670,13 @@ namespace Hamburger.Migrations
                 name: "Sizes");
 
             migrationBuilder.DropTable(
-                name: "Products");
+                name: "Toppings");
 
             migrationBuilder.DropTable(
-                name: "Toppings");
+                name: "Menus");
+
+            migrationBuilder.DropTable(
+                name: "Products");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

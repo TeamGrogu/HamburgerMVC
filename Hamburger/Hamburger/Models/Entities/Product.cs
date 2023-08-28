@@ -29,5 +29,6 @@
         public ICollection<OrderDetails>? OrderDetails { get; set; }
         public ICollection<MenuProduct> MenuProducts { get; set; }
         public ICollection<ProductTopping> ProductToppings { get; set; }
+        public ICollection<UserFavorites> UserFavorites { get; set; }
     }
 }
