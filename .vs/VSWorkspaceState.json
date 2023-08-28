@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Hamburger",
+    "\\Hamburger\\Hamburger",
+    "\\Hamburger\\Hamburger\\DAL",
+    "\\Hamburger\\Hamburger\\DAL\\EntityConfigurations"
   ],
+  "SelectedNode": "\\Hamburger\\Hamburger\\DAL\\EntityConfigurations\\RoleCFG.cs",
   "PreviewInSolutionExplorer": false
 }

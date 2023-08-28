@@ -9,8 +9,144 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\Food-Plate.png",
+      "PackagePath": "staticwebassets\\image\\Food-Plate.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\Hot_dog.jpg",
+      "PackagePath": "staticwebassets\\image\\Hot_dog.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\Spanchi.jpg",
+      "PackagePath": "staticwebassets\\image\\Spanchi.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",
+      "PackagePath": "staticwebassets\\image\\bg1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\bg2.jpg",
+      "PackagePath": "staticwebassets\\image\\bg2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\biryani.webp",
+      "PackagePath": "staticwebassets\\image\\biryani.webp"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\buger.jpg",
+      "PackagePath": "staticwebassets\\image\\buger.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\cake.jpg",
+      "PackagePath": "staticwebassets\\image\\cake.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chef1.png",
+      "PackagePath": "staticwebassets\\image\\chef1.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chef2.png",
+      "PackagePath": "staticwebassets\\image\\chef2.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chef3.jpg",
+      "PackagePath": "staticwebassets\\image\\chef3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chef4.jpg",
+      "PackagePath": "staticwebassets\\image\\chef4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate.jpg",
+      "PackagePath": "staticwebassets\\image\\chocolate.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate_Drink.jpg",
+      "PackagePath": "staticwebassets\\image\\chocolate_Drink.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_1.jpg",
+      "PackagePath": "staticwebassets\\image\\gallary_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_2.jpg",
+      "PackagePath": "staticwebassets\\image\\gallary_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_3.jpg",
+      "PackagePath": "staticwebassets\\image\\gallary_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_4.jpg",
+      "PackagePath": "staticwebassets\\image\\gallary_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_5.jpg",
+      "PackagePath": "staticwebassets\\image\\gallary_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_6.jpg",
+      "PackagePath": "staticwebassets\\image\\gallary_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\ice_cream.jpg",
+      "PackagePath": "staticwebassets\\image\\ice_cream.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\juse.jpg",
+      "PackagePath": "staticwebassets\\image\\juse.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\lasagna.webp",
+      "PackagePath": "staticwebassets\\image\\lasagna.webp"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\logo.png",
+      "PackagePath": "staticwebassets\\image\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\main_img.png",
+      "PackagePath": "staticwebassets\\image\\main_img.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\order_image.png",
+      "PackagePath": "staticwebassets\\image\\order_image.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\pasta.jpg",
+      "PackagePath": "staticwebassets\\image\\pasta.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\pizza.jpg",
+      "PackagePath": "staticwebassets\\image\\pizza.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\review_1.png",
+      "PackagePath": "staticwebassets\\image\\review_1.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\review_2.png",
+      "PackagePath": "staticwebassets\\image\\review_2.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\review_3.png",
+      "PackagePath": "staticwebassets\\image\\review_3.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\review_4.png",
+      "PackagePath": "staticwebassets\\image\\review_4.png"
+    },
+    {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\sandwich.jpg",
+      "PackagePath": "staticwebassets\\image\\sandwich.jpg"
     },
     {
       "Id": "C:\\Users\\DELL\\Desktop\\Hamburger Proje\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\js\\site.js",

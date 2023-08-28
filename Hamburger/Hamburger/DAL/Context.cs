@@ -23,12 +23,16 @@ namespace Hamburger.DAL
         DbSet<Status> Statuses { get; set; }
         DbSet<User> Users { get; set; }
         DbSet<MenuProduct> MenuProducts { get; set; }
+        DbSet<Topping> Toppings { get; set; }
+        DbSet<ProductTopping> ProductToppings { get; set; }
 		protected override async void OnModelCreating(ModelBuilder builder)
 		{
 			builder.ApplyConfiguration<User>(new UserCFG());
             builder.ApplyConfiguration<Role>(new RoleCFG());
-
+            builder.ApplyConfiguration<Category>(new CategoryCFG());
+            builder.ApplyConfiguration<Product>(new ProductCFG());
             builder.ApplyConfiguration<Size>(new SizeCFG());
+
             builder.Entity<Role>().HasData(
                     new Role { Id = 1, Name = "Admin", NormalizedName = "ADMIN" },
                     new Role { Id = 2, Name = "Standard", NormalizedName = "STANDARD"}
