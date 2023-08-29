@@ -18,33 +18,37 @@
             {
                 <li><a asp-area="Admin" asp-controller="Admin" asp-action="AdminPanel">Admin Panel</a></li>
             }
-
         </ul>
 
         <div class="icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-heart"></i>
-            <a asp-controller="Home" asp-action="CartList"><i class="fa-solid fa-cart-shopping"></i></a>
-            <a asp-controller="Account" asp-action="Register">
-                <i class="fa-solid fa-user">
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        @User.Identity.Name
-
-                    }
-                    else
-                    {
-                        <label>Login/Register</label>
-                    }
+            @if (!User.IsInRole("Admin"))
+            {
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <a asp-controller="Home" asp-action="CartList"><i class="fa-solid fa-cart-shopping"></i></a>
+            }
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="Account" asp-action="Register">
+                    <i class="fa-solid fa-user">
+                    <label>Login/Register</label>
                 </i>
             </a>
-            @if (User.Identity.IsAuthenticated)
+            }
+            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
             {
+                <i class="fa-solid fa-user">  @User.Identity.Name</i>
                 <a asp-controller="Account" asp-action="Logout">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </a>
             }
-
+            @if (User.Identity.IsAuthenticated && User.IsInRole("Standart"))
+            {
+                <i class="fa-solid fa-user">  @User.Identity.Name</i>
+                <a asp-controller="Account" asp-action="Logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            }
         </div>
     </nav>
 </section>
