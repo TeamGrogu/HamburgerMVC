@@ -1,8 +1,10 @@
 ﻿using Hamburger.DAL;
 using Hamburger.Models;
+using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Reflection.Metadata;
 
@@ -24,27 +26,10 @@ namespace Hamburger.Controllers
 
         public IActionResult Index()
         {
-            if(menuProductVM.Products == null && menuProductVM.Menus == null)
-            {
-                menuProductVM.Products = _context.Products.ToList();
-                menuProductVM.Menus = _context.Menus.ToList();
-            }
-            menuProductVM.Categories = _context.Categories.ToList();
-            return View(menuProductVM);
-        }
-        public IActionResult BringProducts(int id)
-        {
-            menuProductVM.Menus = null;
-            menuProductVM.Products = _context.Products.Where(x => x.CategoryID == id).ToList();
-            menuProductVM.Categories = _context.Categories.ToList();
-            return View("Index", menuProductVM);
-        }
-        public IActionResult BringMenus()
-        {
-            menuProductVM.Products = null;
+            menuProductVM.Products = _context.Products.ToList();
             menuProductVM.Menus = _context.Menus.ToList();
             menuProductVM.Categories = _context.Categories.ToList();
-            return View("Index", menuProductVM);
+            return View(menuProductVM);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
