@@ -9,7 +9,7 @@
         </div>
 
         <div class="main_image">
-            <img src="image/main_img.png">
+            <img src="~/image/main_img.png">
         </div>
 
     </div>
@@ -36,7 +36,7 @@
 <div class="about" id="About">
     <div class="about_main">
         <div class="image">
-            <img src="image/Food-Plate.png">
+            <img src="~/image/Food-Plate.png">
         </div>
 
         <div class="about_text">
@@ -65,395 +65,418 @@
 <div class="menu" id="Menu">
     <h1>Our <span>PRODUCTS</span></h1>
 
-    <div class="btn-group ">
-        @*<button type="button" class="btn btn-success"><a href=""></a></button>*@
-        <button type="button" class="btn btn-success">1</button>
-        
+   
+    <div>
+        <a class="btn btn-outline-success" style="height:10%;width:15%" asp-action="BringMenus" asp-controller="Home">MENUS</a>
+        @foreach (var item in Model.Categories)
+        {
+            <a class="btn btn-outline-success" style="height:10%;width:15%" asp-route-id="@item.ID" asp-action="BringProducts" asp-controller="Home">@item.CategoryName.ToUpper()</a>
+        }
     </div>
     <hr />
     <div class="menu_box">
-        @foreach (var item in Model.Products)
-        {
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
-                </div>
-                <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
-                <div class="">
-                    <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                    <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
-                </div>
+            @if(Model.Products != null)
+            {
+                @foreach (var item in Model.Products)
+                {
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                        </div>
+                        <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                        <div class="">
+                            <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
+                            <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                        </div>
 
-            </div>
-        }
+                    </div>
+                }
+            }
+            else
+            {
+                @foreach (var item in Model.Menus)
+                {
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="@item.MenuImage" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bold">@item.MenuName</h5>
+                        </div>
+                        <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                        <div class="">
+                            <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
+                            <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                        </div>
+
+                    </div>
+                }
+            }
     </div>
 </div>
 
 
 
 
-<!--Gallary-->
+        <!--Gallary-->
 
-<div class="gallary" id="Gallary">
-    <h1>Our<span>Gallery</span></h1>
+        <div class="gallary" id="Gallary">
+            <h1>Our<span>Gallery</span></h1>
 
-    <div class="gallary_image_box">
-        <div class="gallary_image">
-            <img src="image/gallary_1.jpg">
+            <div class="gallary_image_box">
+                <div class="gallary_image">
+                    <img src="~/image/gallary_1.jpg">
 
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="image/gallary_2.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="image/gallary_3.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="image/gallary_4.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="image/gallary_5.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="image/gallary_6.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-    </div>
-
-</div>
-
-
-
-
-<!--Review-->
-
-<div class="review" id="Review">
-    <h1>Customer<span>Review</span></h1>
-
-    <div class="review_box">
-        <div class="review_card">
-
-            <div class="review_profile">
-                <img src="image/review_1.png">
-            </div>
-
-            <div class="review_text">
-                <h2 class="name">John Deo</h2>
-
-                <div class="review_icon">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <h3>Food</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="gallary_btn">Order Now</a>
                 </div>
 
-                <div class="review_social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                <div class="gallary_image">
+            <img src="~/image/gallary_2.jpg">
+
+                    <h3>Food</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="gallary_btn">Order Now</a>
                 </div>
 
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
-                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
-                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
-                    repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
-                    pariatur. Fuga aperiam impedit illo atque repellendus!
-                </p>
+                <div class="gallary_image">
+            <img src="~/image/gallary_3.jpg">
 
-            </div>
-
-        </div>
-
-        <div class="review_card">
-
-            <div class="review_profile">
-                <img src="image/review_2.png">
-            </div>
-
-            <div class="review_text">
-                <h2 class="name">John Deo</h2>
-
-                <div class="review_icon">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <h3>Food</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="gallary_btn">Order Now</a>
                 </div>
 
-                <div class="review_social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                <div class="gallary_image">
+            <img src="~/image/gallary_4.jpg">
+
+                    <h3>Food</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="gallary_btn">Order Now</a>
                 </div>
 
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
-                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
-                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
-                    repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
-                    pariatur. Fuga aperiam impedit illo atque repellendus!
-                </p>
+                <div class="gallary_image">
+            <img src="~/image/gallary_5.jpg">
 
-            </div>
-
-        </div>
-
-        <div class="review_card">
-
-            <div class="review_profile">
-                <img src="image/review_3.png">
-            </div>
-
-            <div class="review_text">
-                <h2 class="name">John Deo</h2>
-
-                <div class="review_icon">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <h3>Food</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="gallary_btn">Order Now</a>
                 </div>
 
-                <div class="review_social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
+                <div class="gallary_image">
+            <img src="~/image/gallary_6.jpg">
 
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
-                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
-                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
-                    repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
-                    pariatur. Fuga aperiam impedit illo atque repellendus!
-                </p>
-
-            </div>
-
-        </div>
-
-        <div class="review_card">
-
-            <div class="review_profile">
-                <img src="image/review_4.png">
-            </div>
-
-            <div class="review_text">
-                <h2 class="name">John Deo</h2>
-
-                <div class="review_icon">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-
-                <div class="review_social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
-                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
-                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
-                    repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
-                    pariatur. Fuga aperiam impedit illo atque repellendus!
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-
-<!--Order-->
-
-<div class="order" id="Order">
-    <h1><span>Order</span>Now</h1>
-
-    <div class="order_main">
-
-        <div class="order_image">
-            <img src="image/order_image.png">
-        </div>
-
-        <form action="#">
-
-            <div class="input">
-                <p>Name</p>
-                <input type="text" placeholder="you name">
-            </div>
-
-            <div class="input">
-                <p>Email</p>
-                <input type="email" placeholder="you email">
-            </div>
-
-            <div class="input">
-                <p>Number</p>
-                <input placeholder="you number">
-            </div>
-
-            <div class="input">
-                <p>How Much</p>
-                <input type="number" placeholder="how many order">
-            </div>
-
-            <div class="input">
-                <p>You Order</p>
-                <input placeholder="food name">
-            </div>
-
-            <div class="input">
-                <p>Address</p>
-                <input placeholder="you Address">
-            </div>
-
-            <a href="#" class="order_btn">Order Now</a>
-
-        </form>
-
-    </div>
-
-</div>
-
-
-
-<!--Team-->
-
-<div class="team">
-    <h1>Our<span>Team</span></h1>
-
-    <div class="team_box">
-        <div class="profile">
-            <img src="image/chef1.png">
-
-            <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <div class="team_icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
+                    <h3>Food</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
+                    </p>
+                    <a href="#" class="gallary_btn">Order Now</a>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="profile">
-            <img src="image/chef2.png">
 
-            <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-                <div class="team_icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
+
+        <!--Review-->
+
+        <div class="review" id="Review">
+            <h1>Customer<span>Review</span></h1>
+
+            <div class="review_box">
+                <div class="review_card">
+
+                    <div class="review_profile">
+                <img src="~/image/review_1.png">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">John Deo</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
+                            blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
+                            asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
+                            dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
+                            repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
+                            pariatur. Fuga aperiam impedit illo atque repellendus!
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                <img src="~/image/review_2.png">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">John Deo</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
+                            blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
+                            asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
+                            dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
+                            repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
+                            pariatur. Fuga aperiam impedit illo atque repellendus!
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                <img src="~/image/review_3.png">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">John Deo</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
+                            blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
+                            asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
+                            dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
+                            repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
+                            pariatur. Fuga aperiam impedit illo atque repellendus!
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="review_card">
+
+                    <div class="review_profile">
+                <img src="~/image/review_4.png">
+                    </div>
+
+                    <div class="review_text">
+                        <h2 class="name">John Deo</h2>
+
+                        <div class="review_icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+
+                        <div class="review_social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+
+                        <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
+                            blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
+                            asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
+                            dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
+                            repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
+                            pariatur. Fuga aperiam impedit illo atque repellendus!
+                        </p>
+
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-        <div class="profile">
-            <img src="image/chef3.jpg">
 
-            <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-                <div class="team_icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
+        <!--Order-->
+
+        <div class="order" id="Order">
+            <h1><span>Order</span>Now</h1>
+
+            <div class="order_main">
+
+                <div class="order_image">
+                    <img src="/image/order_image.png">
                 </div>
+
+                <form action="#">
+
+                    <div class="input">
+                        <p>Name</p>
+                        <input type="text" placeholder="you name">
+                    </div>
+
+                    <div class="input">
+                        <p>Email</p>
+                        <input type="email" placeholder="you email">
+                    </div>
+
+                    <div class="input">
+                        <p>Number</p>
+                        <input placeholder="you number">
+                    </div>
+
+                    <div class="input">
+                        <p>How Much</p>
+                        <input type="number" placeholder="how many order">
+                    </div>
+
+                    <div class="input">
+                        <p>You Order</p>
+                        <input placeholder="food name">
+                    </div>
+
+                    <div class="input">
+                        <p>Address</p>
+                        <input placeholder="you Address">
+                    </div>
+
+                    <a href="#" class="order_btn">Order Now</a>
+
+                </form>
 
             </div>
 
         </div>
 
-        <div class="profile">
-            <img src="image/chef4.jpg">
 
-            <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-                <div class="team_icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
+        <!--Team-->
+
+        <div class="team">
+            <h1>Our<span>Team</span></h1>
+
+            <div class="team_box">
+                <div class="profile">
+            <img src="~/image/chef1.png">
+
+                    <div class="info">
+                        <h2 class="name">Chef</h2>
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <div class="team_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+            <img src="~/image/chef2.png">
+
+                    <div class="info">
+                        <h2 class="name">Chef</h2>
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <div class="team_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+            <img src="~/image/chef3.jpg">
+
+                    <div class="info">
+                        <h2 class="name">Chef</h2>
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <div class="team_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="profile">
+            <img src="~/image/chef4.jpg">
+
+                    <div class="info">
+                        <h2 class="name">Chef</h2>
+                        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                        <div class="team_icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
-
-    </div>
-
-</div>
-</section>
