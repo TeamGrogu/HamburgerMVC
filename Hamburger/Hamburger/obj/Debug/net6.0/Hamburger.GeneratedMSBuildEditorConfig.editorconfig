@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hamburger
 build_property.RootNamespace = Hamburger
-build_property.ProjectDir = C:\Users\omerf\Source\Repos\HamburgerMVC\Hamburger\Hamburger\
+build_property.ProjectDir = C:\Users\omerf\source\repos\HamburgerMVC\Hamburger\Hamburger\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\omerf\Source\Repos\HamburgerMVC\Hamburger\Hamburger
+build_property.MSBuildProjectDirectory = C:\Users\omerf\source\repos\HamburgerMVC\Hamburger\Hamburger
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/omerf/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Areas/AdminArea/Views/Admin/Index.cshtml]
@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/omerf/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omerf/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Home/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/omerf/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Home/Index.cshtml]

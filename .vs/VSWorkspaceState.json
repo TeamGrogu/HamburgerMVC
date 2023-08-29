@@ -6,8 +6,10 @@
     "\\Hamburger\\Hamburger\\DAL",
     "\\Hamburger\\Hamburger\\DAL\\EntityConfigurations",
     "\\Hamburger\\Hamburger\\Views",
-    "\\Hamburger\\Hamburger\\Views\\Home"
+    "\\Hamburger\\Hamburger\\Views\\Home",
+    "\\Hamburger\\Hamburger\\wwwroot",
+    "\\Hamburger\\Hamburger\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Hamburger\\Hamburger\\Views\\Home\\Index.cshtml",
+  "SelectedNode": "\\Hamburger\\Hamburger.sln",
   "PreviewInSolutionExplorer": false
 }

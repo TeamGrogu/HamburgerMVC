@@ -819,6 +819,8 @@ footer .end span{
     border-radius: 15px;
 }
 
+
+/*Menu kısmı*/
 .tm-paging-item {
     list-style: none;
     display: inline-block;
@@ -853,5 +855,5 @@ footer .end span{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
-
+/*menu kısmı son*/
 

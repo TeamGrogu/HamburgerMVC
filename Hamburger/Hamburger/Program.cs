@@ -1,7 +1,9 @@
-using Hamburger.DAL;
+﻿using Hamburger.DAL;
 using Hamburger.Models.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Cryptography;
+using static System.Net.Mime.MediaTypeNames;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,10 +22,24 @@ builder.Services.AddIdentity<User, Role>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+
+//404 page başlangıç
+if (app.Environment.IsDevelopment())
 {
-	app.UseExceptionHandler("/Home/Error");
+	DeveloperExceptionPageOptions options = new DeveloperExceptionPageOptions();
+	options.SourceCodeLineCount = 1;
+	app.UseDeveloperExceptionPage(options);
+  
 }
+else { app.UseExceptionHandler("/Home/Error"); }
+
+
+app.UseStatusCodePagesWithRedirects("SenBuralaraNerdenGeldin/{0}");
+//404 bitiş
+
+
+
+
 app.UseStaticFiles();
 
 app.UseRouting();
