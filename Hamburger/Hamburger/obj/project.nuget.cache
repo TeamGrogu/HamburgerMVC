@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Rt64DlgZlDZ2SztJI9xBUogvIHzpiM0akvfkeVos4VUkehHHVjbKY7NZ27hKxfgyYuaouvHafPN2Kgep9oqpBA==",
+  "dgSpecHash": "5xgOG5KySunEE3OvuyXrIsR5k/nw4a+BYZHMe6fhk4czcP67thi1ue8Qvo0YoIW1l36DJz7ub7KFbFkI7opTOw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+  "projectFilePath": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\yolcu\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\yolcu\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
