@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Hamburger",
+    "\\Hamburger\\Hamburger",
+    "\\Hamburger\\Hamburger\\DAL",
+    "\\Hamburger\\Hamburger\\DAL\\EntityConfigurations",
+    "\\Hamburger\\Hamburger\\Models",
+    "\\Hamburger\\Hamburger\\Models\\ViewModels",
+    "\\Hamburger\\Hamburger\\Views",
+    "\\Hamburger\\Hamburger\\Views\\Account"
   ],
-  "SelectedNode": "\\Hamburger.sln",
+  "SelectedNode": "\\Hamburger\\Hamburger\\Models\\ViewModels\\UserVM.cs",
   "PreviewInSolutionExplorer": false
 }

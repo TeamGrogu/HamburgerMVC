@@ -11,7 +11,7 @@ html{
 
 section{
     width: 100%;
-    height: 10vh;
+    height: 10%;
 }
 
 section nav{
@@ -73,6 +73,18 @@ section nav .icon i{
     cursor: pointer;
     transition: 0.3s;
 }
+
+/*section nav .icon i a{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i a label:hover {
+    color: #fac031;
+}*/
 
 section nav .icon i:hover{
     color: #fac031;
@@ -817,4 +829,41 @@ footer .end span{
 ::-webkit-scrollbar-thumb{
     background: #fac031;
     border-radius: 15px;
+}
+
+.tm-paging-item {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #2F956D;
+    margin: 7px;
+}
+
+.tm-paging-link {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #2F956D;
+    background-color: transparent;
+}
+
+.tm-paging-links {
+    text-align: center;
+}
+
+.tm-paging-link.active,
+.tm-paging-link:hover {
+    background-color: #2F956D;
+    color: white;
+}
+
+.tm-gallery-page {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }

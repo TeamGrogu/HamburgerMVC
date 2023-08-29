@@ -2,32 +2,32 @@
 @model MenuProductVM
 
 <section id="Home">
-<div class="main">
+    <div class="main">
 
-    <div class="men_text">
-        <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+        <div class="men_text">
+            <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+        </div>
+
+        <div class="main_image">
+            <img src="~/image/main_img.png">
+        </div>
+
     </div>
 
-    <div class="main_image">
-        <img src="image/main_img.png">
+    <p class="col-md-4">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse reiciendis quaerat nobis
+        deleniti amet non inventore. Reprehenderit recusandae voluptatibus minus tenetur itaque numquam
+        cum quos dolorem maxime. Quas, quaerat nisi. Lorem ipsum dolor sit, amet consectetur adipisicing
+        elit. Cumque facilis, quaerat cupiditate nulla quibusdam quo sunt esse tempore inventore vel
+        voluptate, amet laudantium adipisci veniam nihil quam molestiae omnis mollitia.
+    </p>
+
+    <div class="main_btn">
+        <a href="#">Order Now</a>
+        <i class="fa-solid fa-angle-right"></i>
     </div>
 
-</div>
-
-<p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse reiciendis quaerat nobis
-    deleniti amet non inventore. Reprehenderit recusandae voluptatibus minus tenetur itaque numquam
-    cum quos dolorem maxime. Quas, quaerat nisi. Lorem ipsum dolor sit, amet consectetur adipisicing
-    elit. Cumque facilis, quaerat cupiditate nulla quibusdam quo sunt esse tempore inventore vel
-    voluptate, amet laudantium adipisci veniam nihil quam molestiae omnis mollitia.
-</p>
-
-<div class="main_btn">
-    <a href="#">Order Now</a>
-    <i class="fa-solid fa-angle-right"></i>
-</div>
-
-    </section>
+</section>
 
 
 
@@ -36,7 +36,7 @@
 <div class="about" id="About">
     <div class="about_main">
         <div class="image">
-            <img src="image/Food-Plate.png">
+            <img src="~/image/Food-Plate.png">
         </div>
 
         <div class="about_text">
@@ -63,34 +63,156 @@
 <!--Menu-->
 
 <div class="menu" id="Menu">
-    <h1>Our <span>PRODUCTS</span></h1>
+    <h1>Our <span>Products</span></h1>
 
-    <div class="btn-group ">
-        @*<button type="button" class="btn btn-success"><a href=""></a></button>*@
-        <button type="button" class="btn btn-success">1</button>
-        
+    <div class="tm-paging-links" style="list-style: none; display: flex; justify-content:center;">
+        <nav >
+            <ul>
+                <li class="tm-paging-item"><a href="#" class="tm-paging-link active">Menus</a></li>
+                @foreach (var category in Model.Categories)
+                {
+                    <li class="tm-paging-item"><a href="#" class="tm-paging-link">@category.CategoryName</a></li>
+                }
+            </ul>
+        </nav>
     </div>
     <hr />
-    <div class="menu_box">
-        @foreach (var item in Model.Products)
+    <div class="menu_box" id="tm-gallery-page-menus">
+        @foreach (var item in Model.Menus)
         {
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                <img class="card-img-top" src="@item.MenuImage" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                    <h5 class="card-title text-center fw-bold">@item.MenuName</h5>
                 </div>
                 <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
                 <div class="">
                     <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
                     <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
                 </div>
-                
+
             </div>
+        }
+    </div>
+    <div class="menu_box" id="tm-gallery-page-hamburgers" style="display: none;">
+        @foreach (var item in Model.Products)
+        {
+            @if (item.CategoryID == 1)
+            {
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                    </div>
+                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                    <div class="">
+                        <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
+                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                    </div>
+
+                </div>
+            }
+        }
+    </div>
+    <div class="menu_box" id="tm-gallery-page-sides" style="display: none;">
+        @foreach (var item in Model.Products)
+        {
+            @if (item.CategoryID == 2)
+            {
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                    </div>
+                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                    <div class="">
+                        <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
+                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                    </div>
+
+                </div>
+            }
+        }
+    </div>
+    <div class="menu_box" id="tm-gallery-page-beverages" style="display: none;">
+        @foreach (var item in Model.Products)
+        {
+            @if (item.CategoryID == 3)
+            {
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                    </div>
+                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                    <div class="">
+                        <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
+                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                    </div>
+
+                </div>
+            }
+        }
+    </div>
+    <div class="menu_box" id="tm-gallery-page-deserts" style="display: none;">
+        @foreach (var item in Model.Products)
+        {
+            @if (item.CategoryID == 4)
+            {
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                    </div>
+                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                    <div class="">
+                        <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
+                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                    </div>
+
+                </div>
+            }
+        }
+    </div>
+    <div class="menu_box" id="tm-gallery-page-sauces" style="display: none;">
+        @foreach (var item in Model.Products)
+        {
+            @if (item.CategoryID == 5)
+            {
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                    </div>
+                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                    <div class="">
+                        <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
+                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                    </div>
+
+                </div>
+            }
         }
     </div>
 </div>
 
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Handle click on paging links
+        $('.tm-paging-link').click(function (e) {
+            e.preventDefault();
+
+            var page = $(this).text().toLowerCase();
+            $('.menu_box').hide();
+            $('#tm-gallery-page-' + page).show();
+            $('.tm-paging-link').removeClass('active');
+            $(this).addClass("active");
+        });
+    });
+
+</script>
 
 
 <!--Gallary-->
@@ -100,7 +222,7 @@
 
     <div class="gallary_image_box">
         <div class="gallary_image">
-            <img src="image/gallary_1.jpg">
+            <img src="~/image/gallary_1.jpg">
 
             <h3>Food</h3>
             <p>
@@ -110,7 +232,7 @@
         </div>
 
         <div class="gallary_image">
-            <img src="image/gallary_2.jpg">
+            <img src="~/image/gallary_2.jpg">
 
             <h3>Food</h3>
             <p>
@@ -120,7 +242,7 @@
         </div>
 
         <div class="gallary_image">
-            <img src="image/gallary_3.jpg">
+            <img src="~/image/gallary_3.jpg">
 
             <h3>Food</h3>
             <p>
@@ -130,7 +252,7 @@
         </div>
 
         <div class="gallary_image">
-            <img src="image/gallary_4.jpg">
+            <img src="~/image/gallary_4.jpg">
 
             <h3>Food</h3>
             <p>
@@ -140,7 +262,7 @@
         </div>
 
         <div class="gallary_image">
-            <img src="image/gallary_5.jpg">
+            <img src="~/image/gallary_5.jpg">
 
             <h3>Food</h3>
             <p>
@@ -150,7 +272,7 @@
         </div>
 
         <div class="gallary_image">
-            <img src="image/gallary_6.jpg">
+            <img src="~/image/gallary_6.jpg">
 
             <h3>Food</h3>
             <p>
@@ -175,7 +297,7 @@
         <div class="review_card">
 
             <div class="review_profile">
-                <img src="image/review_1.png">
+                <img src="~/image/review_1.png">
             </div>
 
             <div class="review_text">
@@ -212,7 +334,7 @@
         <div class="review_card">
 
             <div class="review_profile">
-                <img src="image/review_2.png">
+                <img src="~/image/review_2.png">
             </div>
 
             <div class="review_text">
@@ -249,7 +371,7 @@
         <div class="review_card">
 
             <div class="review_profile">
-                <img src="image/review_3.png">
+                <img src="~/image/review_3.png">
             </div>
 
             <div class="review_text">
@@ -286,7 +408,7 @@
         <div class="review_card">
 
             <div class="review_profile">
-                <img src="image/review_4.png">
+                <img src="~/image/review_4.png">
             </div>
 
             <div class="review_text">
@@ -334,7 +456,7 @@
     <div class="order_main">
 
         <div class="order_image">
-            <img src="image/order_image.png">
+            <img src="/image/order_image.png">
         </div>
 
         <form action="#">
@@ -386,7 +508,7 @@
 
     <div class="team_box">
         <div class="profile">
-            <img src="image/chef1.png">
+            <img src="~/image/chef1.png">
 
             <div class="info">
                 <h2 class="name">Chef</h2>
@@ -403,7 +525,7 @@
         </div>
 
         <div class="profile">
-            <img src="image/chef2.png">
+            <img src="~/image/chef2.png">
 
             <div class="info">
                 <h2 class="name">Chef</h2>
@@ -420,7 +542,7 @@
         </div>
 
         <div class="profile">
-            <img src="image/chef3.jpg">
+            <img src="~/image/chef3.jpg">
 
             <div class="info">
                 <h2 class="name">Chef</h2>
@@ -437,7 +559,7 @@
         </div>
 
         <div class="profile">
-            <img src="image/chef4.jpg">
+            <img src="~/image/chef4.jpg">
 
             <div class="info">
                 <h2 class="name">Chef</h2>
@@ -456,4 +578,3 @@
     </div>
 
 </div>
-</section>
