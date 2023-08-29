@@ -13,28 +13,27 @@
             <li><a href="#Menu">Menu</a></li>
             <li><a href="#Gallary">Gallery</a></li>
             <li><a href="#Review">Review</a></li>
-            <li><a href="#Order">Order</a></li>
-            @if (User.Identity.IsAuthenticated)
-            {
-                <li><a>Giris Yapildi</a></li>
-            }
+            <li><a href="#Order">Order</a></li>           
         </ul>
 
         <div class="icon">
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-heart"></i>
             <i class="fa-solid fa-cart-shopping"></i>
-            <i class="fa-solid fa-user">
-                @if (User.Identity.IsAuthenticated)
-                {
-                    @User.Identity.Name
+            <a asp-controller="Account" asp-action="Register">
+                <i class="fa-solid fa-user">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @User.Identity.Name
 
-                }
-                else
-                {
-                    <a asp-controller="Account" asp-action="Register"><label style="color:black;">Login/Register</label></a>
-                }
-            </i>
+                    }
+                    else
+                    {
+                        <label>Login/Register</label>
+                    }
+                </i>
+            </a>
+            
         </div>
     </nav>
 </section>

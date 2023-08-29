@@ -13,9 +13,18 @@ builder.Services.AddDbContext<Context>
 builder.Services.AddIdentity<User, Role>
 	(x =>
 	{
-		x.SignIn.RequireConfirmedEmail = true;
+		x.SignIn.RequireConfirmedEmail = false;
 		x.Password.RequiredLength = 6;
 	}).AddRoles<Role>().AddEntityFrameworkStores<Context>();
+builder.Services.ConfigureApplicationCookie(
+                 option =>
+                 {
+                     //option.LoginPath = "/Register/Login";
+                     option.Cookie.Name = "UserCookie";
+                     option.ExpireTimeSpan = TimeSpan.FromMinutes(5);
+                     option.SlidingExpiration = true;
+                 }
+             );
 
 var app = builder.Build();
 
