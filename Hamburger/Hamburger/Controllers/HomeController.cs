@@ -19,13 +19,32 @@ namespace Hamburger.Controllers
         {
             _logger = logger;
             _context = context;
+            
         }
 
         public IActionResult Index()
         {
-            menuProductVM.Products = _context.Products.ToList();
-            menuProductVM.Menus = _context.Menus.ToList();
+            if(menuProductVM.Products == null && menuProductVM.Menus == null)
+            {
+                menuProductVM.Products = _context.Products.ToList();
+                menuProductVM.Menus = _context.Menus.ToList();
+            }
+            menuProductVM.Categories = _context.Categories.ToList();
             return View(menuProductVM);
+        }
+        public IActionResult BringProducts(int id)
+        {
+            menuProductVM.Menus = null;
+            menuProductVM.Products = _context.Products.Where(x => x.CategoryID == id).ToList();
+            menuProductVM.Categories = _context.Categories.ToList();
+            return View("Index", menuProductVM);
+        }
+        public IActionResult BringMenus()
+        {
+            menuProductVM.Products = null;
+            menuProductVM.Menus = _context.Menus.ToList();
+            menuProductVM.Categories = _context.Categories.ToList();
+            return View("Index", menuProductVM);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
