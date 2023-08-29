@@ -74,6 +74,18 @@ section nav .icon i{
     transition: 0.3s;
 }
 
+/*section nav .icon i a{
+    font-size: 18px;
+    color: #000;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i a label:hover {
+    color: #fac031;
+}*/
+
 section nav .icon i:hover{
     color: #fac031;
 }
