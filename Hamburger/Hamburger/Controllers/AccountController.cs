@@ -2,6 +2,7 @@
 using Hamburger.Models.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using SignInResult = Microsoft.AspNetCore.Identity.SignInResult;
 
 namespace Hamburger.Controllers
 {
@@ -56,10 +57,28 @@ namespace Hamburger.Controllers
             }
             return View(vm);
         }
-        [HttpPost]
         public async Task<IActionResult> Login()
         {
-            return View();
+            return RedirectToAction("Index", "Home");
+        }
+        [HttpPost]
+        public async Task<IActionResult> Login(UserVM vm)
+        {
+            if (ModelState.IsValid)
+            {
+                User user = await userManager.FindByEmailAsync(vm.Email);
+                if (user != null)
+                {
+                    await signInManager.SignOutAsync();
+                    SignInResult result = await signInManager.PasswordSignInAsync(user, vm.Password,false,false);
+                    if (result.Succeeded)
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
+                    ModelState.AddModelError("","Credentials are incorrect.");
+                }
+            }
+            return RedirectToAction("Login");
         }
     }
 }

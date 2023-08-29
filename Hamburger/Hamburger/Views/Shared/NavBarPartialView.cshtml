@@ -8,12 +8,16 @@
         </div>
 
         <ul>
-            <li><a href="#Home">Home</a></li>
+            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Menu">Menu</a></li>
             <li><a href="#Gallary">Gallery</a></li>
             <li><a href="#Review">Review</a></li>
             <li><a href="#Order">Order</a></li>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li><a>Giris Yapildi</a></li>
+            }
         </ul>
 
         <div class="icon">
