@@ -29,7 +29,7 @@ namespace Hamburger.Controllers
             return View(menuProductVM);
         }
 
-
+        //404 page başlangıç
         public IActionResult Error()
         {
             return View();
@@ -41,6 +41,6 @@ namespace Hamburger.Controllers
             if (statusCode == 404) { ViewBag.ErrorMessage = "Üzgünüm ama böyle bir sayfa yok..."; }
             return View();
         }
-        
+        //404 page bitiş
     }
 }
