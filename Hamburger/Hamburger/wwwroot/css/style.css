@@ -1,4 +1,4 @@
-*{
+﻿*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -853,3 +853,5 @@ footer .end span{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
+

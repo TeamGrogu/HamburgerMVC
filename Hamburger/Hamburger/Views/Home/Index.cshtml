@@ -1,26 +1,47 @@
 ﻿@using Hamburger.Models.ViewModels;
 @model MenuProductVM
 
+
 <section id="Home">
+
     <div class="main">
-
         <div class="men_text">
-            <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
+            <h1><span id="menuTitle"></span><span></span><br></h1>
         </div>
-
         <div class="main_image">
-            <img src="image/main_img.png">
+            <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach (var menu in Model.Menus)
+                    {
+                        <div class="carousel-item @(menu == Model.Menus.First() ? "active" : "")">
+                            <img src="@menu.MenuImage" class="d-block w-100" alt="@menu.MenuName" style="max-width: 100%;">
+                        </div>
+                    }
+                </div>
+                <script>
+                    document.getElementById('homeCarousel').setAttribute('data-bs-interval', '4000');
+                    var menuTitles = @Json.Serialize(Model.Menus.Select(m => m.MenuName));
+                    var menuDescriptions = @Json.Serialize(Model.Menus.Select(m => m.Description));
+                    var menuTitleElement = document.getElementById('menuTitle');
+                    var menuDescriptionElement = document.createElement('div');
+                    menuDescriptionElement.className = 'menu-description';
+                    var currentMenuIndex = 0;
+
+                    function updateMenuInfo() {
+                        menuTitleElement.textContent = menuTitles[currentMenuIndex];
+                        menuDescriptionElement.innerHTML = '<p>' + menuDescriptions[currentMenuIndex] + '</p>';
+                    }
+
+                    updateMenuInfo();
+
+                    setInterval(function () {
+                        currentMenuIndex = (currentMenuIndex + 1) % menuTitles.length;
+                        updateMenuInfo();
+                    }, 4000);
+                </script>
+            </div>
         </div>
-
     </div>
-
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse reiciendis quaerat nobis
-        deleniti amet non inventore. Reprehenderit recusandae voluptatibus minus tenetur itaque numquam
-        cum quos dolorem maxime. Quas, quaerat nisi. Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Cumque facilis, quaerat cupiditate nulla quibusdam quo sunt esse tempore inventore vel
-        voluptate, amet laudantium adipisci veniam nihil quam molestiae omnis mollitia.
-    </p>
 
     <div class="main_btn">
         <a href="#">Order Now</a>
@@ -31,9 +52,16 @@
 
 
 
+
+
+
+
+
+
+
 <!--About-->
 
-<div class="about" id="About">
+@*<div class="about" id="About">
     <div class="about_main">
         <div class="image">
             <img src="image/Food-Plate.png">
@@ -57,18 +85,18 @@
     <a href="#" class="about_btn">Order Now</a>
 
 </div>
-
+*@
 
 
 <!--Menu-->
 
 <div class="menu" id="Menu">
-    <h1>Our <span>PRODUCTS</span></h1>
+    <h1>Our <span>Products</span></h1>
   
     <div class="tm-paging-links">
         <nav>
             <ul>
-                <li class="tm-paging-item"><a href="3" class="tm-paging-link">Menu's'</a></li>
+                <li class="tm-paging-item"><a href="3" class="tm-paging-link active">Menus</a></li>
                 @foreach (var category in Model.Categories)
                 {
                     <li class="tm-paging-item"><a href="#" class="tm-paging-link">@category.CategoryName</a></li>
@@ -77,7 +105,7 @@
         </nav>
     </div>
     <hr />
-    <div class="menu_box" id="tm-gallery-page-all">
+    <div class="menu_box" id="tm-gallery-page-menus">
         @foreach (var item in Model.Menus)
         {
             <div class="card" style="width: 18rem;">

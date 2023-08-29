@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+r77wthSTDMFtvdx+/BJM6onuArTyzEFMebNkLD8sLnsESOyWBuxHW7ahaRV+e6jbWx9ywIkQqXXfYX4T0o2kg==",
+  "dgSpecHash": "/PV6MJxTHI4K9b39e5VouhwGDOhX4XWSLOwendZLWTC1WALwafx+nq6GwBhyahDJ7ppUqB5rB2SYTGAM7zDEwg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\omerf\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+  "projectFilePath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omerf\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
