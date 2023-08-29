@@ -2,6 +2,7 @@
 @{
 	Layout = null;
 }
+
 <link rel="stylesheet" href="~/css/register.css">
 
 <partial name="~/Views/Shared/NavBarPartialView.cshtml" />
@@ -15,13 +16,13 @@
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>*@			
-			<input type="text" placeholder="First name" asp-for="FirstName"/>
-			<input type="text" placeholder="Last name" asp-for="LastName" />
-			<input type="text" placeholder="Username" asp-for="UserName" />
-			<input type="email" placeholder="Email" asp-for="Email" />
-			<input type="password" placeholder="Password" asp-for="Password" />
-			<input type="text" placeholder="Address" asp-for="Address" />
-			<input type="tel" placeholder="Telephone number" asp-for="PhoneNumber" />
+			<input type="text" placeholder="First name" asp-for="RegisterVM.FirstName"/>
+			<input type="text" placeholder="Last name" asp-for="RegisterVM.LastName" />
+			<input type="text" placeholder="Username" asp-for="RegisterVM.UserName" />
+			<input type="email" placeholder="Email" asp-for="RegisterVM.Email" />
+			<input type="password" placeholder="Password" asp-for="RegisterVM.Password" />
+			<input type="text" placeholder="Address" asp-for="RegisterVM.Address" />
+			<input type="tel" placeholder="Telephone number" asp-for="RegisterVM.PhoneNumber" />
 			<button>Sign Up</button>
 		</form>
 	</div>
@@ -33,8 +34,9 @@
 				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
 				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
 			</div>*@
-			<input type="email" placeholder="Email" asp-for="Email" />
-			<input type="password" placeholder="Password" asp-for="Password"/>
+			<h1>@TempData["login"]</h1>
+			<input type="email" placeholder="Email" asp-for="LoginVM.Email" />
+			<input type="password" placeholder="Password" asp-for="LoginVM.Password" />
 			<a href="#">Forgot your password?</a>
 			<button>Sign In</button>
 		</form>

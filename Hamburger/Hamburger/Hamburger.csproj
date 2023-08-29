@@ -27,6 +27,7 @@
     <Folder Include="Areas\AdminArea\Models\" />
     <Folder Include="Areas\UserArea\Data\" />
     <Folder Include="Areas\UserArea\Models\" />
+    <Folder Include="CustomValidations\" />
   </ItemGroup>
 
 </Project>
