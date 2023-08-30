@@ -16,7 +16,7 @@
             <li><a href="#Order">Order</a></li>
             @if (User.IsInRole("Admin"))
             {
-                <li><a asp-area="Admin" asp-controller="Admin" asp-action="AdminPanel">Admin Panel</a></li>
+                <li><a asp-area="AdminArea" asp-controller="Admin" asp-action="AdminPanel">Admin Panel</a></li>
             }
         </ul>
 
@@ -32,20 +32,13 @@
                 <a asp-controller="Account" asp-action="Register">
                     <i class="fa-solid fa-user">
                     <label>Login/Register</label>
-                </i>
-            </a>
-            }
-            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-            {
-                <i class="fa-solid fa-user">  @User.Identity.Name</i>
-                <a asp-controller="Account" asp-action="Logout">
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    </i>
                 </a>
             }
-            @if (User.Identity.IsAuthenticated && User.IsInRole("Standart"))
+            @if (User.Identity.IsAuthenticated)
             {
                 <i class="fa-solid fa-user">  @User.Identity.Name</i>
-                <a asp-controller="Account" asp-action="Logout">
+                <a asp-area="" asp-controller="Account" asp-action="Logout">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </a>
             }

@@ -40,11 +40,10 @@ namespace Hamburger.Controllers
                     Address = vm.Address,
                     PhoneNumber = vm.PhoneNumber,
                 };
-                appUser.SecurityStamp = Guid.NewGuid().ToString();
-                IdentityResult identityResult = await userManager.CreateAsync(appUser, vm.Password);
-                await userManager.AddToRoleAsync(appUser, "Standard");
+                IdentityResult identityResult = await userManager.CreateAsync(appUser, vm.Password);              
                 if (identityResult.Succeeded)
                 {
+                    await userManager.AddToRoleAsync(appUser, "Standard");
                     return RedirectToAction("Register");
                 }
                 else
@@ -69,7 +68,6 @@ namespace Hamburger.Controllers
                 User user = await userManager.FindByEmailAsync(vm.Email);
                 if (user != null)
                 {
-                    user.SecurityStamp = Guid.NewGuid().ToString();
                     await signInManager.SignOutAsync();
                     Microsoft.AspNetCore.Identity.SignInResult result = await signInManager.PasswordSignInAsync(user, vm.Password, false, false);
                     if (result.Succeeded)

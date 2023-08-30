@@ -43,7 +43,7 @@ namespace Hamburger.DAL
                     new Role { Id = 2, Name = "Standard", NormalizedName = "STANDARD"}
                 );
             
-            List<User> admins = new List<User>() { new User { Id = 1, FirstName = "overthinkers", LastName = "team", Email = "overthinkerst@gmail.com", NormalizedEmail = "OVERTHINKERST@GMAIL.COM", UserName = "overthinkers", NormalizedUserName = "OVERTHINKERS", Address="Kadikoy" } };
+            List<User> admins = new List<User>() { new User { Id = 1, FirstName = "overthinkers", LastName = "team", Email = "overthinkerst@gmail.com", NormalizedEmail = "OVERTHINKERST@GMAIL.COM", UserName = "overthinkers", NormalizedUserName = "OVERTHINKERS", Address="Kadikoy", SecurityStamp = Guid.NewGuid().ToString() } };
 
             builder.Entity<User>().HasData(admins);
 

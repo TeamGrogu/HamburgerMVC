@@ -23,11 +23,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\AdminArea\Data\" />
+    <Folder Include="Areas\AdminArea\Data\css\" />
     <Folder Include="Areas\AdminArea\Models\" />
     <Folder Include="Areas\UserArea\Data\" />
     <Folder Include="Areas\UserArea\Models\" />
     <Folder Include="CustomValidations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap.css" />
+    <None Include="wwwroot\css\custom.css" />
+    <None Include="wwwroot\css\font-awesome.css" />
   </ItemGroup>
 
 </Project>

@@ -1,38 +1,71 @@
 ﻿@using Hamburger.Models.ViewModels;
 @model MenuProductVM
 
-<section id="Home">
-    <div class="main">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-        <div class="men_text">
-            <h1>Get Fresh<span>Food</span><br>in a Easy Way</h1>
-        </div>
-
-        <div class="main_image">
-            <img src="~/image/main_img.png">
-        </div>
-
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+        @foreach (var menu in Model.Menus)
+        {
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="@menu.ID" class="@menu == Model.Menus.First() ? 'active' : ''" aria-label="Slide @(menu.ID +1)" onclick="goToMenu(@menu.ID)"></button>
+        }
     </div>
-
-    <p class="col-md-4">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse reiciendis quaerat nobis
-        deleniti amet non inventore. Reprehenderit recusandae voluptatibus minus tenetur itaque numquam
-        cum quos dolorem maxime. Quas, quaerat nisi. Lorem ipsum dolor sit, amet consectetur adipisicing
-        elit. Cumque facilis, quaerat cupiditate nulla quibusdam quo sunt esse tempore inventore vel
-        voluptate, amet laudantium adipisci veniam nihil quam molestiae omnis mollitia.
-    </p>
-
-    <div class="main_btn">
-        <a href="#">Order Now</a>
-        <i class="fa-solid fa-angle-right"></i>
+    <div class="carousel-inner align-content-center">
+        @foreach (var menu in Model.Menus)
+        {
+            <div class="carousel-item @(menu == Model.Menus.First() ? "active" : "")" data-bs-interval="false">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="@menu.MenuImage" class="p-5 m-5 w-50" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5><strong>@menu.MenuName</strong></h5>
+                        <p>@menu.Description</p>
+                    </div>
+                </div>
+            </div>
+        }
     </div>
+    <button class="carousel-control-prev position-absolute start-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" onclick="goToPrevMenu()">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next position-absolute end-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next" onclick="goToNextMenu()">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
-</section>
+<script>
+    var menuInfoDivs = document.querySelectorAll('.carousel-item');
+    var currentMenuIndex = 0;
+
+    function updateCarousel() {
+        menuInfoDivs.forEach(div => div.classList.remove('active'));
+        menuInfoDivs[currentMenuIndex].classList.add('active');
+    }
+
+    function goToMenu(menuID) {
+        currentMenuIndex = menuID - 1;
+        updateCarousel();
+    }
+
+    function goToNextMenu() {
+        currentMenuIndex = (currentMenuIndex + 1) % menuInfoDivs.length;
+        updateCarousel();
+    }
+
+    function goToPrevMenu() {
+        currentMenuIndex = (currentMenuIndex - 1 + menuInfoDivs.length) % menuInfoDivs.length;
+        updateCarousel();
+    }
+</script>
+
 
 
 
 <!--About-->
-
+<!--
 <div class="about" id="About">
     <div class="about_main">
         <div class="image">
@@ -58,7 +91,7 @@
 
 </div>
 
-
+-->
 
 <!--Menu-->
 
