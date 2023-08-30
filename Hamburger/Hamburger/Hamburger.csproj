@@ -23,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\AdminArea\Controllers\" />
     <Folder Include="Areas\AdminArea\Data\css\" />
     <Folder Include="Areas\AdminArea\Models\" />
     <Folder Include="Areas\UserArea\Data\" />
