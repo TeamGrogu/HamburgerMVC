@@ -1,56 +1,76 @@
 ﻿@using Hamburger.Models.ViewModels;
 @model MenuProductVM
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<section id="Home">
-
-    <div class="main">
-        <div class="men_text">
-            <h1><span id="menuTitle"></span><span></span><br></h1>
-        </div>
-        <div class="main_image">
-            <div id="homeCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    @foreach (var menu in Model.Menus)
-                    {
-                        <div class="carousel-item @(menu == Model.Menus.First() ? "active" : "")">
-                            <img src="@menu.MenuImage" class="d-block w-100" alt="@menu.MenuName" style="max-width: 100%;">
-                        </div>
-                    }
-                </div>
-                <script>
-                    document.getElementById('homeCarousel').setAttribute('data-bs-interval', '4000');
-                    var menuTitles = @Json.Serialize(Model.Menus.Select(m => m.MenuName));
-                    var menuDescriptions = @Json.Serialize(Model.Menus.Select(m => m.Description));
-                    var menuTitleElement = document.getElementById('menuTitle');
-                    var menuDescriptionElement = document.createElement('div');
-                    menuDescriptionElement.className = 'menu-description';
-                    var currentMenuIndex = 0;
-
-                    function updateMenuInfo() {
-                        menuTitleElement.textContent = menuTitles[currentMenuIndex];
-                        menuDescriptionElement.innerHTML = '<p>' + menuDescriptions[currentMenuIndex] + '</p>';
-                    }
-
-                    updateMenuInfo();
-
-                    setInterval(function () {
-                        currentMenuIndex = (currentMenuIndex + 1) % menuTitles.length;
-                        updateMenuInfo();
-                    }, 4000);
-                </script>
-            </div>
-        </div>
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+        @foreach (var menu in Model.Menus)
+        {
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="@menu.ID" class="@menu == Model.Menus.First() ? 'active' : ''" aria-label="Slide @(menu.ID +1)" onclick="goToMenu(@menu.ID)"></button>
+        }
     </div>
+    <div class="carousel-inner align-content-center">
+        @foreach (var menu in Model.Menus)
+        {
+            <div class="carousel-item @(menu == Model.Menus.First() ? "active" : "")" data-bs-interval="false">
+                <div class="d-flex justify-content-center align-items-center">
+                    <img src="@menu.MenuImage" class="p-5 m-5 w-50" alt="...">
+                    <div class="carousel-caption d-md-block">
+                        <h5><strong>@menu.MenuName</strong></h5>
+                        <p>@menu.Description</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    <button class="carousel-control-prev position-absolute start-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev" onclick="goToPrevMenu()">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next position-absolute end-0" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next" onclick="goToNextMenu()">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
 
+<script>
+    var menuInfoDivs = document.querySelectorAll('.carousel-item');
+    var currentMenuIndex = 0;
+
+    function updateCarousel() {
+        menuInfoDivs.forEach(div => div.classList.remove('active'));
+        menuInfoDivs[currentMenuIndex].classList.add('active');
+    }
+
+    function goToMenu(menuID) {
+        currentMenuIndex = menuID - 1;
+        updateCarousel();
+    }
+
+    function goToNextMenu() {
+        currentMenuIndex = (currentMenuIndex + 1) % menuInfoDivs.length;
+        updateCarousel();
+    }
+
+    function goToPrevMenu() {
+        currentMenuIndex = (currentMenuIndex - 1 + menuInfoDivs.length) % menuInfoDivs.length;
+        updateCarousel();
+    }
+</script>
+
+
+
+@*<section id="Home">
     <div class="main_btn">
         <a href="#">Order Now</a>
         <i class="fa-solid fa-angle-right"></i>
     </div>
 
-</section>
+</section>*@
 <!--About-->
-
 @*<div class="about" id="About">
     <div class="about_main">
         <div class="image">
@@ -82,7 +102,7 @@
 
 <div class="menu" id="Menu">
     <h1>Our <span>Products</span></h1>
-  
+
     <div class="tm-paging-links">
         <nav>
             <ul>
@@ -119,16 +139,16 @@
             {
                 <div class="card" style="width: 18rem;">
                     <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
-                </div>
-                <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
-                <div class="">
-                    <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                    <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
-                </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                    </div>
+                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                    <div class="">
+                        <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
+                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                    </div>
 
-            </div>
+                </div>
             }
         }
     </div>

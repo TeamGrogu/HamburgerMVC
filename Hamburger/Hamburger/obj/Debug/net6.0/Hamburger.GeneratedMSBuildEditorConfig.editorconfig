@@ -9,11 +9,11 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hamburger
 build_property.RootNamespace = Hamburger
-build_property.ProjectDir = C:\Users\omerf\source\repos\HamburgerMVC\Hamburger\Hamburger\
+build_property.ProjectDir = C:\Users\omerf\Source\Repos\HamburgerMVC\Hamburger\Hamburger\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\omerf\source\repos\HamburgerMVC\Hamburger\Hamburger
+build_property.MSBuildProjectDirectory = C:\Users\omerf\Source\Repos\HamburgerMVC\Hamburger\Hamburger
 build_property._RazorSourceGeneratorDebug = 
 
 [C:/Users/omerf/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Areas/AdminArea/Views/Admin/Index.cshtml]
