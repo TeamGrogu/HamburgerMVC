@@ -38,7 +38,7 @@
             @if (User.Identity.IsAuthenticated)
             {
                 <i class="fa-solid fa-user">  @User.Identity.Name</i>
-                <a asp-controller="Account" asp-action="Logout">
+                <a asp-area="" asp-controller="Account" asp-action="Logout">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </a>
             }
