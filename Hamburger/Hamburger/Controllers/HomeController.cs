@@ -32,10 +32,18 @@ namespace Hamburger.Controllers
             return View(menuProductVM);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        //404 page başlangıç
         public IActionResult Error()
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            return View();
         }
+
+        [Route("SenBuralaraNerdenGeldin/{statusCode}")]
+        public IActionResult Error(int statusCode)
+        {
+            if (statusCode == 404) { ViewBag.ErrorMessage = "Üzgünüm ama böyle bir sayfa yok..."; }
+            return View();
+        }
+        //404 page bitiş
     }
 }

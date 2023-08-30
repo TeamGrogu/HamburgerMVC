@@ -8,31 +8,47 @@
         </div>
 
         <ul>
-            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li><a href="#Home">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Menu">Menu</a></li>
             <li><a href="#Gallary">Gallery</a></li>
             <li><a href="#Review">Review</a></li>
-            <li><a href="#Order">Order</a></li>           
+            <li><a href="#Order">Order</a></li>
+            @if (User.IsInRole("Admin"))
+            {
+                <li><a asp-area="Admin" asp-controller="Admin" asp-action="AdminPanel">Admin Panel</a></li>
+            }
         </ul>
 
         <div class="icon">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
-            <a asp-controller="Account" asp-action="Register">
-                <i class="fa-solid fa-user">
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        @User.Identity.Name
-
-                    }
-                    else
-                    {
-                        <label>Login/Register</label>
-                    }
+            @if (!User.IsInRole("Admin"))
+            {
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-heart"></i>
+                <a asp-controller="Home" asp-action="CartList"><i class="fa-solid fa-cart-shopping"></i></a>
+            }
+            @if (!User.Identity.IsAuthenticated)
+            {
+                <a asp-controller="Account" asp-action="Register">
+                    <i class="fa-solid fa-user">
+                    <label>Login/Register</label>
                 </i>
             </a>
+            }
+            @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+            {
+                <i class="fa-solid fa-user">  @User.Identity.Name</i>
+                <a asp-controller="Account" asp-action="Logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            }
+            @if (User.Identity.IsAuthenticated && User.IsInRole("Standart"))
+            {
+                <i class="fa-solid fa-user">  @User.Identity.Name</i>
+                <a asp-controller="Account" asp-action="Logout">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </a>
+            }
         </div>
     </nav>
 </section>

@@ -33,14 +33,15 @@ namespace Hamburger.Controllers
             {
                 User appUser = new User()
                 {
-                    FirstName = vm.RegisterVM.FirstName,
-                    LastName = vm.RegisterVM.LastName,
-                    UserName = vm.RegisterVM.UserName,
-                    Email = vm.RegisterVM.Email,
-                    Address = vm.RegisterVM.Address,
-                    PhoneNumber = vm.RegisterVM.PhoneNumber,
+                    FirstName = vm.FirstName,
+                    LastName = vm.LastName,
+                    UserName = vm.UserName,
+                    Email = vm.Email,
+                    Address = vm.Address,
+                    PhoneNumber = vm.PhoneNumber,
                 };
-				IdentityResult identityResult = await userManager.CreateAsync(appUser, vm.RegisterVM.Password);
+                appUser.SecurityStamp = Guid.NewGuid().ToString();
+                IdentityResult identityResult = await userManager.CreateAsync(appUser, vm.Password);
                 await userManager.AddToRoleAsync(appUser, "Standard");
                 if (identityResult.Succeeded)
                 {
@@ -62,26 +63,28 @@ namespace Hamburger.Controllers
         }
         [HttpPost]
         public async Task<IActionResult> Login(UserVM vm)
-        {              
-            if (ModelState.IsValid)
+        {
+            if (!ModelState.IsValid)
             {
-                User user = await userManager.FindByEmailAsync(vm.LoginVM.Email);
+                User user = await userManager.FindByEmailAsync(vm.Email);
                 if (user != null)
                 {
+                    user.SecurityStamp = Guid.NewGuid().ToString();
                     await signInManager.SignOutAsync();
-                    Microsoft.AspNetCore.Identity.SignInResult result = await signInManager.PasswordSignInAsync(user, vm.LoginVM.Password, false, false);
+                    Microsoft.AspNetCore.Identity.SignInResult result = await signInManager.PasswordSignInAsync(user, vm.Password, false, false);
                     if (result.Succeeded)
                     {
                         return RedirectToAction("Index", "Home");
                     }
-                    else
-                    {
-                        TempData["login"] = "Credentials are incorrect.";
-                        return RedirectToAction("Register",vm);
-                    }
+                    ModelState.AddModelError("", "Credentials are incorrect.");
                 }
             }
-            return NoContent();
+            return RedirectToAction("Login");
+        }
+        public async Task<IActionResult> Logout()
+        {
+            await signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
