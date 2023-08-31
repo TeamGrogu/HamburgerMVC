@@ -9,77 +9,105 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hamburger
 build_property.RootNamespace = Hamburger
-build_property.ProjectDir = C:\Users\DELL\Desktop\Hamburger3\Hamburger\Hamburger\
+build_property.ProjectDir = C:\Users\yolcu\Source\Repos\HamburgerMVC\Hamburger\Hamburger\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\DELL\Desktop\Hamburger3\Hamburger\Hamburger
+build_property.MSBuildProjectDirectory = C:\Users\yolcu\Source\Repos\HamburgerMVC\Hamburger\Hamburger
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Areas/AdminArea/Views/Admin/AdminPanel.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Areas/AdminArea/Views/Admin/AdminPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5BcmVhXFZpZXdzXEFkbWluXEFkbWluUGFuZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Areas/UserArea/Views/User/Index.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Areas/UserArea/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlckFyZWFcVmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Account/Register.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Admin/AdminPanel.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/AdminPanel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5QYW5lbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Admin/CreateCategory.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/CreateCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlQ2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Admin/CreateProduct.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/CreateProduct.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlUHJvZHVjdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Admin/ListCategories.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/CreateUpdateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVXBkYXRlQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/CreateUpdateMenu.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVXBkYXRlTWVudS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/CreateUpdateProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlVXBkYXRlUHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/ListCategories.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdENhdGVnb3JpZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Admin/ListProducts.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/ListMenus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdE1lbnVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Admin/ListProducts.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdFByb2R1Y3RzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Home/Error.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Home/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Home/Index.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Home/Privacy.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Shared/Error.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Shared/CategoryPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENhdGVnb3J5UGFydGlhbFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Shared/NavBarPartialView.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Shared/MenuPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1lbnVQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Shared/NavBarPartialView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5hdkJhclBhcnRpYWxWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Shared/ProductPartialView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFByb2R1Y3RQYXJ0aWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/_ViewImports.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/_ViewStart.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/DELL/Desktop/Hamburger3/Hamburger/Hamburger/Views/Shared/_Layout.cshtml]
+[C:/Users/yolcu/Source/Repos/HamburgerMVC/Hamburger/Hamburger/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-hsn5tmse0w

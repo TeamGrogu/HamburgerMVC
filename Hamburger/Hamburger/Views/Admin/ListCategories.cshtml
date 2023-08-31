@@ -16,8 +16,17 @@
             <tr>
                 <td>@category.ID</td>
                 <td>@category.CategoryName</td>
-                <td><i class="fas fa-pencil text-warning"></i></td>
-                <td><i class="fas fa-trash text-danger"></i></td>
+                <td>
+                    <a asp-controller="Admin" asp-action="EditCategory" asp-route-id="@category.ID">
+                        <i class="fas fa-pencil text-warning"></i>
+                    </a>
+                    
+                </td>
+                <td>
+                    <a asp-controller="Admin" asp-action="DeleteCategory" asp-route-id="@category.ID">
+                        <i class="fas fa-trash text-danger"></i>
+                    </a>                    
+                </td>
             </tr>
         }
     </tbody>

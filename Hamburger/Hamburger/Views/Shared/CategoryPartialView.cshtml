@@ -1,0 +1,27 @@
+﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+@model Category
+
+
+<form asp-action="EditCategory" asp-controller="Admin" method="post" class="needs-validation">
+    @if (Model.ID != 0)
+    {
+        <div class="form-group">
+            <label asp-for="ID" class="control-label">ID</label>
+            <input asp-for="ID" class="form-control" disabled />
+        </div>
+    }
+    <input asp-for="ID" type="hidden" />
+    <div class="form-group">
+        <label asp-for="CategoryName" class="control-label">Category Name</label>
+        <input asp-for="CategoryName" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">
+            @(Model.ID == 0 ? "Create" : "Update")
+        </button>
+    </div>
+</form>
+
+
+
+
