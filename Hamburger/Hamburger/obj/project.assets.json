@@ -11095,11 +11095,16 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\sabri\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\yolcu\\.nuget\\packages\\": {}
+>>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj",
       "projectName": "Hamburger",
       "projectPath": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\Hamburger.csproj",
@@ -11108,6 +11113,16 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+      "projectUniqueName": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+      "projectName": "Hamburger",
+      "projectPath": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+      "packagesPath": "C:\\Users\\yolcu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\yolcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

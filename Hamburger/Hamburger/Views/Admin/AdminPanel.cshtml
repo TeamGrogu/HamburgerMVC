@@ -18,7 +18,7 @@
         <div class="row text-center pad-top">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                 <div class="div-square">
-                    <a asp-action="CreateCategory">
+                    <a asp-action="EditCategory">
                         <i class="fa-solid fa-plus fa-5x"></i>
                         <h4>Add Categories</h4>
                     </a>
@@ -45,7 +45,7 @@
         <div class="row text-center pad-top">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                 <div class="div-square">
-                    <a asp-action="CreateProduct">
+                    <a asp-controller="Admin" asp-action="EditProduct">
                         <i class="fa-solid fa-plus fa-5x"></i>
                         <h4>Add Products</h4>
                     </a>
@@ -66,15 +66,15 @@
             </div>
 
         </div>
-        <h1>Meals</h1>
+        <h1>Menus</h1>
         <hr />
         <!-- /. ROW  -->
         <div class="row text-center pad-top">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                 <div class="div-square">
-                    <a href="blank.html">
+                    <a asp-controller="Admin" asp-action="EditMenu">
                         <i class="fa-solid fa-plus fa-5x"></i>
-                        <h4>Add Meals</h4>
+                        <h4>Add Menus</h4>
                     </a>
                 </div>
 
@@ -83,9 +83,9 @@
 
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
                 <div class="div-square">
-                    <a href="blank.html">
+                    <a asp-action="ListMenus">
                         <i class="fa-solid fa-list-ul fa-5x"></i>
-                        <h4>List Meals</h4>
+                        <h4>List Menus</h4>
                     </a>
                 </div>
 

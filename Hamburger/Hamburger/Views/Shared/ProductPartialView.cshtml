@@ -1,0 +1,26 @@
+﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+@model MenuProductVM
+
+<form method="post" asp-controller="Admin" asp-action="EditProduct">
+    @if (Model.Product.ID != 0)
+    {
+        <div class="form-group">
+            <label asp-for="@Model.Product.ID" class="control-label">ID</label>
+            <input asp-for="@Model.Product.ID" class="form-control" disabled />
+        </div>
+    }
+    <label class="control-label" asp-for="Product.ProductName">Product Name:</label>
+    <input asp-for="Product.ProductName" type="text" /><br /><br />
+    <label class="control-label" asp-for="Product.Price">Price:</label>
+    <input asp-for="Product.Price" type="text" /><br /><br />
+    <label class="control-label" asp-for="Product.Description">Description:</label>
+    <input asp-for="Product.Description" type="text" /><br /><br />
+    <div class="form-group">
+        <label asp-for="Product.CategoryID" class="control-label"></label>
+        @Html.DropDownListFor(x => x.Product.CategoryID, Model.Dropdown, new { @class = "form-control text-center" })
+        <span asp-validation-for="Product.CategoryID" class="text-danger"></span>
+    </div>
+    <br /><br />
+    <input class="btn btn-outline-success" type="submit" value="@(Model.Product.ID == 0 ? "Create" : "Update")" />
+</form>
