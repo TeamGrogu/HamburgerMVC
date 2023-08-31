@@ -15,7 +15,6 @@ namespace Hamburger.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly Context _context;
         MenuProductVM menuProductVM = new MenuProductVM();
-        CartViewModel cartVM = new CartViewModel();
 
         public HomeController(ILogger<HomeController> logger, Context context)
         {
