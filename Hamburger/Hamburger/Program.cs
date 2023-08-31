@@ -9,7 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>
 	(x => x.UseSqlServer(builder.Configuration.GetConnectionString("ConnStr")));
-
 builder.Services.AddIdentity<User, Role>
 	(x =>
 	{

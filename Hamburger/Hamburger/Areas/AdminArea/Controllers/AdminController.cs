@@ -1,4 +1,5 @@
 ﻿using Hamburger.DAL;
+using Hamburger.Models.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
