@@ -121,7 +121,7 @@
                 <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
                 <div class="">
                     <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                    <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                    <a asp-controller="User" asp-action="CreateOrder" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
                 </div>
 
             </div>

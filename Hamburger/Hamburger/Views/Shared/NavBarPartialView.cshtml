@@ -25,7 +25,7 @@
             {
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-heart"></i>
-                <a asp-controller="Home" asp-action="CartList"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a asp-controller="User" asp-action="ShoppingCart" class="side-panel-toggle"><i class="fa-solid fa-cart-shopping"></i></a>
             }
             @if (!User.Identity.IsAuthenticated)
             {
