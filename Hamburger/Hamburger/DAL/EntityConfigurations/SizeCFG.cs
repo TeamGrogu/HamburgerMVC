@@ -10,8 +10,8 @@ namespace Hamburger.DAL.EntityConfigurations
 		{
 			builder.HasData(
 				new Size { SizeID=1,SizeName="Küçük Boy"},
-				new Size { SizeID=2,SizeName="Orta Boy"},
-				new Size { SizeID=3,SizeName="Büyük Boy"}
+				new Size { SizeID=2,SizeName="Orta Boy", Price = 8 },
+				new Size { SizeID=3,SizeName="Büyük Boy", Price = 12 }
 				);
 		}
 	}
