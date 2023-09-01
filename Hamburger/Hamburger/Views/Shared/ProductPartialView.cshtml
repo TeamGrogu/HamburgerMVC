@@ -1,20 +1,11 @@
 ﻿
-
-
 @model MenuProductVM
-
-
 
 <div class="formbold-main-wrapper">
 
   <div class="formbold-form-wrapper">
-       
+        <img src="~/image/animeburger.png">
         <form method="post" asp-controller="Admin" asp-action="EditProduct">
-
-
-            <img src="~/image/animeburger.png">
-
-
 
             @if (Model.Product.ID != 0)
             {
@@ -47,9 +38,6 @@
                 <span asp-validation-for="Product.CategoryID" class="text-danger"></span>
             </div>
             <input class="formbold-btn" type="submit" value="@(Model.Product.ID == 0 ? "Create" : "Update")" />
-
-
-
 
     </form>
   </div>
