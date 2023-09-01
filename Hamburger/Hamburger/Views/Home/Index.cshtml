@@ -92,14 +92,13 @@
 </div>
 
 -->
-
 <!--Menu-->
 
 <div class="menu" id="Menu">
-    <h1>Our <span>Products</span></h1>
+    <h1><span>Our Products</span></h1>
 
     <div class="tm-paging-links" style="list-style: none; display: flex; justify-content:center;">
-        <nav >
+        <nav>
             <ul>
                 <li class="tm-paging-item"><a href="#" class="tm-paging-link active">Menus</a></li>
                 @foreach (var category in Model.Categories)
@@ -251,68 +250,21 @@
 <!--Gallary-->
 
 <div class="gallary" id="Gallary">
-    <h1>Our<span>Gallery</span></h1>
+    <h1><span>Our Commercial</span></h1>
 
     <div class="gallary_image_box">
         <div class="gallary_image">
-            <img src="~/image/gallary_1.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/dA0VGEbbw4g?si=JDZh6rMiAfoKWZh1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="gallary_image">
-            <img src="~/image/gallary_2.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/lpnYYvX670U?si=s8Kyu0SfJxC9if8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="gallary_image">
-            <img src="~/image/gallary_3.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/Ip0tlyXBmE0?si=f8VN04saO8EWfeSB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <div class="gallary_image">
-            <img src="~/image/gallary_4.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="~/image/gallary_5.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="~/image/gallary_6.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
 
     </div>
 
@@ -324,7 +276,7 @@
 <!--Review-->
 
 <div class="review" id="Review">
-    <h1>Customer<span>Review</span></h1>
+    <h1><span>Customer Review</span></h1>
 
     <div class="review_box">
         <div class="review_card">
@@ -484,7 +436,7 @@
 <!--Order-->
 
 <div class="order" id="Order">
-    <h1><span>Order</span>Now</h1>
+    <h1><span>Order Now</span></h1>
 
     <div class="order_main">
 
@@ -537,41 +489,48 @@
 <!--Team-->
 
 <div class="team">
-    <h1>Our<span>Team</span></h1>
+    <h1><span>Our Team</span></h1>
 
     <div class="team_box">
         <div class="profile">
-            <img src="https://avatars.githubusercontent.com/u/123166483?v=4">
+            <img src="https://avatars.githubusercontent.com/u/123166483?v=4" onclick="redirectToLinkedIn('https://www.linkedin.com/in/sbrsn/')">
             <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="name">Team Lead</h2>
+                <p class="bio">Sabri ŞEN</p>
             </div>
 
         </div>
         <div class="profile">
-            <img src="https://avatars.githubusercontent.com/u/78663695?v=4">
+            <img src="https://avatars.githubusercontent.com/u/78663695?v=4 " onclick="redirectToLinkedIn('https://www.linkedin.com/in/omeralmali/')">
 
             <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="name">Frontend Developer</h2>
+                <p class="bio">omerfdev</p>
             </div>
         </div>
         <div class="profile">
-            <img src="https://media.licdn.com/dms/image/D4D03AQHuPwxm36y7Kg/profile-displayphoto-shrink_200_200/0/1672786522602?e=1698883200&v=beta&t=vNyxN2ycwZ3HIoVi3ko26XwKZgBAvgKVVdvEF0R7oqY">
+            <img src="https://media.licdn.com/dms/image/D4D03AQHuPwxm36y7Kg/profile-displayphoto-shrink_200_200/0/1672786522602?e=1698883200&v=beta&t=vNyxN2ycwZ3HIoVi3ko26XwKZgBAvgKVVdvEF0R7oqY" onclick="redirectToLinkedIn('https://www.linkedin.com/in/mehmet-talha-aksoy-23000521b/')">
 
             <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="name">Backend Developer</h2>
+                <p class="bio">Talha YOLCU</p>
             </div>
         </div>
-        <div class="profile">
-            <img src="https://media.licdn.com/dms/image/D4D03AQFC95WGbVxznw/profile-displayphoto-shrink_200_200/0/1691581321413?e=1698883200&v=beta&t=f-Ud9gNuK3ySfEZtfjTsbh5Pw9KtcDHd2ClCGpNYLTQ">
+        <div class="profile gradient">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFC95WGbVxznw/profile-displayphoto-shrink_200_200/0/1691581321413?e=1698883200&v=beta&t=f-Ud9gNuK3ySfEZtfjTsbh5Pw9KtcDHd2ClCGpNYLTQ" onclick="redirectToLinkedIn('https://www.linkedin.com/in/ömer-yolcu-21217472/')">
             <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="name">Backend Developer</h2>
+                <p class="bio">Ömer YOLCU</p>
             </div>
-        </div>
+            </d
 
+        </div>
+        <script>
+            function redirectToLinkedIn(link) {
+                window.open(link, '_blank');
+            }
+        </script>
     </div>
 
-</div>
+
+
