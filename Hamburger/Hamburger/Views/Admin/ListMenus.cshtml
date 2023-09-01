@@ -1,0 +1,39 @@
+﻿@model List<Menu>
+
+
+<table class="table table-striped table-bordered table-hover table-responsive text-center table-sm">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Menu Name</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var menu in Model)
+        {
+            <tr>
+                <td>@menu.ID</td>
+                <td>@menu.MenuName</td>
+                <td>@menu.Price</td>
+                <td>@menu.Description</td>
+
+                <td>
+                    <a asp-controller="Admin" asp-action="EditMenu" asp-route-id="@menu.ID">
+                        <i class="fas fa-pencil text-warning"></i>
+                    </a>
+
+                </td>
+                <td>
+                    <a asp-controller="Admin" asp-action="DeleteMenu" asp-route-id="@menu.ID">
+                        <i class="fas fa-trash text-danger"></i>
+                    </a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

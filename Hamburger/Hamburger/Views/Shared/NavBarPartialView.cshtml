@@ -8,7 +8,7 @@
         </div>
 
         <ul>
-            <li><a href="#Home">Home</a></li>
+            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Menu">Menu</a></li>
             <li><a href="#Gallary">Gallery</a></li>
@@ -16,7 +16,7 @@
             <li><a href="#Order">Order</a></li>
             @if (User.IsInRole("Admin"))
             {
-                <li><a asp-area="AdminArea" asp-controller="Admin" asp-action="AdminPanel">Admin Panel</a></li>
+                <li><a asp-controller="Admin" asp-action="AdminPanel">Admin Panel</a></li>
             }
         </ul>
 
@@ -25,7 +25,7 @@
             {
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-heart"></i>
-                <a asp-controller="Home" asp-action="CartList"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a asp-controller="User" asp-action="ShoppingCart" class="side-panel-toggle"><i class="fa-solid fa-cart-shopping"></i></a>
             }
             @if (!User.Identity.IsAuthenticated)
             {

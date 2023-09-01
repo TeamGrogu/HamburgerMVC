@@ -7,6 +7,5 @@
 		public int ProductID { get; set; }
 		public Menu? Menu { get; set; }
 		public Product? Product { get; set; }
-
 	}
 }

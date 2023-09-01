@@ -36,6 +36,7 @@ namespace Hamburger.DAL
             builder.ApplyConfiguration<MenuProduct>(new MenuProductCFG());
             builder.ApplyConfiguration<Menu>(new MenuCFG());         
             builder.ApplyConfiguration<Size>(new SizeCFG());
+            builder.ApplyConfiguration<Status>(new StatusCFG());
            
 
             builder.Entity<Role>().HasData(

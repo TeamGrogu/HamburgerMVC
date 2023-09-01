@@ -4,7 +4,6 @@ using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 using System.Diagnostics;
 using System.Reflection.Metadata;
 
@@ -15,7 +14,6 @@ namespace Hamburger.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly Context _context;
         MenuProductVM menuProductVM = new MenuProductVM();
-        CartViewModel cartVM = new CartViewModel();
 
         public HomeController(ILogger<HomeController> logger, Context context)
         {

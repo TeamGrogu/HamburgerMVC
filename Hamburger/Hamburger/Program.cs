@@ -1,15 +1,17 @@
 ﻿using Hamburger.DAL;
 using Hamburger.Models.Entities;
+using Hamburger.Models.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<ShoppingCartVM>();
+builder.Services.AddScoped<MenuProductVM>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>
 	(x => x.UseSqlServer(builder.Configuration.GetConnectionString("ConnStr")));
-
 builder.Services.AddIdentity<User, Role>
 	(x =>
 	{

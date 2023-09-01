@@ -121,7 +121,7 @@
                 <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
                 <div class="">
                     <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                    <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                    <a asp-controller="User" asp-action="CreateOrder" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
                 </div>
 
             </div>
@@ -140,7 +140,7 @@
                     <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
                     <div class="">
                         <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                        <a asp-controller="User" asp-action="CreateOrder" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
                     </div>
 
                 </div>
@@ -160,7 +160,7 @@
                     <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
                     <div class="">
                         <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                        <a asp-controller="User" asp-action="CreateOrder" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
                     </div>
 
                 </div>
@@ -180,7 +180,7 @@
                     <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
                     <div class="">
                         <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                        <a asp-controller="User" asp-action="CreateOrder" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
                     </div>
 
                 </div>
@@ -200,7 +200,7 @@
                     <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
                     <div class="">
                         <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                        <a asp-controller="User" asp-action="CreateOrder" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
                     </div>
 
                 </div>
@@ -220,7 +220,7 @@
                     <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
                     <div class="">
                         <a href="#" class="btn btn-outline-primary" style="width:49%">Details</a>
-                        <a href="#" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
+                        <a asp-controller="User" asp-action="CreateOrder" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:49%">Add to Cart</a>
                     </div>
 
                 </div>
@@ -541,71 +541,35 @@
 
     <div class="team_box">
         <div class="profile">
-            <img src="~/image/chef1.png">
-
+            <img src="https://avatars.githubusercontent.com/u/123166483?v=4">
             <div class="info">
                 <h2 class="name">Chef</h2>
                 <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <div class="team_icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-
             </div>
 
         </div>
-
         <div class="profile">
-            <img src="~/image/chef2.png">
+            <img src="https://avatars.githubusercontent.com/u/78663695?v=4">
 
             <div class="info">
                 <h2 class="name">Chef</h2>
                 <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <div class="team_icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-
             </div>
-
         </div>
-
         <div class="profile">
-            <img src="~/image/chef3.jpg">
+            <img src="https://media.licdn.com/dms/image/D4D03AQHuPwxm36y7Kg/profile-displayphoto-shrink_200_200/0/1672786522602?e=1698883200&v=beta&t=vNyxN2ycwZ3HIoVi3ko26XwKZgBAvgKVVdvEF0R7oqY">
 
             <div class="info">
                 <h2 class="name">Chef</h2>
                 <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <div class="team_icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-
             </div>
-
         </div>
-
         <div class="profile">
-            <img src="~/image/chef4.jpg">
-
+            <img src="https://media.licdn.com/dms/image/D4D03AQFC95WGbVxznw/profile-displayphoto-shrink_200_200/0/1691581321413?e=1698883200&v=beta&t=f-Ud9gNuK3ySfEZtfjTsbh5Pw9KtcDHd2ClCGpNYLTQ">
             <div class="info">
                 <h2 class="name">Chef</h2>
                 <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-                <div class="team_icon">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-
             </div>
-
         </div>
 
     </div>
