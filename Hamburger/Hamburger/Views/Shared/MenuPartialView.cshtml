@@ -18,7 +18,15 @@
 
     <div class="form-group">
         <label class="control-label">Hamburgers</label>
-        @Html.DropDownListFor(x => x.Hamburgers, Model.DropdownH, new { @class = "form-control text-center" })
+        @Html.DropDownListFor(x => x.Hamburger, Model.DropdownH, new { @class = "form-control text-center" })
+        <span class="text-danger"></span>
+
+        <label class="control-label">Sides</label>
+        @Html.DropDownListFor(x => x.Side, Model.DropdownS, new { @class = "form-control text-center" })
+        <span class="text-danger"></span>
+
+        <label class="control-label">Beverages</label>
+        @Html.DropDownListFor(x => x.Beverage, Model.DropdownB, new { @class = "form-control text-center" })
         <span class="text-danger"></span>
     </div>
 

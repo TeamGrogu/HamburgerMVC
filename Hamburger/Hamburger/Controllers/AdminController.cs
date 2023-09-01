@@ -160,19 +160,16 @@ namespace Hamburger.Controllers
                 Menus = _context.Menus.ToList(),
                 Menu = id == 0 ? new Menu() : _context.Menus.FirstOrDefault(m => m.ID == id)
             };
-            productCategories.Hamburgers = _context.Products.Where(x => x.CategoryID == 1).ToList();
-            productCategories.Sides = _context.Products.Where(x => x.CategoryID == 2).ToList();
-            productCategories.Beverages = _context.Products.Where(x => x.CategoryID == 3).ToList();
             productCategories.Categories = _context.Categories.ToList();
-            productCategories.DropdownH = Dropdown();
-            productCategories.DropdownS = Dropdown();
-            productCategories.DropdownB = Dropdown();
+            productCategories.DropdownH = _context.Products.Where(x => x.CategoryID == 1).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList();
+            productCategories.DropdownS = _context.Products.Where(x => x.CategoryID == 2).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList();
+            productCategories.DropdownB = _context.Products.Where(x => x.CategoryID == 3).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList();
 
             return PartialView("MenuPartialView", productCategories);
         }
 
         [HttpPost]
-        public IActionResult EditMenu(MenuProductVM model)
+        public IActionResult EditMenu(ProductCategories model)
         {
             if (model.Menu.ID == 0)
             {
@@ -184,11 +181,22 @@ namespace Hamburger.Controllers
                     Description = model.Menu.Description,
                 };
                 _context.Menus.Add(menu);
-                MenuProduct menuProduct = new MenuProduct()
+                MenuProduct menuProductH = new MenuProduct()
                 {
                     MenuID = menu.ID,
-
+                    ProductID = model.Hamburger.ID
                 };
+                MenuProduct menuProductS = new MenuProduct()
+                {
+                    MenuID = menu.ID,
+                    ProductID = model.Side.ID
+                };
+                MenuProduct menuProductB = new MenuProduct()
+                {
+                    MenuID = menu.ID,
+                    ProductID = model.Beverage.ID
+                };
+                _context.MenuProducts.AddRange(menuProductH, menuProductS, menuProductB);
             }
             else
             {

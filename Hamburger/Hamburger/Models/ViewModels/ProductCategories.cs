@@ -11,9 +11,9 @@ namespace Hamburger.Models.ViewModels
         public ICollection<SelectListItem> DropdownS { get; set; }
         public ICollection<SelectListItem> DropdownB { get; set; }
         public ICollection<Category> Categories { get; set; }
-        public ICollection<Product> Hamburgers { get; set; }
-        public ICollection<Product> Sides { get; set; }
-        public ICollection<Product> Beverages { get; set; }
+        public Product Hamburger { get; set; }
+        public Product Side { get; set; }
+        public Product Beverage { get; set; }
         
     }
 }

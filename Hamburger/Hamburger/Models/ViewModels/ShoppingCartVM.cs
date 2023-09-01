@@ -5,6 +5,7 @@ namespace Hamburger.Models.ViewModels
 {
     public class ShoppingCartVM
     {
+        public User User { get; set; }
         public Order Order { get; set; }
         public ICollection<OrderDetails> OrderDetails { get; set; }
         public ICollection<Menu> Menus { get; set; }

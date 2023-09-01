@@ -3,6 +3,7 @@ using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Hamburger.Controllers
 {
@@ -10,18 +11,43 @@ namespace Hamburger.Controllers
     {
         private readonly UserManager<User> _userManager;
         private readonly Context _context;
-
-        public UserController(UserManager<User> userManager, Context context)
+        private readonly ShoppingCartVM _shoppingCartVM;
+        public UserController(UserManager<User> userManager, Context context, ShoppingCartVM shoppingCartVM)
         {
             _userManager = userManager;
             _context = context;
+            _shoppingCartVM = shoppingCartVM;
         }
 
         public async Task<IActionResult> ShoppingCart()
         {
             User user = await _userManager.GetUserAsync(User);
-            Order selectedOrder = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
-            return View();
+            _shoppingCartVM.User = user;
+            Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
+            _shoppingCartVM.Order = order;
+            _shoppingCartVM.Menus = new List<Menu>();
+            _shoppingCartVM.Products = new List<Product>();
+            _shoppingCartVM.MenusProducts = new List<MenuProduct>();
+            if (order != null)
+            {
+                _shoppingCartVM.OrderDetails = _context.OrderDetails.Where(x => x.OrderID == order.ID).ToList();
+                foreach (var item in _shoppingCartVM.OrderDetails)
+                {
+                    if (item.MenuID != null)
+                        _shoppingCartVM.Menus.Add(_context.Menus.Find(item.MenuID));
+                    else
+                        _shoppingCartVM.Products.Add(_context.Products.Find(item.ProductID));
+                }
+                foreach (var item in _shoppingCartVM.Menus)
+                {
+                    foreach (var mp in _context.MenuProducts.Where(x => x.MenuID == item.ID))
+                    {
+                        _shoppingCartVM.MenusProducts.Add(mp);
+                    }
+                }
+                _shoppingCartVM.Sizes = _context.Sizes.ToList();
+            }
+            return View(_shoppingCartVM);
         }
         [HttpPost]
         public async Task<IActionResult> ShoppingCart(ShoppingCartVM scvm)
