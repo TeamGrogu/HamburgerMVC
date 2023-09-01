@@ -1,12 +1,33 @@
+body {
+    background: linear-gradient(-45deg,#e63946, #f1faee, #a8dadc, #457b9d);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-/*body {
-    background: linear-gradient(to right, red, purple);
-}*/
+
 
 html {
     scroll-behavior: smooth;
