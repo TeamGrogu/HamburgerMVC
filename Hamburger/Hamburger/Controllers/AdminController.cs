@@ -155,14 +155,20 @@ namespace Hamburger.Controllers
 
         public IActionResult EditMenu(int id = 0)
         {
-            MenuProductVM menuProductVM = new MenuProductVM
+            ProductCategories productCategories = new ProductCategories()
             {
-                Dropdown = Dropdown(),
                 Menus = _context.Menus.ToList(),
                 Menu = id == 0 ? new Menu() : _context.Menus.FirstOrDefault(m => m.ID == id)
             };
+            productCategories.Hamburgers = _context.Products.Where(x => x.CategoryID == 1).ToList();
+            productCategories.Sides = _context.Products.Where(x => x.CategoryID == 2).ToList();
+            productCategories.Beverages = _context.Products.Where(x => x.CategoryID == 3).ToList();
+            productCategories.Categories = _context.Categories.ToList();
+            productCategories.DropdownH = Dropdown();
+            productCategories.DropdownS = Dropdown();
+            productCategories.DropdownB = Dropdown();
 
-            return PartialView("MenuPartialView", menuProductVM);
+            return PartialView("MenuPartialView", productCategories);
         }
 
         [HttpPost]
@@ -178,6 +184,11 @@ namespace Hamburger.Controllers
                     Description = model.Menu.Description,
                 };
                 _context.Menus.Add(menu);
+                MenuProduct menuProduct = new MenuProduct()
+                {
+                    MenuID = menu.ID,
+
+                };
             }
             else
             {
