@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Hamburger",
+    "\\Hamburger\\Hamburger",
+    "\\Hamburger\\Hamburger\\Views",
+    "\\Hamburger\\Hamburger\\Views\\Home",
+    "\\Hamburger\\Hamburger\\wwwroot",
+    "\\Hamburger\\Hamburger\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Hamburger.sln",
+  "SelectedNode": "\\Hamburger\\Hamburger\\wwwroot\\css\\register.css",
   "PreviewInSolutionExplorer": false
 }

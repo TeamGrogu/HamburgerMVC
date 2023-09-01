@@ -10,8 +10,9 @@
 }
 
 
-nav{
-	margin-top:-170px;
+nav {
+	position: fixed;
+	top: 0px;
 }
 
 
