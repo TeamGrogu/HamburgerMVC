@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "/ukIFgKeh0G2+QGVW80WAxM7qABuM9Z2lq4BtElznsE=",
-=======
-  "Hash": "Nb6iHGJE7CPpoPChajbUNMR45YKRQmKlwbKS5oYrryc=",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
+  "Hash": "4fVl+QTQts5J/1FlwggDsroRR//S2K+l1tH9rTy7WKg=",
   "Source": "Hamburger",
   "BasePath": "_content/Hamburger",
   "Mode": "Default",
@@ -14,28 +10,17 @@
     {
       "Name": "Hamburger\\wwwroot",
       "Source": "Hamburger",
-<<<<<<< HEAD
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\css\\site.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "Identity": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\css\\site.css",
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -46,15 +31,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\css\\site.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\favicon.ico",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\css\\site.css"
     },
     {
@@ -62,7 +38,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -73,15 +48,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\favicon.ico"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\js\\site.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\favicon.ico"
     },
     {
@@ -89,7 +55,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -100,15 +65,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\js\\site.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\js\\site.js"
     },
     {
@@ -116,7 +72,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -127,15 +82,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
@@ -143,7 +89,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -154,15 +99,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
@@ -170,7 +106,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -181,15 +116,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
@@ -197,7 +123,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -208,15 +133,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
@@ -224,7 +140,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -235,15 +150,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
@@ -251,7 +157,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -262,15 +167,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
@@ -278,7 +174,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -289,15 +184,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
@@ -305,7 +191,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -316,15 +201,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
@@ -332,7 +208,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -343,15 +218,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
@@ -359,7 +225,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -370,15 +235,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
@@ -386,7 +242,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -397,15 +252,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
@@ -413,7 +259,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -424,15 +269,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
@@ -440,7 +276,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -451,15 +286,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
@@ -467,7 +293,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -478,15 +303,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
@@ -494,7 +310,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -505,15 +320,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
@@ -521,7 +327,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -532,15 +337,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
@@ -548,7 +344,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -559,15 +354,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
@@ -575,7 +361,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -586,15 +371,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
@@ -602,7 +378,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -613,15 +388,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
@@ -629,7 +395,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -640,15 +405,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
@@ -656,7 +412,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -667,15 +422,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
@@ -683,7 +429,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -694,15 +439,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
@@ -710,7 +446,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -721,15 +456,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
@@ -737,7 +463,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -748,15 +473,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
@@ -764,7 +480,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -775,15 +490,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
@@ -791,7 +497,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -802,15 +507,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
@@ -818,7 +514,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -829,15 +524,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
@@ -845,7 +531,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -856,15 +541,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
@@ -872,7 +548,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -883,15 +558,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
@@ -899,7 +565,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -910,15 +575,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
@@ -926,7 +582,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -937,15 +592,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
@@ -953,7 +599,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -964,15 +609,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
@@ -980,7 +616,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -991,15 +626,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
@@ -1007,7 +633,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1018,15 +643,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
@@ -1034,7 +650,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1045,15 +660,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
@@ -1061,7 +667,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1072,15 +677,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
@@ -1088,7 +684,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1099,15 +694,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
@@ -1115,7 +701,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1126,15 +711,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
@@ -1142,7 +718,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1153,15 +728,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
@@ -1169,7 +735,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1180,15 +745,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
@@ -1196,7 +752,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1207,15 +762,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
@@ -1223,7 +769,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1234,15 +779,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
@@ -1250,7 +786,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1261,15 +796,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
@@ -1277,7 +803,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1288,15 +813,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
@@ -1304,7 +820,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1315,15 +830,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\bootstrap\\LICENSE"
     },
     {
@@ -1331,7 +837,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1342,15 +847,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.js"
     },
     {
@@ -1358,7 +854,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1369,15 +864,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
@@ -1385,7 +871,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1396,15 +881,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
@@ -1412,7 +888,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1423,15 +898,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery\\LICENSE.txt"
     },
     {
@@ -1439,7 +905,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1450,15 +915,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
@@ -1466,7 +922,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1477,15 +932,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
@@ -1493,7 +939,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1504,15 +949,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
@@ -1520,7 +956,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1531,15 +966,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
@@ -1547,7 +973,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1558,15 +983,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation\\LICENSE.md"
     },
     {
@@ -1574,7 +990,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1585,15 +1000,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
@@ -1601,7 +1007,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1612,15 +1017,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "Microsoft.AspNetCore.Identity.UI",
-      "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
@@ -1628,7 +1024,6 @@
       "SourceId": "Microsoft.AspNetCore.Identity.UI",
       "SourceType": "Package",
       "ContentRoot": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "Identity",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
@@ -1639,15 +1034,6 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hamburger.styles.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.21\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
@@ -1655,7 +1041,6 @@
       "SourceId": "Hamburger",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "Hamburger.styles.css",
       "AssetKind": "All",
@@ -1666,15 +1051,6 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hamburger.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hamburger.bundle.scp.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Hamburger.styles.css"
     },
     {
@@ -1682,7 +1058,6 @@
       "SourceId": "Hamburger",
       "SourceType": "Computed",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "Hamburger.bundle.scp.css",
       "AssetKind": "All",
@@ -1693,15 +1068,6 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-<<<<<<< HEAD
-      "OriginalItemSpec": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hamburger.bundle.scp.css"
-    },
-    {
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\css\\bootstrap.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "OriginalItemSpec": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hamburger.bundle.scp.css"
     },
     {
@@ -1709,7 +1075,6 @@
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "css/bootstrap.css",
       "AssetKind": "All",
@@ -1723,11 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\css\\cart.css",
+      "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\cart.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
       "BasePath": "_content/Hamburger",
       "RelativePath": "css/cart.css",
       "AssetKind": "All",
@@ -1741,16 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\css\\cart.css"
     },
     {
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\css\\custom.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\custom.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "css/custom.css",
       "AssetKind": "All",
@@ -1764,17 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\css\\custom.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\css\\font-awesome.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\font-awesome.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "css/font-awesome.css",
       "AssetKind": "All",
@@ -1788,17 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\css\\font-awesome.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\css\\register.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\register.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "css/register.css",
       "AssetKind": "All",
@@ -1812,17 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\css\\register.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\css\\site.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\site.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1836,17 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\css\\style.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\style.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "css/style.css",
       "AssetKind": "All",
@@ -1860,17 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\favicon.ico",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\favicon.ico",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1884,17 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/bg1.jpg",
       "AssetKind": "All",
@@ -1908,17 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\image\\bg1.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\bg2.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\bg2.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/bg2.jpg",
       "AssetKind": "All",
@@ -1932,17 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\image\\bg2.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\biryani.webp",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\biryani.webp",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/biryani.webp",
       "AssetKind": "All",
@@ -1956,17 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\image\\biryani.webp"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\buger.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\buger.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/buger.jpg",
       "AssetKind": "All",
@@ -1980,17 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\image\\buger.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\cake.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\cake.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/cake.jpg",
       "AssetKind": "All",
@@ -2004,17 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\image\\cake.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\chef1.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chef1.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/chef1.png",
       "AssetKind": "All",
@@ -2028,17 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\image\\chef1.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\chef2.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chef2.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/chef2.png",
       "AssetKind": "All",
@@ -2052,17 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\image\\chef2.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\chef3.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chef3.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/chef3.jpg",
       "AssetKind": "All",
@@ -2076,17 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\image\\chef3.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\chef4.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chef4.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/chef4.jpg",
       "AssetKind": "All",
@@ -2100,17 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\image\\chef4.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/chocolate.jpg",
       "AssetKind": "All",
@@ -2124,17 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\image\\chocolate.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate_Drink.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate_Drink.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/chocolate_Drink.jpg",
       "AssetKind": "All",
@@ -2148,17 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\image\\chocolate_Drink.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\Food-Plate.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\Food-Plate.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/Food-Plate.png",
       "AssetKind": "All",
@@ -2172,17 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\image\\Food-Plate.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_1.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_1.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/gallary_1.jpg",
       "AssetKind": "All",
@@ -2196,17 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\image\\gallary_1.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_2.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_2.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/gallary_2.jpg",
       "AssetKind": "All",
@@ -2220,17 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\image\\gallary_2.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_3.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_3.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/gallary_3.jpg",
       "AssetKind": "All",
@@ -2244,17 +1462,10 @@
       "OriginalItemSpec": "wwwroot\\image\\gallary_3.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_4.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_4.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/gallary_4.jpg",
       "AssetKind": "All",
@@ -2268,17 +1479,10 @@
       "OriginalItemSpec": "wwwroot\\image\\gallary_4.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_5.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_5.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/gallary_5.jpg",
       "AssetKind": "All",
@@ -2292,17 +1496,10 @@
       "OriginalItemSpec": "wwwroot\\image\\gallary_5.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_6.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_6.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/gallary_6.jpg",
       "AssetKind": "All",
@@ -2316,17 +1513,10 @@
       "OriginalItemSpec": "wwwroot\\image\\gallary_6.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\Hot_dog.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\Hot_dog.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/Hot_dog.jpg",
       "AssetKind": "All",
@@ -2340,17 +1530,10 @@
       "OriginalItemSpec": "wwwroot\\image\\Hot_dog.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\ice_cream.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\ice_cream.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/ice_cream.jpg",
       "AssetKind": "All",
@@ -2364,17 +1547,10 @@
       "OriginalItemSpec": "wwwroot\\image\\ice_cream.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\juse.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\juse.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/juse.jpg",
       "AssetKind": "All",
@@ -2388,17 +1564,10 @@
       "OriginalItemSpec": "wwwroot\\image\\juse.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\lasagna.webp",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\lasagna.webp",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/lasagna.webp",
       "AssetKind": "All",
@@ -2412,17 +1581,10 @@
       "OriginalItemSpec": "wwwroot\\image\\lasagna.webp"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\logo.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\logo.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/logo.png",
       "AssetKind": "All",
@@ -2436,17 +1598,10 @@
       "OriginalItemSpec": "wwwroot\\image\\logo.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\main_img.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\main_img.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/main_img.png",
       "AssetKind": "All",
@@ -2460,17 +1615,10 @@
       "OriginalItemSpec": "wwwroot\\image\\main_img.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\order_image.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\order_image.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/order_image.png",
       "AssetKind": "All",
@@ -2484,17 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\image\\order_image.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\pasta.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\pasta.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/pasta.jpg",
       "AssetKind": "All",
@@ -2508,17 +1649,10 @@
       "OriginalItemSpec": "wwwroot\\image\\pasta.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\pizza.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\pizza.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/pizza.jpg",
       "AssetKind": "All",
@@ -2532,17 +1666,10 @@
       "OriginalItemSpec": "wwwroot\\image\\pizza.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\review_1.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\review_1.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/review_1.png",
       "AssetKind": "All",
@@ -2556,17 +1683,10 @@
       "OriginalItemSpec": "wwwroot\\image\\review_1.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\review_2.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\review_2.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/review_2.png",
       "AssetKind": "All",
@@ -2580,17 +1700,10 @@
       "OriginalItemSpec": "wwwroot\\image\\review_2.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\review_3.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\review_3.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/review_3.png",
       "AssetKind": "All",
@@ -2604,17 +1717,10 @@
       "OriginalItemSpec": "wwwroot\\image\\review_3.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\review_4.png",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\review_4.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/review_4.png",
       "AssetKind": "All",
@@ -2628,17 +1734,10 @@
       "OriginalItemSpec": "wwwroot\\image\\review_4.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\sandwich.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\sandwich.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/sandwich.jpg",
       "AssetKind": "All",
@@ -2652,17 +1751,10 @@
       "OriginalItemSpec": "wwwroot\\image\\sandwich.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\image\\Spanchi.jpg",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\Spanchi.jpg",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "image/Spanchi.jpg",
       "AssetKind": "All",
@@ -2676,17 +1768,10 @@
       "OriginalItemSpec": "wwwroot\\image\\Spanchi.jpg"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\js\\register.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\js\\register.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "js/register.js",
       "AssetKind": "All",
@@ -2700,17 +1785,10 @@
       "OriginalItemSpec": "wwwroot\\js\\register.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\js\\site.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\js\\site.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -2724,17 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -2748,17 +1819,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -2772,17 +1836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -2796,17 +1853,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -2820,17 +1870,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -2844,17 +1887,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -2868,17 +1904,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -2892,17 +1921,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -2916,17 +1938,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -2940,17 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -2964,17 +1972,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -2988,17 +1989,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -3012,17 +2006,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -3036,17 +2023,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -3060,17 +2040,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -3084,17 +2057,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -3108,17 +2074,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -3132,17 +2091,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -3156,17 +2108,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -3180,17 +2125,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -3204,17 +2142,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -3228,17 +2159,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -3252,17 +2176,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -3276,17 +2193,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -3300,17 +2210,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -3324,17 +2227,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -3348,17 +2244,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -3372,17 +2261,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -3396,17 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -3420,17 +2295,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -3444,17 +2312,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -3468,17 +2329,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -3492,17 +2346,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -3516,17 +2363,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -3540,17 +2380,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -3564,17 +2397,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -3588,17 +2414,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -3612,17 +2431,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -3636,17 +2448,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -3660,17 +2465,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -3684,17 +2482,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -3708,17 +2499,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -3732,17 +2516,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -3756,17 +2533,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -3780,17 +2550,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -3804,17 +2567,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -3828,17 +2584,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -3852,17 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -3876,17 +2618,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -3900,17 +2635,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -3924,17 +2652,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -3948,17 +2669,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -3972,17 +2686,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -3996,17 +2703,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -4020,17 +2720,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -4044,17 +2737,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -4068,17 +2754,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "SourceId": "Hamburger",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Projee\\Hamburger\\Hamburger\\wwwroot\\",
-=======
       "Identity": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\yolcu\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
->>>>>>> 8465986898d6172edea85ae2600896e2d4923b22
       "BasePath": "_content/Hamburger",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
