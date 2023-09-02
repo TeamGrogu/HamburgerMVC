@@ -84,7 +84,6 @@ namespace Hamburger.Controllers
                         return RedirectToAction("Index", "Home");
                     }
                 }
-
             }
             return RedirectToAction("Login");
         }
