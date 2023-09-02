@@ -4,29 +4,28 @@
 
     <nav>
         <div class="logo">
-            <img src="~/image/logo.png">
+            <img src="~/image/logo.png" style="height:60px; width:60px;">
         </div>
 
         <ul>
-            <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Menu">Menu</a></li>
-            <li><a href="#Gallary">Gallery</a></li>
-            <li><a href="#Review">Review</a></li>
-            <li><a href="#Order">Order</a></li>
+            <li><a asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
+            <li><a href="#Menu"><i class="fa-solid fa-bell-concierge"></i>Menu</a></li>
+            <li><a href="#Gallary"><i class="fa-solid fa-clapperboard"></i>Commercials</a></li>
+            <li><a href="#Review"><i class="fa-solid fa-comment"></i>Review</a></li>
+            <li><a href="#Order"><i class="fa-solid fa-file-signature"></i>Write Us</a></li>
+            <li><a href="#About"><i class="fa-solid fa-address-card"></i>About</a></li>
             @if (User.IsInRole("Admin"))
             {
-                <li><a asp-controller="Admin" asp-action="AdminPanel">Admin Panel</a></li>
+                <li><a asp-controller="Admin" asp-action="AdminPanel"><i class="fa-solid fa-gears"></i>Admin Panel</a></li>
             }
         </ul>
 
         <div class="icon">
-            @if (!User.IsInRole("Admin"))
+            @if (!User.IsInRole("Admin") && User.Identity.IsAuthenticated)
             {
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
                 <a asp-controller="User" asp-action="ShoppingCart" class="side-panel-toggle"><i class="fa-solid fa-cart-shopping"></i></a>
             }
+        
             @if (!User.Identity.IsAuthenticated)
             {
                 <a asp-controller="Account" asp-action="Register">
@@ -42,6 +41,7 @@
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </a>
             }
+
         </div>
     </nav>
 </section>

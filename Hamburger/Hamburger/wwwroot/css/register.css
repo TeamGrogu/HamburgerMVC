@@ -2,8 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
+	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
+	font-family: sans-serif;
 }
+
+
+nav {
+	position: fixed;
+	top: 0px;
+}
+
 
 body {
 	background: #f6f5f7;
@@ -12,8 +22,8 @@ body {
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	/*height: 100vh;
-	margin: -20px 0 50px;*/
+
+	
 }
 
 h1 {

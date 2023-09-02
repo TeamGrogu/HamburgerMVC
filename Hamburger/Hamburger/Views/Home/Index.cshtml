@@ -62,44 +62,13 @@
 </script>
 
 
-
-
-<!--About-->
-<!--
-<div class="about" id="About">
-    <div class="about_main">
-        <div class="image">
-            <img src="~/image/Food-Plate.png">
-        </div>
-
-        <div class="about_text">
-            <h1><span>About</span>Us</h1>
-            <h3>Why Choose us?</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, est. Doloremque
-                sapiente veritatis laboriosam corrupti optio et maxime. Ad, amet explicabo eaque labore
-                cupiditate quasi nostrum nemo recusandae id quibusdam? Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Doloremque ab, dolores pariatur cum exercitationem, illo nisi
-                veritatis vitae ea deleniti fugiat quisquam tempora, accusantium corrupti excepturi optio.
-                Inventore, cupiditate recusandae.
-            </p>
-        </div>
-
-    </div>
-
-    <a href="#" class="about_btn">Order Now</a>
-
-</div>
-
--->
-
 <!--Menu-->
 
 <div class="menu" id="Menu">
-    <h1>Our <span>Products</span></h1>
+    <h1><span>Our Products</span></h1>
 
     <div class="tm-paging-links" style="list-style: none; display: flex; justify-content:center;">
-        <nav >
+        <nav>
             <ul>
                 <li class="tm-paging-item"><a href="#" class="tm-paging-link active">Menus</a></li>
                 @foreach (var category in Model.Categories)
@@ -113,7 +82,7 @@
     <div class="menu_box" id="tm-gallery-page-menus">
         @foreach (var item in Model.Menus)
         {
-            <div class="card" style="width: 18rem;">
+            <div class="card card-renk" style="width: 18rem;">
                 <img class="card-img-top" src="@item.MenuImage" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title text-center fw-bold">@item.MenuName</h5>
@@ -132,7 +101,7 @@
         {
             @if (item.CategoryID == 1)
             {
-                <div class="card" style="width: 18rem;">
+                <div class="card card-renk" style="width: 18rem;">
                     <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
@@ -152,7 +121,7 @@
         {
             @if (item.CategoryID == 2)
             {
-                <div class="card" style="width: 18rem;">
+                <div class="card card-renk" style="width: 18rem;">
                     <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
@@ -172,7 +141,7 @@
         {
             @if (item.CategoryID == 3)
             {
-                <div class="card" style="width: 18rem;">
+                <div class="card card-renk" style="width: 18rem;">
                     <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
@@ -192,7 +161,7 @@
         {
             @if (item.CategoryID == 4)
             {
-                <div class="card" style="width: 18rem;">
+                <div class="card card-renk" style="width: 18rem;">
                     <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
@@ -212,7 +181,7 @@
         {
             @if (item.CategoryID == 5)
             {
-                <div class="card" style="width: 18rem;">
+                <div class="card card-renk" style="width: 18rem;">
                     <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
@@ -233,7 +202,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
-        // Handle click on paging links
+
         $('.tm-paging-link').click(function (e) {
             e.preventDefault();
 
@@ -251,68 +220,21 @@
 <!--Gallary-->
 
 <div class="gallary" id="Gallary">
-    <h1>Our<span>Gallery</span></h1>
+    <h1><span>Our Commercial</span></h1>
 
     <div class="gallary_image_box">
         <div class="gallary_image">
-            <img src="~/image/gallary_1.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/dA0VGEbbw4g?si=JDZh6rMiAfoKWZh1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="gallary_image">
-            <img src="~/image/gallary_2.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/lpnYYvX670U?si=s8Kyu0SfJxC9if8J" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
         <div class="gallary_image">
-            <img src="~/image/gallary_3.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
+            <iframe width="360" height="315" src="https://www.youtube.com/embed/Ip0tlyXBmE0?si=f8VN04saO8EWfeSB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
 
-        <div class="gallary_image">
-            <img src="~/image/gallary_4.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="~/image/gallary_5.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
-
-        <div class="gallary_image">
-            <img src="~/image/gallary_6.jpg">
-
-            <h3>Food</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi sint eveniet laboriosam
-            </p>
-            <a href="#" class="gallary_btn">Order Now</a>
-        </div>
 
     </div>
 
@@ -324,17 +246,17 @@
 <!--Review-->
 
 <div class="review" id="Review">
-    <h1>Customer<span>Review</span></h1>
+    <h1><span>Customer Review</span></h1>
 
     <div class="review_box">
         <div class="review_card">
 
             <div class="review_profile">
-                <img src="~/image/review_1.png">
+                <img src="https://media.licdn.com/dms/image/C4D03AQFEOxkpn89XuQ/profile-displayphoto-shrink_800_800/0/1654254670263?e=1698883200&v=beta&t=u33hyImZX2Mau9IH6zXFWoZQX6ow_pku0BhFqb150BY">
             </div>
 
             <div class="review_text">
-                <h2 class="name">John Deo</h2>
+                <h2 class="name">Samet ARSLAN</h2>
 
                 <div class="review_icon">
                     <i class="fa-solid fa-star"></i>
@@ -343,21 +265,8 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
-
-                <div class="review_social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
-                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
-                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
-                    repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
-                    pariatur. Fuga aperiam impedit illo atque repellendus!
+                    İnanılmaz....Çok severek sipariş veriyoruum.İnternet siteleride baya kullanışlı.İnsanın yazılımcı olası geliyor.
                 </p>
 
             </div>
@@ -367,34 +276,22 @@
         <div class="review_card">
 
             <div class="review_profile">
-                <img src="~/image/review_2.png">
+                <img src="https://media.licdn.com/dms/image/C4D03AQEXqq32MZlYag/profile-displayphoto-shrink_800_800/0/1659947193406?e=1698883200&v=beta&t=shFMznSEPP9RGx615YKfLs2msbeWgHY47jFLO5P6AcQ">
             </div>
 
             <div class="review_text">
-                <h2 class="name">John Deo</h2>
+                <h2 class="name">Umur DALGIÇ</h2>
 
                 <div class="review_icon">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                </div>
-
-                <div class="review_social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
+                    <i class="fa-solid fa-star"></i>
+                </div>         
 
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
-                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
-                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
-                    repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
-                    pariatur. Fuga aperiam impedit illo atque repellendus!
+                   Ben Sivaslıyım arkadaş...Hamburger falan bilmem ama bu hamburger bir başka...Sivas'da bu hamburger yüzünden millet şehrimizin lezzeti olan Sivas köfte yemeyi bıraktı.Bu hizmeti bize sağlayanları tebrik ederim.Mük olmuş MÜK!
                 </p>
 
             </div>
@@ -404,11 +301,11 @@
         <div class="review_card">
 
             <div class="review_profile">
-                <img src="~/image/review_3.png">
+                <img src="https://cdn.discordapp.com/attachments/1108470313454407781/1147511308305043486/pati_reis.jpeg">
             </div>
 
             <div class="review_text">
-                <h2 class="name">John Deo</h2>
+                <h2 class="name">omerfdev</h2>
 
                 <div class="review_icon">
                     <i class="fa-solid fa-star"></i>
@@ -417,21 +314,8 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
-
-                <div class="review_social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
-                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
-                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
-                    repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
-                    pariatur. Fuga aperiam impedit illo atque repellendus!
+                   Bayılıyorum bu hamburgere....Pati Reyiz'e de söylüyorum bir tane afiyetle bitiriyor.Ayrıca Bingöl'e de şube istiyoruz.
                 </p>
 
             </div>
@@ -441,11 +325,11 @@
         <div class="review_card">
 
             <div class="review_profile">
-                <img src="~/image/review_4.png">
+                <img src="https://cdn.discordapp.com/attachments/1146518392744968242/1147512429568331816/300px-Surprised_Pikachu_HD.jpg">
             </div>
 
             <div class="review_text">
-                <h2 class="name">John Deo</h2>
+                <h2 class="name">Pikachu</h2>
 
                 <div class="review_icon">
                     <i class="fa-solid fa-star"></i>
@@ -454,21 +338,8 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
-
-                <div class="review_social">
-                    <i class="fa-brands fa-facebook-f"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </div>
-
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus quam facere
-                    blanditiis in fugiat tempore necessitatibus aliquid. Id adipisci, rem corrupti
-                    asperiores distinctio delectus quae quia tenetur totam laboriosam quam. Lorem ipsum,
-                    dolor sit amet consectetur adipisicing elit. Dolores soluta ullam ipsa voluptates
-                    repudiandae dignissimos deleniti mollitia eum. Laudantium placeat velit nemo illo
-                    pariatur. Fuga aperiam impedit illo atque repellendus!
+                    Pi ka pika pika pika pi ka pikachuuuuu!!!!!
                 </p>
 
             </div>
@@ -484,7 +355,7 @@
 <!--Order-->
 
 <div class="order" id="Order">
-    <h1><span>Order</span>Now</h1>
+    <h1><span>Order Now</span></h1>
 
     <div class="order_main">
 
@@ -532,46 +403,76 @@
 
 </div>
 
+<!--About-->
 
+<div class="about" id="About">
+    <div class="about_main">
+        <div class="image">
+            <img src="https://www.tastingtable.com/img/gallery/is-it-necessary-to-let-your-burgers-rest-after-cooking/l-intro-1679941229.jpg" style="width:430px; height:260px; border-radius:15%; border:2px solid gray; box-shadow: 10px 10px 5px gray; -moz-box-shadow: 10px 10px 5px; -webkit-box-shadow: 10px 10px 5px #ccc; -khtml-box-shadow: 10px 10px 5px gray;">
+        </div>
+        <div class="about_text">
+            <h1><span>About Us</span></h1>
+            <h3>Why Choose us?</h3>
+            <p>
+                For our delicious hamburgers, our 100% ground beef from Butcher is prepared with care and without any additives, combined with our special sauce and garnishes, and served among fresh daily breads prepared for us.
+                We are sensitive about quality and hygiene, because as the Bro Burger family, our priority is to offer you, especially our children, hamburgers that we can safely eat. We are waiting for you at Baguette Burger to taste the most delicious and natural form of hamburger.
+            </p>
+        </div>
+    </div>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 <!--Team-->
 
 <div class="team">
-    <h1>Our<span>Team</span></h1>
+    <h1><span>Our Team</span></h1>
 
     <div class="team_box">
         <div class="profile">
-            <img src="https://avatars.githubusercontent.com/u/123166483?v=4">
+            <img src="https://avatars.githubusercontent.com/u/123166483?v=4" onclick="redirectToLinkedIn('https://www.linkedin.com/in/sbrsn/')">
             <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="name">Team Lead</h2>
+                <p class="bio">Sabri ŞEN</p>
             </div>
 
         </div>
         <div class="profile">
-            <img src="https://avatars.githubusercontent.com/u/78663695?v=4">
+            <img src="https://avatars.githubusercontent.com/u/78663695?v=4 " onclick="redirectToLinkedIn('https://www.linkedin.com/in/omeralmali/')">
 
             <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="name">Frontend Developer</h2>
+                <p class="bio">omerfdev</p>
             </div>
         </div>
         <div class="profile">
-            <img src="https://media.licdn.com/dms/image/D4D03AQHuPwxm36y7Kg/profile-displayphoto-shrink_200_200/0/1672786522602?e=1698883200&v=beta&t=vNyxN2ycwZ3HIoVi3ko26XwKZgBAvgKVVdvEF0R7oqY">
+            <img src="https://media.licdn.com/dms/image/D4D03AQHuPwxm36y7Kg/profile-displayphoto-shrink_200_200/0/1672786522602?e=1698883200&v=beta&t=vNyxN2ycwZ3HIoVi3ko26XwKZgBAvgKVVdvEF0R7oqY" onclick="redirectToLinkedIn('https://www.linkedin.com/in/mehmet-talha-aksoy-23000521b/')">
 
             <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="name">Backend Developer</h2>
+                <p class="bio">Talha YOLCU</p>
             </div>
         </div>
         <div class="profile">
-            <img src="https://media.licdn.com/dms/image/D4D03AQFC95WGbVxznw/profile-displayphoto-shrink_200_200/0/1691581321413?e=1698883200&v=beta&t=f-Ud9gNuK3ySfEZtfjTsbh5Pw9KtcDHd2ClCGpNYLTQ">
+            <img src="https://media.licdn.com/dms/image/D4D03AQFC95WGbVxznw/profile-displayphoto-shrink_200_200/0/1691581321413?e=1698883200&v=beta&t=f-Ud9gNuK3ySfEZtfjTsbh5Pw9KtcDHd2ClCGpNYLTQ" onclick="redirectToLinkedIn('https://www.linkedin.com/in/ömer-yolcu-21217472/')">
             <div class="info">
-                <h2 class="name">Chef</h2>
-                <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h2 class="name">Backend Developer</h2>
+                <p class="bio">Ömer YOLCU</p>
             </div>
-        </div>
+            </d
 
+        </div>
+        <script>
+            function redirectToLinkedIn(link) {
+                window.open(link, '_blank');
+            }
+        </script>
     </div>
 
-</div>
+
+

@@ -4,6 +4,7 @@ using Hamburger.Models.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hamburger.Controllers
@@ -12,12 +13,10 @@ namespace Hamburger.Controllers
     public class AdminController : Controller
     {
         private readonly Context _context;
-        private readonly MenuProductVM menuProductVM;
 
         public AdminController(Context context, MenuProductVM menuProductVM)
         {
             _context = context;
-            this.menuProductVM = menuProductVM;
         }
         public IActionResult AdminPanel()
         {
@@ -50,6 +49,12 @@ namespace Hamburger.Controllers
             var menuList = _context.Menus.ToList();
             return View(menuList);
         }
+
+        public IActionResult ListToppings()
+        {
+            ICollection<Topping> toppingList = _context.Toppings.ToList();
+            return View(toppingList);
+        }
         #endregion
 
         #region DELETE
@@ -70,6 +75,12 @@ namespace Hamburger.Controllers
             _context.Menus.Remove(_context.Menus.Find(id));
             _context.SaveChanges();
             return RedirectToAction("ListMenus");
+        }
+        public ActionResult DeleteTopping(int id)
+        {
+            _context.Toppings.Remove(_context.Toppings.Find(id));
+            _context.SaveChanges();
+            return RedirectToAction("ListToppings");
         }
         #endregion
 
@@ -98,14 +109,10 @@ namespace Hamburger.Controllers
                 }
             }
 
-            _context.SaveChanges(); 
+            _context.SaveChanges();
 
             return RedirectToAction("ListCategories");
         }
-
-
-
-
 
         public IActionResult EditProduct(int id = 0)
         {
@@ -116,7 +123,7 @@ namespace Hamburger.Controllers
                 Product = id == 0 ? new Product() : _context.Products.FirstOrDefault(p => p.ID == id)
             };
 
-            return PartialView("ProductPartialView",menuProductVM);
+            return PartialView("ProductPartialView", menuProductVM);
         }
 
         [HttpPost]
@@ -151,26 +158,51 @@ namespace Hamburger.Controllers
             return RedirectToAction("ListProducts");
         }
 
-
-
         public IActionResult EditMenu(int id = 0)
         {
-            ProductCategories productCategories = new ProductCategories()
+            MenuProductVM menuProductVM = new MenuProductVM
             {
+                DropdownHamburgers = _context.Products.Where(x => x.CategoryID == 1).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList(),
+                DropdownBeverages = _context.Products.Where(x => x.CategoryID == 3).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList(),
+                DropdownSides = _context.Products.Where(x => x.CategoryID == 2).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList(),
                 Menus = _context.Menus.ToList(),
                 Menu = id == 0 ? new Menu() : _context.Menus.FirstOrDefault(m => m.ID == id)
             };
-            productCategories.Categories = _context.Categories.ToList();
-            productCategories.DropdownH = _context.Products.Where(x => x.CategoryID == 1).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList();
-            productCategories.DropdownS = _context.Products.Where(x => x.CategoryID == 2).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList();
-            productCategories.DropdownB = _context.Products.Where(x => x.CategoryID == 3).Select(x => new SelectListItem() { Text = x.ProductName, Value = x.ID.ToString() }).ToList();
+            if (id != 0)
+            {
+                var menuProductsList = _context.MenuProducts.Include(x => x.Product).Where(x => x.MenuID == id).ToList();
+                foreach (MenuProduct menuProduct in menuProductsList)
+                {
+                    if (menuProduct.Product.CategoryID == 1)
+                    {
+                        menuProductVM.SelectedHamburgerID = menuProduct.ProductID;
+                    }
+                    else if (menuProduct.Product.CategoryID == 2)
+                    {
+                        menuProductVM.SelectedSideID = menuProduct.ProductID;
 
-            return PartialView("MenuPartialView", productCategories);
+                    }
+                    else if (menuProduct.Product.CategoryID == 3)
+                    {
+                        menuProductVM.SelectedBeverageID = menuProduct.ProductID;
+
+                    }
+                }
+            }
+
+            return PartialView("MenuPartialView", menuProductVM);
         }
 
         [HttpPost]
-        public IActionResult EditMenu(ProductCategories model)
+        public IActionResult EditMenu(MenuProductVM model)
         {
+            Product Hamburger = new Product();
+            Product Side = new Product();
+            Product Beverage = new Product();
+            Hamburger = _context.Products.FirstOrDefault(x => x.ID == model.SelectedHamburgerID);
+            Side = _context.Products.FirstOrDefault(x => x.ID == model.SelectedSideID);
+            Beverage = _context.Products.FirstOrDefault(x => x.ID == model.SelectedBeverageID);
+
             if (model.Menu.ID == 0)
             {
                 //Create menu
@@ -180,38 +212,93 @@ namespace Hamburger.Controllers
                     Price = model.Menu.Price,
                     Description = model.Menu.Description,
                 };
+
                 _context.Menus.Add(menu);
-                MenuProduct menuProductH = new MenuProduct()
+                _context.SaveChanges();
+
+                if (menu.ID > 0)
                 {
-                    MenuID = menu.ID,
-                    ProductID = model.Hamburger.ID
-                };
-                MenuProduct menuProductS = new MenuProduct()
-                {
-                    MenuID = menu.ID,
-                    ProductID = model.Side.ID
-                };
-                MenuProduct menuProductB = new MenuProduct()
-                {
-                    MenuID = menu.ID,
-                    ProductID = model.Beverage.ID
-                };
-                _context.MenuProducts.AddRange(menuProductH, menuProductS, menuProductB);
+                    MenuProduct menuProduct1 = new MenuProduct()
+                    {
+                        MenuID = menu.ID,
+                        ProductID = Hamburger.ID,
+                    };
+                    MenuProduct menuProduct2 = new MenuProduct()
+                    {
+                        MenuID = menu.ID,
+                        ProductID = Side.ID,
+                    };
+                    MenuProduct menuProduct3 = new MenuProduct()
+                    {
+                        MenuID = menu.ID,
+                        ProductID = Beverage.ID,
+                    };
+                    _context.MenuProducts.AddRange(menuProduct1, menuProduct2, menuProduct3);
+                }
             }
             else
             {
                 //Update menu
                 var existingMenu = _context.Menus.Find(model.Menu.ID);
+
                 if (existingMenu != null)
                 {
                     existingMenu.MenuName = model.Menu.MenuName;
                     existingMenu.Price = model.Menu.Price;
                     existingMenu.Description = model.Menu.Description;
                 }
+                var menuProductsList = _context.MenuProducts.Include(x => x.Product).Where(x => x.MenuID == existingMenu.ID).ToList();
+                foreach (MenuProduct menuProduct in menuProductsList)
+                {
+                    if (menuProduct.Product.CategoryID == 1)
+                    {
+                        menuProduct.ProductID = model.SelectedHamburgerID;
+                    }
+                    else if (menuProduct.Product.CategoryID == 2)
+                    {
+                        menuProduct.ProductID = model.SelectedSideID;
+
+                    }
+                    else if (menuProduct.Product.CategoryID == 3)
+                    {
+                        menuProduct.ProductID = model.SelectedBeverageID;
+
+                    }
+                }
             }
 
             _context.SaveChanges();
             return RedirectToAction("ListMenus");
+        }
+
+        public ActionResult EditTopping(int id = 0)
+        {
+            Topping topping = id == 0 ? new Topping() : _context.Toppings.FirstOrDefault(topping => topping.ID == id);
+            return PartialView("ToppingPartialView", topping);
+        }
+
+        [HttpPost]
+        public ActionResult EditTopping(Topping topping)
+        {
+            if (topping.ID == 0)
+            {
+                // Create topping
+                _context.Toppings.Add(topping);
+            }
+            else
+            {
+                // Update topping
+                var existingTopping = _context.Toppings.Find(topping.ID);
+                if (existingTopping != null)
+                {
+                    existingTopping.ToppingName = topping.ToppingName;
+                    existingTopping.Price = topping.Price;
+                }
+            }
+
+            _context.SaveChanges();
+
+            return RedirectToAction("ListToppings");
         }
         #endregion
 
