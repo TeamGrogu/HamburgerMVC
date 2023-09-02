@@ -204,7 +204,9 @@
                                 <div>
                                     <strong>Total amount</strong>
                                 </div>
-                                <span><strong>@Model.Order.TotalPrice <span>&#8378</span></strong></span>
+                                @if(Model.Order!=null){
+                                    <span><strong>@Model.Order.TotalPrice<span> &#8378</span></strong></span>
+                                }
                             </li>
                         </ul>
 

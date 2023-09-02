@@ -17,5 +17,9 @@ namespace Hamburger.Models.ViewModels
         public int SelectedHamburgerID { get; set; }
         public int SelectedSideID { get; set; }
         public int SelectedBeverageID { get; set; }
+        public ICollection<Order> Orders { get; set; }
+        public ICollection<SelectListItem> DropdownOrder { get; set; }
+        public int OrderID { get; set; }
+        public string message { get; set; }
     }
 }

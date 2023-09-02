@@ -9,5 +9,6 @@
         public ICollection<OrderDetails>? OrderDetails { get; set; }
 		public User? User { get; set; }
 		public Status? Status { get; set; }
+		public ICollection<Message> Messages { get; set; }
     }
 }
