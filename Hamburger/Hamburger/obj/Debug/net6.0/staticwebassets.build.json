@@ -1,6 +1,18 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "Rj8Ocf4ZFsKuKluITQjRiIvJ4aaPzoHJ7WIm78RqgcY=",
+=======
+<<<<<<< HEAD
+  "Hash": "3A0WYXZ/QUPteHec0TMkra0VjDW6sgM9YdFUOsGd8GM=",
+=======
+<<<<<<< HEAD
+  "Hash": "bMhXTYlkK+BEQ7JTPzASwBsAwHki7mEjV9iYQaTYzyU=",
+=======
+  "Hash": "lb6iSlhVcR3hsZSP4SZ3w/SkR1xBtH5o2dqU9o05iDQ=",
+>>>>>>> b9957808fed3ce07e39284f92b38ba827a1ff382
+>>>>>>> 7b6fd717549fedca8f61868670669f921da68a64
+>>>>>>> 8e36688d815e6018ad22244247b73001e7964e3c
   "Source": "Hamburger",
   "BasePath": "_content/Hamburger",
   "Mode": "Default",
@@ -1075,6 +1087,35 @@
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\",
+<<<<<<< HEAD
+=======
+=======
+      "OriginalItemSpec": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hamburger.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\admincrud.css",
+      "SourceId": "Hamburger",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
+      "BasePath": "_content/Hamburger",
+      "RelativePath": "css/admincrud.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admincrud.css"
+    },
+    {
+      "Identity": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\bootstrap.css",
+      "SourceId": "Hamburger",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
+>>>>>>> b9957808fed3ce07e39284f92b38ba827a1ff382
+>>>>>>> 8e36688d815e6018ad22244247b73001e7964e3c
       "BasePath": "_content/Hamburger",
       "RelativePath": "css/bootstrap.css",
       "AssetKind": "All",
@@ -1258,7 +1299,28 @@
       "OriginalItemSpec": "wwwroot\\image\\animeburger3.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",
+=======
+      "Identity": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger4.png",
+      "SourceId": "Hamburger",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
+      "BasePath": "_content/Hamburger",
+      "RelativePath": "image/animeburger4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\animeburger4.png"
+    },
+    {
+      "Identity": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",
+>>>>>>> 8e36688d815e6018ad22244247b73001e7964e3c
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\",
