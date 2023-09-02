@@ -1,6 +1,10 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "Hash": "QrUfGHdB3cruXKcdP0QB2yraZM78eUP0K7bd33Vwclw=",
+=======
+  "Hash": "m7U+ge6XbVCtk1MSa//j1sEM0IvRtB6xK5dBY22wKEM=",
+>>>>>>> 5f2ec9c41d600d0f8200abe31a7e80b36b7d2f9d
   "Source": "Hamburger",
   "BasePath": "_content/Hamburger",
   "Mode": "Default",
@@ -1241,12 +1245,16 @@
       "OriginalItemSpec": "wwwroot\\image\\animeburger.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger2.jpeg",
+=======
+      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger2.png",
+>>>>>>> 5f2ec9c41d600d0f8200abe31a7e80b36b7d2f9d
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\",
       "BasePath": "_content/Hamburger",
-      "RelativePath": "image/animeburger2.jpeg",
+      "RelativePath": "image/animeburger2.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1255,15 +1263,19 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\animeburger2.jpeg"
+      "OriginalItemSpec": "wwwroot\\image\\animeburger2.png"
     },
     {
+<<<<<<< HEAD
       "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger3.jpeg",
+=======
+      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger3.png",
+>>>>>>> 5f2ec9c41d600d0f8200abe31a7e80b36b7d2f9d
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\",
       "BasePath": "_content/Hamburger",
-      "RelativePath": "image/animeburger3.jpeg",
+      "RelativePath": "image/animeburger3.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1272,7 +1284,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\animeburger3.jpeg"
+      "OriginalItemSpec": "wwwroot\\image\\animeburger3.png"
     },
     {
       "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger4.png",

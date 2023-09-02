@@ -19,8 +19,8 @@ namespace Hamburger.Controllers
             _context = context;
             _shoppingCartVM = shoppingCartVM;
         }
-
-        public async Task<IActionResult> ShoppingCart()
+		[Route("{Action}")]
+		public async Task<IActionResult> ShoppingCart()
         {
             User user = await _userManager.GetUserAsync(User);
             _shoppingCartVM.User = user;
@@ -66,6 +66,7 @@ namespace Hamburger.Controllers
             return View();
         }
 
+<<<<<<< HEAD
         [HttpPost]
         public IActionResult RemoveItem(ShoppingCartVM model,int id)
         {
@@ -78,6 +79,9 @@ namespace Hamburger.Controllers
 
 
         public async Task<IActionResult> CreateOrder(int id)
+=======
+		public async Task<IActionResult> CreateOrder(int id)
+>>>>>>> 5f2ec9c41d600d0f8200abe31a7e80b36b7d2f9d
         {
             Order order;
             User user = await _userManager.GetUserAsync(User);

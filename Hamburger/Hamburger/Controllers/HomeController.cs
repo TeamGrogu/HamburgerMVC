@@ -28,8 +28,12 @@ namespace Hamburger.Controllers
             _context = context;
             _userManager = userManager;
         }
+<<<<<<< HEAD
 
         public async Task<IActionResult> Index()
+=======
+		public IActionResult Index()
+>>>>>>> 5f2ec9c41d600d0f8200abe31a7e80b36b7d2f9d
         {
             menuProductVM.Products = _context.Products.ToList();
             menuProductVM.Menus = _context.Menus.ToList();
