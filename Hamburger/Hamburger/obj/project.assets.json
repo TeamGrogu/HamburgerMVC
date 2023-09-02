@@ -2465,16 +2465,11 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\sabri\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\yolcu\\.nuget\\packages\\": {}
->>>>>>> b9957808fed3ce07e39284f92b38ba827a1ff382
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\Hamburger.csproj",
       "projectName": "Hamburger",
       "projectPath": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\Hamburger.csproj",
@@ -2483,16 +2478,6 @@
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sabri\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-      "projectUniqueName": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
-      "projectName": "Hamburger",
-      "projectPath": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
-      "packagesPath": "C:\\Users\\yolcu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\yolcu\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> b9957808fed3ce07e39284f92b38ba827a1ff382
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2574,5 +2559,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
