@@ -18,14 +18,15 @@ namespace Hamburger.Controllers
         {
             _context = context;
         }
-        public IActionResult AdminPanel()
+		[Route("{Action}")]
+		public IActionResult AdminPanel()
         {
             return View();
         }
 
-        #region LIST
-
-        public IActionResult ListCategories()
+		#region LIST
+		[Route("categoryList")]
+		public IActionResult ListCategories()
         {
             ICollection<Category> categoryList = _context.Categories.ToList();
             return View(categoryList);
@@ -35,22 +36,20 @@ namespace Hamburger.Controllers
         {
             return _context.Categories.Select(x => new SelectListItem() { Text = x.CategoryName, Value = x.ID.ToString() }).ToList();
         }
-
-
-
-        public IActionResult ListProducts()
+		[Route("productList")]
+		public IActionResult ListProducts()
         {
             var productList = _context.Products.Include(x => x.Category).OrderBy(y => y.CategoryID).ToList();
             return View(productList);
         }
-
-        public IActionResult ListMenus()
+		[Route("menuList")]
+		public IActionResult ListMenus()
         {
             var menuList = _context.Menus.ToList();
             return View(menuList);
         }
-
-        public IActionResult ListToppings()
+		[Route("toppingList")]
+		public IActionResult ListToppings()
         {
             ICollection<Topping> toppingList = _context.Toppings.ToList();
             return View(toppingList);
@@ -82,17 +81,19 @@ namespace Hamburger.Controllers
             _context.SaveChanges();
             return RedirectToAction("ListToppings");
         }
-        #endregion
+		#endregion
 
-        #region CREATE/UPDATE
-        public ActionResult EditCategory(int id = 0)
+		#region CREATE/UPDATE
+		[Route("{Action}")]
+		public ActionResult EditCategory(int id = 0)
         {
             Category category = id == 0 ? new Category() : _context.Categories.FirstOrDefault(category => category.ID == id);
             return PartialView("CategoryPartialView", category);
         }
 
         [HttpPost]
-        public ActionResult EditCategory(Category category)
+		[Route("{Action}")]
+		public ActionResult EditCategory(Category category)
         {
             if (category.ID == 0)
             {
@@ -113,8 +114,8 @@ namespace Hamburger.Controllers
 
             return RedirectToAction("ListCategories");
         }
-
-        public IActionResult EditProduct(int id = 0)
+		[Route("{Action}")]
+		public IActionResult EditProduct(int id = 0)
         {
             MenuProductVM menuProductVM = new MenuProductVM
             {
@@ -127,7 +128,8 @@ namespace Hamburger.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditProduct(MenuProductVM model)
+		[Route("{Action}")]
+		public IActionResult EditProduct(MenuProductVM model)
         {
             if (model.Product.ID == 0)
             {
@@ -157,8 +159,8 @@ namespace Hamburger.Controllers
             _context.SaveChanges();
             return RedirectToAction("ListProducts");
         }
-
-        public IActionResult EditMenu(int id = 0)
+		[Route("{Action}")]
+		public IActionResult EditMenu(int id = 0)
         {
             MenuProductVM menuProductVM = new MenuProductVM
             {
@@ -194,7 +196,8 @@ namespace Hamburger.Controllers
         }
 
         [HttpPost]
-        public IActionResult EditMenu(MenuProductVM model)
+		[Route("{Action}")]
+		public IActionResult EditMenu(MenuProductVM model)
         {
             Product Hamburger = new Product();
             Product Side = new Product();
@@ -270,15 +273,16 @@ namespace Hamburger.Controllers
             _context.SaveChanges();
             return RedirectToAction("ListMenus");
         }
-
-        public ActionResult EditTopping(int id = 0)
+		[Route("{Action}")]
+		public ActionResult EditTopping(int id = 0)
         {
             Topping topping = id == 0 ? new Topping() : _context.Toppings.FirstOrDefault(topping => topping.ID == id);
             return PartialView("ToppingPartialView", topping);
         }
 
         [HttpPost]
-        public ActionResult EditTopping(Topping topping)
+		[Route("{Action}")]
+		public ActionResult EditTopping(Topping topping)
         {
             if (topping.ID == 0)
             {

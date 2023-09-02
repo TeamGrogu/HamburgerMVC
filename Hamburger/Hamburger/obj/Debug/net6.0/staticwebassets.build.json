@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PGh8i5AOwmuEbKhSIxgigiKUPgL//8u7V+yKDXfDFys=",
+  "Hash": "m7U+ge6XbVCtk1MSa//j1sEM0IvRtB6xK5dBY22wKEM=",
   "Source": "Hamburger",
   "BasePath": "_content/Hamburger",
   "Mode": "Default",
@@ -1241,12 +1241,12 @@
       "OriginalItemSpec": "wwwroot\\image\\animeburger.png"
     },
     {
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger2.jpeg",
+      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger2.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\",
       "BasePath": "_content/Hamburger",
-      "RelativePath": "image/animeburger2.jpeg",
+      "RelativePath": "image/animeburger2.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1255,15 +1255,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\animeburger2.jpeg"
+      "OriginalItemSpec": "wwwroot\\image\\animeburger2.png"
     },
     {
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger3.jpeg",
+      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger3.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\",
       "BasePath": "_content/Hamburger",
-      "RelativePath": "image/animeburger3.jpeg",
+      "RelativePath": "image/animeburger3.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1272,7 +1272,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\image\\animeburger3.jpeg"
+      "OriginalItemSpec": "wwwroot\\image\\animeburger3.png"
     },
     {
       "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger4.png",

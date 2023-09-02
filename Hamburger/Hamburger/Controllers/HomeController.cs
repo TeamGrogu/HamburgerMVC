@@ -21,8 +21,7 @@ namespace Hamburger.Controllers
             _context = context;
             
         }
-
-        public IActionResult Index()
+		public IActionResult Index()
         {
             menuProductVM.Products = _context.Products.ToList();
             menuProductVM.Menus = _context.Menus.ToList();

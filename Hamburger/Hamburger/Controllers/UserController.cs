@@ -19,8 +19,8 @@ namespace Hamburger.Controllers
             _context = context;
             _shoppingCartVM = shoppingCartVM;
         }
-
-        public async Task<IActionResult> ShoppingCart()
+		[Route("{Action}")]
+		public async Task<IActionResult> ShoppingCart()
         {
             User user = await _userManager.GetUserAsync(User);
             _shoppingCartVM.User = user;
@@ -66,8 +66,7 @@ namespace Hamburger.Controllers
             return View();
         }
 
-
-        public async Task<IActionResult> CreateOrder(int id)
+		public async Task<IActionResult> CreateOrder(int id)
         {
             Order order;
             User user = await _userManager.GetUserAsync(User);
