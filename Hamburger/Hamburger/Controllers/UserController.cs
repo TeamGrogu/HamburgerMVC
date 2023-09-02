@@ -3,6 +3,7 @@ using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Hamburger.Controllers
@@ -26,8 +27,7 @@ namespace Hamburger.Controllers
             Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
             _shoppingCartVM.Order = order;
             _shoppingCartVM.Menus = new List<Menu>();
-            _shoppingCartVM.Products = new List<Product>();
-            _shoppingCartVM.MenusProducts = new List<MenuProduct>();
+            _shoppingCartVM.Products = new List<Product>();       
             if (order != null)
             {
                 _shoppingCartVM.OrderDetails = _context.OrderDetails.Where(x => x.OrderID == order.ID).ToList();
@@ -38,6 +38,8 @@ namespace Hamburger.Controllers
                     else
                         _shoppingCartVM.Products.Add(_context.Products.Find(item.ProductID));
                 }
+                _shoppingCartVM.MenusProducts = _context.MenuProducts.Include(m => m.Menu).Include(p => p.Product).ToList();
+                _shoppingCartVM.MenusProducts.Clear();
                 foreach (var item in _shoppingCartVM.Menus)
                 {
                     foreach (var mp in _context.MenuProducts.Where(x => x.MenuID == item.ID))
@@ -46,17 +48,25 @@ namespace Hamburger.Controllers
                     }
                 }
                 _shoppingCartVM.Sizes = _context.Sizes.ToList();
+                _shoppingCartVM.ProductToppings = _context.ProductToppings.Include(x => x.Topping).Include(y => y.Product).ToList();
+                _shoppingCartVM.Toppings = _context.Toppings.ToList();
+
+                _shoppingCartVM.Dropdown = _context.Sizes.Select(x => new SelectListItem() { Text = x.SizeName, Value = x.SizeID.ToString() }).ToList();                
             }
             return View(_shoppingCartVM);
         }
+
         [HttpPost]
-        public async Task<IActionResult> ShoppingCart(ShoppingCartVM scvm)
+        public async Task<IActionResult> CompleteOrder(ShoppingCartVM model)
         {
             User user = await _userManager.GetUserAsync(User);
             Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
+            ICollection<OrderDetails> orderDetails = _context.OrderDetails.Where(x => x.OrderID == model.Order.ID).ToList();
             return View();
         }
-        public  async Task<IActionResult> CreateOrder(int id)
+
+
+        public async Task<IActionResult> CreateOrder(int id)
         {
             Order order;
             User user = await _userManager.GetUserAsync(User);
