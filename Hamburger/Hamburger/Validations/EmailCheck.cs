@@ -1,5 +1,6 @@
 ﻿using Hamburger.DAL;
 using Hamburger.Models.Entities;
+using Hamburger.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +8,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Hamburger.Validations
 {
-	public class EmailCheck:ValidationAttribute
+    public class EmailCheck:ValidationAttribute
 	{
 		protected override ValidationResult IsValid(object value, ValidationContext validationContext)
 		{

@@ -1,9 +1,11 @@
 ﻿using Hamburger.DAL;
+using Hamburger.Models;
 using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
-using Hamburger.Validations;
+using Hamburger.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,9 +18,10 @@ builder.Services.AddDbContext<Context>
 builder.Services.AddIdentity<User, Role>
 	(x =>
 	{
-		x.SignIn.RequireConfirmedEmail = false;
+		x.SignIn.RequireConfirmedEmail = true;
 		x.Password.RequiredLength = 6;
-	}).AddRoles<Role>().AddEntityFrameworkStores<Context>();
+	}).AddRoles<Role>().AddEntityFrameworkStores<Context>()
+      .AddDefaultTokenProviders();
 builder.Services.ConfigureApplicationCookie(
                  option =>
                  {
@@ -29,8 +32,11 @@ builder.Services.ConfigureApplicationCookie(
                  }
              );
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddSingleton(builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>());
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 //404 page başlangıç
