@@ -4,6 +4,8 @@ using Hamburger.Models.ViewModels;
 using Hamburger.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
+using Newtonsoft.Json.Linq;
 
 namespace Hamburger.Controllers
 {
@@ -49,8 +51,9 @@ namespace Hamburger.Controllers
                     var confirmationLink = Url.Action("ConfirmEmail", "Account",
                         new { userId = appUser.Id, token = confirmationToken }, Request.Scheme
                         );
+                    string subject = "Confirmation";
                     string content = "Confirmation link:  " + confirmationLink;
-                    SendEmail(appUser.Email, content);
+                    SendEmail(appUser.Email, content, subject);
 
                     await userManager.AddToRoleAsync(appUser, "Standard");
                     ViewBag.ErrorTitle = "Registration successful";
@@ -117,9 +120,9 @@ namespace Hamburger.Controllers
             ViewBag.ErrorTile = "Email can not be confirmed.";
             return View("Error");
         }
-        public void SendEmail(string email,string content)
+        public void SendEmail(string email,string content,string subject)
         {
-            var message = new Message(new string[] {email},"Confirmation Link",content);
+            var message = new Message(new string[] {email},subject,content);
             _emailService.SendEmail(message);        
         }
         public IActionResult ForgotPassword()
@@ -134,33 +137,48 @@ namespace Hamburger.Controllers
             {
 			    var passwordToken = await userManager.GeneratePasswordResetTokenAsync(user);
 				var resetLink = Url.Action("ResetPassword", "Account",
-						new { userId = user.Id, token = passwordToken }, Request.Scheme
+						new { email = user.Email, token = passwordToken }, Request.Scheme
 						);
 				string content = "Password reset link:  " + resetLink;
-				SendEmail(user.Email, content);
+				SendEmail(user.Email, content,"Password Reset");
 				ViewBag.ErrorMessage = "Password reset link has been sent to your email adress.";
                 return View("NotFound");
 			}	 
 			return View();
 		}
-		public IActionResult ResetPassword()
+		public async Task<IActionResult> ResetPassword(string token, string email)
 		{
+            if (token == null || email == null)
+            {
+                ModelState.AddModelError("","Invalid password reset token.");
+            }
+			
 			return View();
 		}
         [HttpPost]
-		public async Task<IActionResult> ResetPassword(UserVM vm)
+		public async Task<IActionResult> ResetPassword(ResetPasswordVM vm)
 		{
-			var user = await userManager.FindByEmailAsync(vm.Email);
-			if (user == null)
-			{
-				var passwordToken = await userManager.GeneratePasswordResetTokenAsync(user);
-				var resetLink = Url.Action("ResetPassword", "Account",
-						new { userId = user.Id, token = passwordToken }, Request.Scheme
-						);
-				string content = "Password reset link:  " + resetLink;
-                SendEmail(user.Email, content);              
-			}
-			return View();
+            if (ModelState.IsValid)
+            {
+				var user = await userManager.FindByEmailAsync(vm.Email);
+                if (user != null)
+                {
+                    var result = await userManager.ResetPasswordAsync(user,vm.Token,vm.Password);
+                    if (result.Succeeded)
+                    {
+                        ViewBag.ErrorMessage = "Your Password has been successfully changed.";
+                        return View("NotFound");
+                    }
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError("", error.Description);
+                    }
+                    return View(vm);
+                }
+                ViewBag.ErrorMessage = "User not found.";
+                return View("NotFound");
+			}					
+			return View(vm);
 		}
 	}
 }

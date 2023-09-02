@@ -43,7 +43,7 @@ namespace Hamburger.Services
 		private object CreateEmailMessage(Message message)
 		{
 			var emailMessage = new MimeMessage();
-			emailMessage.From.Add(new MailboxAddress("Confirmation", _emailConfig.From));
+			emailMessage.From.Add(new MailboxAddress("Overthinking Burger", _emailConfig.From));
 			emailMessage.To.AddRange(message.To);
 			emailMessage.Subject = message.Subject;
 			emailMessage.Body = new TextPart(MimeKit.Text.TextFormat.Text) { Text = message.Content };
