@@ -1,6 +1,7 @@
 ﻿using Hamburger.DAL;
 using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
+using Hamburger.Validations;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -27,6 +28,7 @@ builder.Services.ConfigureApplicationCookie(
                      option.SlidingExpiration = true;
                  }
              );
+builder.Services.AddScoped<IUserService, UserService>();
 
 var app = builder.Build();
 
