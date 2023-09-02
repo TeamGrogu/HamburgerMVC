@@ -16,10 +16,10 @@
                         {
                             @foreach (Menu menu in Model.Menus)
                             {
-                                <!-- Single item -->
+                                
                                 <div class="row">
                                     <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                                        <!-- Image -->
+                              
                                         <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
                                             <img src="@menu.MenuImage"
                                                  class="w-100"/>
@@ -37,8 +37,14 @@
 
 
                                     <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                                        <!-- Data -->
+                                    
                                         <p><strong>@menu.MenuName</strong></p>
+                                 
+                                        <button type="button" class="btn btn-danger btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                                                title="Remove item">
+                                            <i class="fas fa-trash-alt text-white"></i>
+                                        </button>
+                                       
                                         @foreach (var menuProduct in menu.MenuProducts)
                                         {
                                             if (menuProduct.Product.CategoryID == 1)
@@ -59,7 +65,7 @@
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                        <!-- Quantity -->
+                                
                                         <div class="d-flex mb-4" style="max-width: 300px">
                                             <button class="btn gradient-custom px-3 me-2" style="height:45px;"
                                                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -77,6 +83,8 @@
                                                 <i class="fas fa-plus text-white"></i>
                                             </button>
                                         </div>
+                                     
+                                        <p class="text-start text-md-center">
                                         <!-- Quantity -->
                                         <button type="button" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip"
                                                 title="Remove item">
@@ -86,10 +94,10 @@
                                         <p class="text-start text-md-center" style="margin-top:0px;">
                                             <strong>@menu.Price <span>&#8378</span></strong>
                                         </p>
-                                        <!-- Price -->
+                                      
                                     </div>
                                 </div>
-                                <!-- Single item -->
+                           
                                 <hr class="my-4" />
                             }
                         }
@@ -98,10 +106,10 @@
                         {
                             @foreach (Product product in Model.Products)
                             {
-                                <!-- Single item -->
+                            
                                 <div class="row">
                                     <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
-                                        <!-- Image -->
+                                     
                                         <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
                                             <img src="@product.ProductImage"
                                                  class="w-100" />
@@ -109,6 +117,7 @@
                                                 <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
                                             </a>
                                         </div>
+
                                         <!-- Image -->
                                         <div class="form-group">
                                             <label class="control-label"></label>
@@ -118,12 +127,19 @@
                                     </div>
 
                                     <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-                                        <!-- Data -->
+                       
                                         <p><strong>@product.ProductName</strong></p>
+
+                             
+                                        <button type="button" class="btn btn-danger btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                                                title="Remove item">
+                                            <i class="fas fa-trash-alt text-white"></i>
+                                        </button>
+                                   
                                     </div>
 
                                     <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-                                        <!-- Quantity -->
+                                     
                                         <div class="d-flex mb-4" style="max-width: 300px">
                                             <button class="btn gradient-custom px-3 me-2" style="height:45px;"
                                                     onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -140,19 +156,21 @@
                                                 <i class="fas fa-plus text-white"></i>
                                             </button>
                                         </div>
+
                                         <!-- Quantity -->
                                         <button type="button" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip"
                                                 title="Remove item">
                                             <a asp-controller="User" asp-action="RemoveItem" asp-route-id="@product.ID" class="text-white text-decoration-none"><i class="fas fa-trash-alt text-white"></i>Remove Item</a>
                                         </button>
                                         <!-- Price -->
+
                                         <p class="text-start text-md-center">
                                             <strong>@product.Price <span>&#8378</span></strong>
                                         </p>
-                                        <!-- Price -->
+                                -
                                     </div>
                                 </div>
-                                <!-- Single item -->
+                               
                                 <hr class="my-4" />
                             }
                         }
@@ -170,9 +188,7 @@
                         <img class="me-2" width="45px"
                              src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
                              alt="Mastercard" />
-                        @*<img class="me-2" width="45px"
-                             src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.webp"
-                             alt="PayPal acceptance mark" />*@
+                
                     </div>
                 </div>
             </div>
@@ -183,10 +199,7 @@
                     </div>
                     <div class="card-body">
                         <ul class="list-group list-group-flush">
-                            @*<li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
-                            Products
-                            <span>$53.98</span>
-                            </li>*@
+
                             <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
                                 <div>
                                     <strong>Total amount</strong>

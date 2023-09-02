@@ -1,7 +1,7 @@
 .card-renk {
     background: linear-gradient(-45deg,#e63946, #f1faee, #a8dadc, #457b9d);
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 5s ease infinite;
     height: 100vh;
 }
 
@@ -105,18 +105,6 @@ section nav .icon i{
     transition: 0.3s;
 }
 
-/*section nav .icon i a{
-    font-size: 18px;
-    color: #000;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-section nav .icon i a label:hover {
-    color: #fac031;
-}*/
-
 section nav .icon i:hover{
     color: #fac031;
 }
@@ -190,7 +178,7 @@ section .main_btn:hover i{
 
 .about{
     width: 100%;
-    height: 100vh;
+    height: 40vh;
     padding: 70px 0;
 }
 
@@ -206,11 +194,13 @@ section .main_btn:hover i{
     top: 60px;
 }
 
-.about .about_main .about_text h1 span{
-    color: #fac031;
-    margin-right: 15px;
-    font-family: mv boli;
-}
+ .about .about_main .about_text h1 span {
+        background: linear-gradient(to left, red, purple);
+        color: transparent;
+        -webkit-background-clip: text;
+        font-family: 'Roboto', sans-serif;
+        margin-left: 15px;
+    }
 
 .about .about_main .about_text h1{
     font-size: 55px;

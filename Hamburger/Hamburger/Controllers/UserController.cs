@@ -53,6 +53,7 @@ namespace Hamburger.Controllers
 
                 _shoppingCartVM.Dropdown = _context.Sizes.Select(x => new SelectListItem() { Text = x.SizeName, Value = x.SizeID.ToString() }).ToList();                
             }
+         
             return View(_shoppingCartVM);
         }
 
