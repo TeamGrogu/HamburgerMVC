@@ -4,16 +4,16 @@
 
     <nav>
         <div class="logo">
-            <img src="https://media.istockphoto.com/id/1356778093/tr/vektör/delicious-burger-flat-logo-icon-sticker-vector.jpg?s=612x612&w=0&k=20&c=W94Yn7N3g0x3bxe3v8Cy0Xuw6dDEqUY_x2nKhkDb8Rk= ">
+            <img src="~/image/logo.png" style="height:60px; width:60px;">
         </div>
 
         <ul>
             <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-            <li><a href="#About">About</a></li>
             <li><a href="#Menu">Menu</a></li>
-            <li><a href="#Gallary">Commercials</a></li>
+            <li><a href="#Gallary">Commercials</a></li>   
             <li><a href="#Review">Review</a></li>
             <li><a href="#Order">Order</a></li>
+            <li><a href="#About">About</a></li>
             @if (User.IsInRole("Admin"))
             {
                 <li><a asp-controller="Admin" asp-action="AdminPanel">Admin Panel</a></li>
