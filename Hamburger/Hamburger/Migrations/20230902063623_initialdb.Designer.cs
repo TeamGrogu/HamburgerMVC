@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hamburger.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230901140405_init")]
-    partial class init
+    [Migration("20230902063623_initialdb")]
+    partial class initialdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -54,40 +54,40 @@ namespace Hamburger.Migrations
                         {
                             ID = 1,
                             CategoryName = "Hamburgers",
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(277),
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(286),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(5977),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(5992),
                             isActive = true
                         },
                         new
                         {
                             ID = 2,
                             CategoryName = "Sides",
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(290),
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(290),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(5997),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(5998),
                             isActive = true
                         },
                         new
                         {
                             ID = 3,
                             CategoryName = "Beverages",
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(291),
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(291),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(5999),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6000),
                             isActive = true
                         },
                         new
                         {
                             ID = 4,
                             CategoryName = "Deserts",
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(292),
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(293),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6001),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6002),
                             isActive = true
                         },
                         new
                         {
                             ID = 5,
                             CategoryName = "Sauces",
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(293),
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(294),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6003),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6003),
                             isActive = true
                         });
                 });
@@ -130,133 +130,133 @@ namespace Hamburger.Migrations
                         new
                         {
                             ID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(757),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6825),
                             Description = "Whopper eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan bir Burger klasiği. Enfes patates kızartması ve içeceğiyle birlikte Whopper® Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/whopper-menu.png?v=285",
                             MenuName = "Whopper Menü",
                             Price = 189.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(757),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6826),
                             isActive = true
                         },
                         new
                         {
                             ID = 2,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(760),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6828),
                             Description = "Whopper® eti, büyük boy susamlı sandviç ekmeği, mayonez, doğranmış marul, soğan halkaları, nefis barbekü sosu ve cheddar peynirinden oluşan Whopper lezzeti. Enfes patates kızartması ve içeceğiyle birlikte Rodeo Whopper® Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/rodeo-whopper-menu.png?v=285",
                             MenuName = "Rodeo Whopper Menü",
                             Price = 189.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(760),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6828),
                             isActive = true
                         },
                         new
                         {
                             ID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(761),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6829),
                             Description = "Hamburger eti, küçük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan, Whopper lezzetinden vazgeçemeyenlere nefis bir seçim. Enfes patates kızartması ve içeceğiyle birlikte Whopper Jr. Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/whopper-jr-menu.png?v=285",
                             MenuName = "Whopper Jr. Menü",
                             Price = 159.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(762),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6830),
                             isActive = true
                         },
                         new
                         {
                             ID = 4,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(763),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6874),
                             Description = "Fish Royale® eti, küçük boy susamlı sandviç ekmeği, doğranmış marul ve Burger klasiğine lezzetini veren tartar sosun birleşimi olan Fish Royale®, balık eti sevenlerin tercihi olacak. Enfes patates kızartması ve içeceği ile istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/fish-royale-menu.png?v=285",
                             MenuName = "Fish Royale Menü",
                             Price = 169.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(763),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6875),
                             isActive = true
                         },
                         new
                         {
                             ID = 5,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(764),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6877),
                             Description = "King Chicken eti, susamlı sandviç ekmeği, mayonez ve doğranmış maruldan oluşan bu son derece sade alternatifi, enfes patates kızartması ve içeceğiyle birlikte istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/king-chicken-menu.png?v=285",
                             MenuName = "King Chicken Menü",
                             Price = 169.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(764),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6877),
                             isActive = true
                         },
                         new
                         {
                             ID = 6,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(765),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6878),
                             Description = "Kocaman Steakhouse eti, özel sosu, cheddar peyniri, domatesi, mayonezi, marulu ve çıtır kaplamalı soğanlarıyla sabrınızı zorlayacak bir lezzet. Enfes patates kızartması ve içeceğiyle birlikte BK Steakhouse Burger® Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/bk-steakhouse-burger-menu.png?v=285",
                             MenuName = "Steakhouse Menü",
                             Price = 209.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(765),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6878),
                             isActive = true
                         },
                         new
                         {
                             ID = 7,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(766),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6879),
                             Description = "4 adet Hamburger eti, 3 katlı özel ekmeği, cheddar peyniri, salatalık turşusu, doğranmış marul ve soğana eşlik eden özel Big King sosun birleşimi. Enfes patates kızartması ve içeceğiyle birlikte Double Menü keyfini istediğin gibi yaşa",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/double-big-king-menu.png?v=285",
                             MenuName = "Double King Menü",
                             Price = 219.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(767),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6880),
                             isActive = true
                         },
                         new
                         {
                             ID = 8,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(768),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6881),
                             Description = "İki adet Whopper eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğanla, klasik Whopper® lezzetini ikiye katlamak için ideal. Enfes patates kızartması ve içeceğiyle birlikte Double Whopper Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/double-whopper-menu.png?v=285",
                             MenuName = "Double Whopper Menü",
                             Price = 210.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(768),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6881),
                             isActive = true
                         },
                         new
                         {
                             ID = 9,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(769),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6882),
                             Description = "Özel kaplamasıyla tavuk göğüs fileto, mısır irmiği ile süslemeli özel ekmeği, spicy sosu, domatesi ve doğranmış maruldan oluşan yeni bir lezzet. Enfes patates kızartması ve içeceğiyle birlikte Spicy Gurme Tavuk Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/spicy-gurme-tavuk-menu.png?v=285",
                             MenuName = "Spicy Gurme Tavuk Menü",
                             Price = 170.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(769),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6883),
                             isActive = true
                         },
                         new
                         {
                             ID = 10,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(770),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6883),
                             Description = "2 adet Whopper eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, cheddar peyniri, hardal ve ketçaptan oluşan oluşan lezzet. Enfes patates kızartması ve içeceğiyle birlikte Mega Double Cheeseburger Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/mega-double-cheeseburger-menu.png?v=285",
                             MenuName = "Mega Double Cheeseburger Menü",
                             Price = 170.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(771),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6884),
                             isActive = true
                         },
                         new
                         {
                             ID = 11,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(771),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6885),
                             Description = "Enfes patates kızartması ve içeceğiyle birlikte 6'lı Nuggets Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/6li-bk-king-nuggets-menu.png?v=285",
                             MenuName = "6 lı Nuggets Menü",
                             Price = 100.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(772),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6886),
                             isActive = true
                         },
                         new
                         {
                             ID = 12,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(773),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6887),
                             Description = "Enfes patates kızartması ve içeceğiyle birlikte 6'lı Tenders Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/6li-chicken-tenders-menu-1.png?v=285",
                             MenuName = "6 lı Tenders Menü",
                             Price = 130.99m,
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(773),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6887),
                             isActive = true
                         });
                 });
@@ -623,504 +623,504 @@ namespace Hamburger.Migrations
                         {
                             ID = 101,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(357),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6292),
                             Description = "Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan bir Burger King® klasiği.",
                             Price = 134.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/whopper.png?v=285",
                             ProductName = "Whopper Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(357),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6293),
                             isActive = true
                         },
                         new
                         {
                             ID = 102,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(386),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6325),
                             Description = "King Chicken eti, susamlı sandviç ekmeği, mayonez ve doğranmış maruldan oluşan son derece sade bir lezzet alternatifi.",
                             Price = 124.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/king-chicken-1.png?v=285",
                             ProductName = "King Chicken Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(386),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6326),
                             isActive = true
                         },
                         new
                         {
                             ID = 103,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(388),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6328),
                             Description = "Kocaman Steakhouse eti, özel sosu, cheddar peyniri, domatesi, mayonezi, marulu ve çıtır kaplamalı soğanlarıyla sabrınızı zorlayacak bir lezzet.",
                             Price = 174.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/bk-steakhouse-burger.png?v=285",
                             ProductName = "Steakhouse Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(389),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6328),
                             isActive = true
                         },
                         new
                         {
                             ID = 104,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(390),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6330),
                             Description = "4 adet Hamburger eti, 3 katlı özel ekmeği, cheddar peyniri, salatalık turşusu, doğranmış marul ve soğana eşlik eden özel Big King® sosun birleşimi",
                             Price = 184.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/double-big-king.png?v=285",
                             ProductName = "Double Big King Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(391),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6331),
                             isActive = true
                         },
                         new
                         {
                             ID = 105,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(392),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6332),
                             Description = "Whopper® eti, büyük boy susamlı sandviç ekmeği, mayonez, doğranmış marul, soğan halkaları, nefis barbekü sosu ve 2 adet cheddar peynirinden oluşan Whopper® lezzeti.",
                             Price = 159.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/rodeo-whopper.png?v=285",
                             ProductName = "Rodeo Whopper Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(393),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6333),
                             isActive = true
                         },
                         new
                         {
                             ID = 106,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(395),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6335),
                             Description = "İki adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğanla klasik Whopper® lezzetini ikiye katlamak için ideal.",
                             Price = 194.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/double-whopper-1.png?v=285",
                             ProductName = "Double Whopper Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(395),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6335),
                             isActive = true
                         },
                         new
                         {
                             ID = 107,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(397),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6338),
                             Description = "Hamburger eti, küçük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan, Whopper® lezzetinden vazgeçemeyenlere nefis bir seçim.",
                             Price = 119.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/whopper-jr.png?v=285",
                             ProductName = "Whopper Jr. Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(397),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6338),
                             isActive = true
                         },
                         new
                         {
                             ID = 108,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(399),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6340),
                             Description = "Özel kaplamasıyla tavuk göğüs fileto, mısır irmiği ile süslemeli özel ekmeği, spicy sosu, domatesi ve doğranmış maruldan oluşan yeni bir lezzet.",
                             Price = 129.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/spicy-gurme-tavuk.png?v=285",
                             ProductName = "Spicy Gurme Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(399),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6340),
                             isActive = true
                         },
                         new
                         {
                             ID = 109,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(400),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6342),
                             Description = "Fish Royale® eti, küçük boy susamlı sandviç ekmeği, doğranmış marul ile burger klasiğine lezzetini veren tartar sosun birleşimi.",
                             Price = 159.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/fish-royale-1.png?v=285",
                             ProductName = "Fish Royale Burger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(401),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6343),
                             isActive = true
                         },
                         new
                         {
                             ID = 110,
                             CategoryID = 1,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(402),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6345),
                             Description = "2 adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, 4 adet cheddar peyniri, hardal ve ketçaptan oluşan lezzet.",
                             Price = 159.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mega-double-cheeseburger.png?v=285",
                             ProductName = "Mega Double CheeseBurger",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(403),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6345),
                             isActive = true
                         },
                         new
                         {
                             ID = 201,
                             CategoryID = 2,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(405),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6347),
                             Description = "Doğal, soyulmuş, gevrek kızarmış patates",
                             Price = 59.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/patates.png?v=285",
                             ProductName = "Patates",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(405),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6347),
                             isActive = true
                         },
                         new
                         {
                             ID = 202,
                             CategoryID = 2,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(407),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6349),
                             Description = "Çıtır Mı Çıtır Altın Sarısı Tırtıklı Patates",
                             Price = 69.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/tirtikli-patates.png?v=285",
                             ProductName = "Tırtıklı  Patates",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(407),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6349),
                             isActive = true
                         },
                         new
                         {
                             ID = 203,
                             CategoryID = 2,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(442),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6351),
                             Description = "Çıtır çıtır 8’li, 12’li ya da 16’lı Soğan Halka lezzeti",
                             Price = 79.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/sogan-halkasi.png?v=285",
                             ProductName = "Soğan Halkası",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(442),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6351),
                             isActive = true
                         },
                         new
                         {
                             ID = 204,
                             CategoryID = 2,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(444),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6353),
                             Description = "Dışı çıtır çıtır, içi sıcacık peyniriyle Çıtır Peynir!",
                             Price = 75.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/citir-peynir.png?v=285",
                             ProductName = "Çıtır Peynir",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(445),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6354),
                             isActive = true
                         },
                         new
                         {
                             ID = 205,
                             CategoryID = 2,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(446),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6355),
                             Description = "Dışı çıtır çıtır Nuggets...",
                             Price = 75.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/bk-king-nuggets-1.png?v=285",
                             ProductName = "Çıtır Nuggets",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(447),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6356),
                             isActive = true
                         },
                         new
                         {
                             ID = 206,
                             CategoryID = 2,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(448),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6358),
                             Description = "Özel harcıyla nar gibi kızarmış  beyaz tavuk eti.",
                             Price = 85.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/chicken-tenders.png?v=285",
                             ProductName = "Çıtır Tavuk Tenders",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(449),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6358),
                             isActive = true
                         },
                         new
                         {
                             ID = 301,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(450),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6360),
                             Description = "Şeftalili Fuse Tea ve Limonlu Fuse Tea seçenekleri ile",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/fuse-tea.png?v=285",
                             ProductName = "Fuse Tea",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(450),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6360),
                             isActive = true
                         },
                         new
                         {
                             ID = 302,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(452),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6362),
                             Description = "Cola cola ",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/coca-cola.png?v=285",
                             ProductName = "Coca Cola",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(452),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6363),
                             isActive = true
                         },
                         new
                         {
                             ID = 303,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(454),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6364),
                             Description = "Cola cola Zero ",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/coca-cola-zero-sugar.png?v=285",
                             ProductName = "Coca Cola Zero",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(455),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6365),
                             isActive = true
                         },
                         new
                         {
                             ID = 304,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(456),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6367),
                             Description = "Fanta",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/fanta.png?v=285",
                             ProductName = "Fanta",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(457),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6368),
                             isActive = true
                         },
                         new
                         {
                             ID = 305,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(458),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6369),
                             Description = "Sprite",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/sprite.png?v=285",
                             ProductName = "Sprite",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(458),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6370),
                             isActive = true
                         },
                         new
                         {
                             ID = 306,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(460),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6372),
                             Description = "Ayran",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/ayran-300-ml.png?v=285",
                             ProductName = "Ayran",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(460),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6372),
                             isActive = true
                         },
                         new
                         {
                             ID = 307,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(463),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6374),
                             Description = "Elma Suyu",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/elma-suyu.png?v=285",
                             ProductName = "Cappy Elma Suyu",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(463),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6374),
                             isActive = true
                         },
                         new
                         {
                             ID = 308,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(465),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6376),
                             Description = "Atom Suyu",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/cappy-atom-200-ml.png?v=285",
                             ProductName = "Cappy Atom",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(465),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6377),
                             isActive = true
                         },
                         new
                         {
                             ID = 309,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(467),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6379),
                             Description = "Kahve Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/espresso.png?v=285",
                             ProductName = "Espresso",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(467),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6379),
                             isActive = true
                         },
                         new
                         {
                             ID = 310,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(468),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6381),
                             Description = "Kahve Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/nescafe-black.png?v=285",
                             ProductName = "Filtre Kahve",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(469),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6381),
                             isActive = true
                         },
                         new
                         {
                             ID = 311,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(470),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6383),
                             Description = "Karadeniz Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/cay.png?v=285",
                             ProductName = "Çay",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(471),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6383),
                             isActive = true
                         },
                         new
                         {
                             ID = 312,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(472),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6385),
                             Description = "İtalyan Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/vanilyali-cappuccino.png?v=285",
                             ProductName = "Cappuccino",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(472),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6385),
                             isActive = true
                         },
                         new
                         {
                             ID = 313,
                             CategoryID = 3,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(474),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6387),
                             Description = "Çikolata Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/nestle-sicak-cikolata.png?v=285",
                             ProductName = "Sıcak Çikolata",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(475),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6388),
                             isActive = true
                         },
                         new
                         {
                             ID = 401,
                             CategoryID = 4,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(476),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6390),
                             Description = "Çikolata Lezzeti",
                             Price = 45.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/cikolatali-cookie.png?v=285",
                             ProductName = "Çikolatalı Cookie",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(477),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6390),
                             isActive = true
                         },
                         new
                         {
                             ID = 402,
                             CategoryID = 4,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(478),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6392),
                             Description = "Çikolata Lezzeti",
                             Price = 45.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/sufle.png?v=285",
                             ProductName = "Sufle",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(478),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6392),
                             isActive = true
                         },
                         new
                         {
                             ID = 403,
                             CategoryID = 4,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(480),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6394),
                             Description = "Vişne Lezzeti",
                             Price = 55.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/visneli-tatli.png?v=285",
                             ProductName = "Vişneli Tatlı",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(480),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6394),
                             isActive = true
                         },
                         new
                         {
                             ID = 404,
                             CategoryID = 4,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(482),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6396),
                             Description = "Vanilyalı, Çilekli, Çikolatalı, Espressolu, Limonlu çeşitleriyle.",
                             Price = 55.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/espressolu-milkshake.png?v=285",
                             ProductName = "Espresso Milkshake",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(482),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6397),
                             isActive = true
                         },
                         new
                         {
                             ID = 405,
                             CategoryID = 4,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(483),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6398),
                             Description = "Vanilyalı, Çikolata Soslu, Böğürtlen Soslu, Karamel Soslu, Çilek Soslu, Limonlu",
                             Price = 65.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/king-sundae.png?v=285",
                             ProductName = "King Sundae",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(484),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6399),
                             isActive = true
                         },
                         new
                         {
                             ID = 406,
                             CategoryID = 4,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(485),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6400),
                             Description = "Çikolata Parçacıklı, Renkli Çikolata Drajeleri, Limonlu",
                             Price = 75.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/bkool.png?v=285",
                             ProductName = "Bkool",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(486),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6401),
                             isActive = true
                         },
                         new
                         {
                             ID = 501,
                             CategoryID = 5,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(487),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6405),
                             Description = "Acı Sos",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-aci-sos.png?v=285",
                             ProductName = "Mini Acı Sos",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(487),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6406),
                             isActive = true
                         },
                         new
                         {
                             ID = 502,
                             CategoryID = 5,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(489),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6408),
                             Description = "Mayonez",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-mayonez.png?v=285",
                             ProductName = "Mayonez",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(489),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6408),
                             isActive = true
                         },
                         new
                         {
                             ID = 503,
                             CategoryID = 5,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(491),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6410),
                             Description = "Ranch Sos",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-ranch.png?v=285",
                             ProductName = "Mini Ranch",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(491),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6410),
                             isActive = true
                         },
                         new
                         {
                             ID = 504,
                             CategoryID = 5,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(492),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6412),
                             Description = "Sarımsaklı Sos",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-sarimsakli-mayonez-1.png?v=285",
                             ProductName = "Sarımsaklı Sos",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(493),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6412),
                             isActive = true
                         },
                         new
                         {
                             ID = 505,
                             CategoryID = 5,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(494),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6414),
                             Description = "Mini Ketçap",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-ketcap.png?v=285",
                             ProductName = "Mini Ketçap",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(495),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6414),
                             isActive = true
                         },
                         new
                         {
                             ID = 506,
                             CategoryID = 5,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(496),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6416),
                             Description = "Buffalo Sos",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-buffalo-1.png?v=285",
                             ProductName = "Buffalo Sos",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(497),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6416),
                             isActive = true
                         },
                         new
                         {
                             ID = 507,
                             CategoryID = 5,
-                            CreateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(498),
+                            CreateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6418),
                             Description = "Mini BBQ",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-bbq.png?v=285",
                             ProductName = "Mini BBQ",
-                            UpdateDate = new DateTime(2023, 9, 1, 17, 4, 5, 239, DateTimeKind.Local).AddTicks(498),
+                            UpdateDate = new DateTime(2023, 9, 2, 9, 36, 22, 413, DateTimeKind.Local).AddTicks(6419),
                             isActive = true
                         });
                 });
@@ -1453,14 +1453,14 @@ namespace Hamburger.Migrations
                         new
                         {
                             Id = 1,
-                            ConcurrencyStamp = "6552d4e9-b62e-4073-ae9c-c1c148a6f278",
+                            ConcurrencyStamp = "b51e6527-e449-4d30-a5b0-e24c11348479",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = 2,
-                            ConcurrencyStamp = "3e97248a-a4ce-426b-873f-0065af410732",
+                            ConcurrencyStamp = "43187501-fbc7-496a-a92c-6198a55f08ad",
                             Name = "Standard",
                             NormalizedName = "STANDARD"
                         });
@@ -1762,7 +1762,7 @@ namespace Hamburger.Migrations
                             AccessFailedCount = 0,
                             Address = "Kadikoy",
                             BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            ConcurrencyStamp = "906491d2-19a6-4a4c-bb57-73116d9ca95e",
+                            ConcurrencyStamp = "47fcc9a6-a2df-4ebd-8f4f-6c996465cba1",
                             Email = "overthinkerst@gmail.com",
                             EmailConfirmed = false,
                             FirstName = "overthinkers",
@@ -1770,9 +1770,9 @@ namespace Hamburger.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "OVERTHINKERST@GMAIL.COM",
                             NormalizedUserName = "OVERTHINKERS",
-                            PasswordHash = "AQAAAAEAACcQAAAAECiOMrGkNOTx9gdNDVyuNfs60C3WH6DU2wRGdcyp1ia+GLrQolKCik0AWSs0BNtztw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBqN+jwGxdkAKgdHfyxlstPmx3LUN1LYCCscS5UXz2zm/3b457oxrZ50hBdMuwikVw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e0f7e1a4-5d6c-4caf-9547-b21d5dd906c1",
+                            SecurityStamp = "ea06bf05-d764-4609-9d9c-c735afeb5d0d",
                             TwoFactorEnabled = false,
                             UserName = "overthinkers"
                         });
