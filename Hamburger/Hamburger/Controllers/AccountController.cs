@@ -49,7 +49,7 @@ namespace Hamburger.Controllers
                     var confirmationLink = Url.Action("ConfirmEmail", "Account",
                         new { userId = appUser.Id, token = confirmationToken }, Request.Scheme
                         );
-                    string content = "Confirmation code:  " + confirmationLink;
+                    string content = "Confirmation link:  " + confirmationLink;
                     SendEmail(appUser.Email, content);
 
                     await userManager.AddToRoleAsync(appUser, "Standard");
@@ -122,5 +122,45 @@ namespace Hamburger.Controllers
             var message = new Message(new string[] {email},"Confirmation Link",content);
             _emailService.SendEmail(message);        
         }
-    }
+        public IActionResult ForgotPassword()
+        {
+            return View();
+        }
+        [HttpPost]
+		public async Task<IActionResult> ForgotPassword(UserVM vm)
+		{
+			var user = await userManager.FindByEmailAsync(vm.Email);
+            if (user != null && await userManager.IsEmailConfirmedAsync(user))
+            {
+			    var passwordToken = await userManager.GeneratePasswordResetTokenAsync(user);
+				var resetLink = Url.Action("ResetPassword", "Account",
+						new { userId = user.Id, token = passwordToken }, Request.Scheme
+						);
+				string content = "Password reset link:  " + resetLink;
+				SendEmail(user.Email, content);
+				ViewBag.ErrorMessage = "Password reset link has been sent to your email adress.";
+                return View("NotFound");
+			}	 
+			return View();
+		}
+		public IActionResult ResetPassword()
+		{
+			return View();
+		}
+        [HttpPost]
+		public async Task<IActionResult> ResetPassword(UserVM vm)
+		{
+			var user = await userManager.FindByEmailAsync(vm.Email);
+			if (user == null)
+			{
+				var passwordToken = await userManager.GeneratePasswordResetTokenAsync(user);
+				var resetLink = Url.Action("ResetPassword", "Account",
+						new { userId = user.Id, token = passwordToken }, Request.Scheme
+						);
+				string content = "Password reset link:  " + resetLink;
+                SendEmail(user.Email, content);              
+			}
+			return View();
+		}
+	}
 }

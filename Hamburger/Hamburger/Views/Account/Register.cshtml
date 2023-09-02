@@ -39,7 +39,7 @@
 			<span asp-validation-for="Email" style="color:red;"></span>
 			<input type="password" placeholder="Password" asp-for="LoginVM.Password" />
 			<span asp-validation-for="Password" style="color:red;"></span>
-			<a href="#">Forgot your password?</a>
+			<a asp-controller="Account" asp-action="ForgotPassword">Forgot your password?</a>
 			<button>Sign In</button>
 		</form>
 	</div>
