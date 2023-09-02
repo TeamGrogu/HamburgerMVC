@@ -15,18 +15,10 @@
 	<div class="form-container sign-up-container">
 		<form asp-action="Register" asp-controller="Account" method="post">
 			<h3>Create Account</h3>
-<<<<<<< HEAD
-			@*<div class="social-container">
-			<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-			<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-			<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-			</div>*@
+
 			<input type="text" placeholder="First name" asp-for="FirstName"/>
-			<span asp-validation-for="FirstName" style="color:red;"></span>
-=======
-		
+			<span asp-validation-for="FirstName" style="color:red;"></span>	
 			<input type="text" placeholder="First name" asp-for="FirstName" />
->>>>>>> b9957808fed3ce07e39284f92b38ba827a1ff382
 			<input type="text" placeholder="Last name" asp-for="LastName" />
 			<span asp-validation-for="LastName" style="color:red;"></span>
 			<input type="text" placeholder="Username" asp-for="UserName" />

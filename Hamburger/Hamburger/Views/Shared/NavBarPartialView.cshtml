@@ -23,13 +23,7 @@
         <div class="icon">
             @if (!User.IsInRole("Admin") && User.Identity.IsAuthenticated)
             {
-<<<<<<< HEAD
                 <a asp-controller="User" asp-action="ShoppingCart" class="side-panel-toggle"><i class="fa-solid fa-cart-shopping"></i></a>
-=======
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
-                <a asp-controller="User" asp-action="ShoppingCart" class="side-panel-toggle"><i class="fa-solid fa-cart-shopping" ></i></a>
->>>>>>> b9957808fed3ce07e39284f92b38ba827a1ff382
             }
         
             @if (!User.Identity.IsAuthenticated)
