@@ -1,10 +1,6 @@
 {
   "Version": 1,
-<<<<<<< HEAD
-  "Hash": "QrUfGHdB3cruXKcdP0QB2yraZM78eUP0K7bd33Vwclw=",
-=======
-  "Hash": "m7U+ge6XbVCtk1MSa//j1sEM0IvRtB6xK5dBY22wKEM=",
->>>>>>> 5f2ec9c41d600d0f8200abe31a7e80b36b7d2f9d
+  "Hash": "F4Pq1iIHrFIEfKho6+1FGvLUDdJxfK7mpUUGxhS7hzs=",
   "Source": "Hamburger",
   "BasePath": "_content/Hamburger",
   "Mode": "Default",
@@ -1245,11 +1241,7 @@
       "OriginalItemSpec": "wwwroot\\image\\animeburger.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger2.jpeg",
-=======
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger2.png",
->>>>>>> 5f2ec9c41d600d0f8200abe31a7e80b36b7d2f9d
+      "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger2.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\",
@@ -1266,11 +1258,7 @@
       "OriginalItemSpec": "wwwroot\\image\\animeburger2.png"
     },
     {
-<<<<<<< HEAD
-      "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger3.jpeg",
-=======
-      "Identity": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger3.png",
->>>>>>> 5f2ec9c41d600d0f8200abe31a7e80b36b7d2f9d
+      "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger3.png",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\",
