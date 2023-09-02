@@ -1,1 +1,39 @@
+<<<<<<< HEAD
 ﻿
+=======
+﻿<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+@model MenuProductVM
+
+<form method="post" asp-controller="Admin" asp-action="EditMenu">
+    @if (Model.Menu.ID != 0)
+    {
+        <div class="form-group">
+            <label asp-for="@Model.Menu.ID" class="control-label">ID</label>
+            <input asp-for="@Model.Menu.ID" class="form-control" readonly />
+        </div>
+    }
+    <label class="control-label" asp-for="Menu.MenuName">Menu Name:</label>
+    <input asp-for="Menu.MenuName" type="text" /><br /><br />
+    <label class="control-label" asp-for="Menu.Price">Price:</label>
+    <input asp-for="Menu.Price" type="text" /><br /><br />
+    <label class="control-label" asp-for="Menu.Description">Description:</label>
+    <input asp-for="Menu.Description" type="text" /><br /><br />
+    <div class="form-group">
+        <label asp-for="SelectedHamburgerID" class="control-label">Hamburger</label>
+        @Html.DropDownListFor(x => x.SelectedHamburgerID,Model.DropdownHamburgers, new { @class = "form-control text-center" })
+        <span asp-validation-for="Products" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SelectedSideID" class="control-label">Side</label>
+        @Html.DropDownListFor(x => x.SelectedSideID, Model.DropdownSides, new { @class = "form-control text-center" })
+        <span asp-validation-for="Products" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SelectedBeverageID" class="control-label">Beverage</label>
+        @Html.DropDownListFor(x => x.SelectedBeverageID, Model.DropdownBeverages, new { @class = "form-control text-center" })
+        <span asp-validation-for="Products" class="text-danger"></span>
+    </div>
+    <br /><br />
+    <input class="btn btn-outline-success" type="submit" value="@(Model.Menu.ID == 0 ? "Add Menu" : "Update Menu")" />
+</form>
+>>>>>>> a2332d740eccba117ce541d613019f079ef0a1ee
