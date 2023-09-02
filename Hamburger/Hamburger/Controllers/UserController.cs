@@ -65,6 +65,16 @@ namespace Hamburger.Controllers
             return View();
         }
 
+        [HttpPost]
+        public IActionResult RemoveItem(ShoppingCartVM model,int id)
+        {
+            OrderDetails orderDetailsP = _context.OrderDetails.FirstOrDefault(x => x.ProductID == id && x.OrderID == model.Order.ID);
+            OrderDetails orderDetailsM = _context.OrderDetails.FirstOrDefault(m => m.MenuID == id && m.OrderID == model.Order.ID);
+            _ = orderDetailsP == null ? _context.OrderDetails.Remove(orderDetailsM) : _context.OrderDetails.Remove(orderDetailsP);
+            _context.SaveChanges();
+            return RedirectToAction("ShoppingCart");
+        }
+
 
         public async Task<IActionResult> CreateOrder(int id)
         {
