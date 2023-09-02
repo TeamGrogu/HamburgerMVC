@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Hamburger.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\admincrud.css",
+      "PackagePath": "staticwebassets\\css\\admincrud.css"
+    },
+    {
       "Id": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
@@ -59,6 +63,10 @@
     {
       "Id": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger3.png",
       "PackagePath": "staticwebassets\\image\\animeburger3.png"
+    },
+    {
+      "Id": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger4.png",
+      "PackagePath": "staticwebassets\\image\\animeburger4.png"
     },
     {
       "Id": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",

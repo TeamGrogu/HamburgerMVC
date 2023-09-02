@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lb6iSlhVcR3hsZSP4SZ3w/SkR1xBtH5o2dqU9o05iDQ=",
+  "Hash": "3A0WYXZ/QUPteHec0TMkra0VjDW6sgM9YdFUOsGd8GM=",
   "Source": "Hamburger",
   "BasePath": "_content/Hamburger",
   "Mode": "Default",
@@ -1071,6 +1071,23 @@
       "OriginalItemSpec": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hamburger.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\admincrud.css",
+      "SourceId": "Hamburger",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
+      "BasePath": "_content/Hamburger",
+      "RelativePath": "css/admincrud.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admincrud.css"
+    },
+    {
       "Identity": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\css\\bootstrap.css",
       "SourceId": "Hamburger",
       "SourceType": "Discovered",
@@ -1256,6 +1273,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\animeburger3.png"
+    },
+    {
+      "Identity": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger4.png",
+      "SourceId": "Hamburger",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\",
+      "BasePath": "_content/Hamburger",
+      "RelativePath": "image/animeburger4.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\animeburger4.png"
     },
     {
       "Identity": "C:\\Users\\yolcu\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",

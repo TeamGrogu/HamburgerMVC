@@ -49,6 +49,12 @@ namespace Hamburger.Controllers
             var menuList = _context.Menus.ToList();
             return View(menuList);
         }
+
+        public IActionResult ListToppings()
+        {
+            ICollection<Topping> toppingList = _context.Toppings.ToList();
+            return View(toppingList);
+        }
         #endregion
 
         #region DELETE
@@ -69,6 +75,12 @@ namespace Hamburger.Controllers
             _context.Menus.Remove(_context.Menus.Find(id));
             _context.SaveChanges();
             return RedirectToAction("ListMenus");
+        }
+        public ActionResult DeleteTopping(int id)
+        {
+            _context.Toppings.Remove(_context.Toppings.Find(id));
+            _context.SaveChanges();
+            return RedirectToAction("ListToppings");
         }
         #endregion
 
@@ -257,6 +269,36 @@ namespace Hamburger.Controllers
 
             _context.SaveChanges();
             return RedirectToAction("ListMenus");
+        }
+
+        public ActionResult EditTopping(int id = 0)
+        {
+            Topping topping = id == 0 ? new Topping() : _context.Toppings.FirstOrDefault(topping => topping.ID == id);
+            return PartialView("ToppingPartialView", topping);
+        }
+
+        [HttpPost]
+        public ActionResult EditTopping(Topping topping)
+        {
+            if (topping.ID == 0)
+            {
+                // Create topping
+                _context.Toppings.Add(topping);
+            }
+            else
+            {
+                // Update topping
+                var existingTopping = _context.Toppings.Find(topping.ID);
+                if (existingTopping != null)
+                {
+                    existingTopping.ToppingName = topping.ToppingName;
+                    existingTopping.Price = topping.Price;
+                }
+            }
+
+            _context.SaveChanges();
+
+            return RedirectToAction("ListToppings");
         }
         #endregion
 
