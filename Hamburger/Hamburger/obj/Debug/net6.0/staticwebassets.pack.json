@@ -1,411 +1,411 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hamburger.bundle.scp.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hamburger.bundle.scp.css",
       "PackagePath": "staticwebassets\\Hamburger.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\bootstrap.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\cart.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\css\\cart.css",
       "PackagePath": "staticwebassets\\css\\cart.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\custom.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\css\\custom.css",
       "PackagePath": "staticwebassets\\css\\custom.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\font-awesome.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\css\\font-awesome.css",
       "PackagePath": "staticwebassets\\css\\font-awesome.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\register.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\css\\register.css",
       "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\Food-Plate.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\Food-Plate.png",
       "PackagePath": "staticwebassets\\image\\Food-Plate.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\Hot_dog.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\Hot_dog.jpg",
       "PackagePath": "staticwebassets\\image\\Hot_dog.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\Spanchi.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\Spanchi.jpg",
       "PackagePath": "staticwebassets\\image\\Spanchi.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\animeburger.png",
       "PackagePath": "staticwebassets\\image\\animeburger.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\bg1.jpg",
       "PackagePath": "staticwebassets\\image\\bg1.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\bg2.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\bg2.jpg",
       "PackagePath": "staticwebassets\\image\\bg2.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\biryani.webp",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\biryani.webp",
       "PackagePath": "staticwebassets\\image\\biryani.webp"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\buger.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\buger.jpg",
       "PackagePath": "staticwebassets\\image\\buger.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\cake.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\cake.jpg",
       "PackagePath": "staticwebassets\\image\\cake.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\chef1.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\chef1.png",
       "PackagePath": "staticwebassets\\image\\chef1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\chef2.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\chef2.png",
       "PackagePath": "staticwebassets\\image\\chef2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\chef3.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\chef3.jpg",
       "PackagePath": "staticwebassets\\image\\chef3.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\chef4.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\chef4.jpg",
       "PackagePath": "staticwebassets\\image\\chef4.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate.jpg",
       "PackagePath": "staticwebassets\\image\\chocolate.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate_Drink.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\chocolate_Drink.jpg",
       "PackagePath": "staticwebassets\\image\\chocolate_Drink.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_1.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_1.jpg",
       "PackagePath": "staticwebassets\\image\\gallary_1.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_2.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_2.jpg",
       "PackagePath": "staticwebassets\\image\\gallary_2.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_3.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_3.jpg",
       "PackagePath": "staticwebassets\\image\\gallary_3.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_4.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_4.jpg",
       "PackagePath": "staticwebassets\\image\\gallary_4.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_5.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_5.jpg",
       "PackagePath": "staticwebassets\\image\\gallary_5.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_6.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\gallary_6.jpg",
       "PackagePath": "staticwebassets\\image\\gallary_6.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\ice_cream.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\ice_cream.jpg",
       "PackagePath": "staticwebassets\\image\\ice_cream.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\juse.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\juse.jpg",
       "PackagePath": "staticwebassets\\image\\juse.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\lasagna.webp",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\lasagna.webp",
       "PackagePath": "staticwebassets\\image\\lasagna.webp"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\logo.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\logo.png",
       "PackagePath": "staticwebassets\\image\\logo.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\main_img.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\main_img.png",
       "PackagePath": "staticwebassets\\image\\main_img.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\order_image.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\order_image.png",
       "PackagePath": "staticwebassets\\image\\order_image.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\pasta.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\pasta.jpg",
       "PackagePath": "staticwebassets\\image\\pasta.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\pizza.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\pizza.jpg",
       "PackagePath": "staticwebassets\\image\\pizza.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\review_1.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\review_1.png",
       "PackagePath": "staticwebassets\\image\\review_1.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\review_2.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\review_2.png",
       "PackagePath": "staticwebassets\\image\\review_2.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\review_3.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\review_3.png",
       "PackagePath": "staticwebassets\\image\\review_3.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\review_4.png",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\review_4.png",
       "PackagePath": "staticwebassets\\image\\review_4.png"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\sandwich.jpg",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\image\\sandwich.jpg",
       "PackagePath": "staticwebassets\\image\\sandwich.jpg"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\js\\register.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\js\\register.js",
       "PackagePath": "staticwebassets\\js\\register.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\sabri\\Desktop\\MVC Proje\\Hamburger\\Hamburger\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

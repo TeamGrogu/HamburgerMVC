@@ -21,10 +21,8 @@
         </ul>
 
         <div class="icon">
-            @if (!User.IsInRole("Admin"))
+            @if (!User.IsInRole("Admin") && User.Identity.IsAuthenticated)
             {
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-heart"></i>
                 <a asp-controller="User" asp-action="ShoppingCart" class="side-panel-toggle"><i class="fa-solid fa-cart-shopping"></i></a>
             }
             @if (!User.Identity.IsAuthenticated)
