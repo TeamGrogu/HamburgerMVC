@@ -63,7 +63,11 @@ namespace Hamburger.Controllers
         [HttpPost]
         public async Task<IActionResult> Login(UserVM vm)
         {
-            if (!ModelState.IsValid)
+			if (string.IsNullOrWhiteSpace(vm.Email) || string.IsNullOrWhiteSpace(vm.Password))
+			{
+                return RedirectToAction("404","SenBuralaraNerdenGeldin");
+			}
+			if (!ModelState.IsValid)
             {
                 User user = await userManager.FindByEmailAsync(vm.Email);
                 if (user != null)
@@ -76,6 +80,7 @@ namespace Hamburger.Controllers
                     }
                     ModelState.AddModelError("", "Credentials are incorrect.");
                 }
+               
             }
             return RedirectToAction("Login");
         }

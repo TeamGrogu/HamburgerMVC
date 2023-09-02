@@ -1,13 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-<<<<<<< HEAD
-/*nav {
-	margin-top: -170px;
-}*/
-=======
 
-
->>>>>>> 2d370bbd5faef7f47e307f45a30530e99d29d821
 * {
 	margin: 0;
 	padding: 0;
@@ -16,8 +9,9 @@
 }
 
 
-nav{
-	margin-top:-170px;
+nav {
+	position: fixed;
+	top: 0px;
 }
 
 

@@ -12,6 +12,9 @@ namespace Hamburger.Models.ViewModels
         public ICollection<MenuProduct> MenusProducts { get; set; }
         public ICollection<Product> Products { get; set; }
         public ICollection<Size> Sizes  { get; set; }
+        public ICollection<ProductTopping> ProductToppings { get; set; }
+        public ICollection<Topping> Toppings { get; set; }
         public ICollection<SelectListItem> Dropdown { get; set; }
+        public Size Size { get; set; }
     }
 }

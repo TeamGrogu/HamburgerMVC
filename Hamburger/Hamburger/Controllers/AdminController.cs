@@ -146,8 +146,6 @@ namespace Hamburger.Controllers
             return RedirectToAction("ListProducts");
         }
 
-
-
         public IActionResult EditMenu(int id = 0)
         {
             MenuProductVM menuProductVM = new MenuProductVM
