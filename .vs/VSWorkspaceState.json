@@ -5,6 +5,7 @@
     "\\Hamburger\\Hamburger",
     "\\Hamburger\\Hamburger\\Views",
     "\\Hamburger\\Hamburger\\Views\\Home",
+    "\\Hamburger\\Hamburger\\Views\\Shared",
     "\\Hamburger\\Hamburger\\wwwroot",
     "\\Hamburger\\Hamburger\\wwwroot\\css"
   ],
