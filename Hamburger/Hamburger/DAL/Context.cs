@@ -24,7 +24,7 @@ namespace Hamburger.DAL
         public DbSet<MenuProduct> MenuProducts { get; set; }
         public DbSet<Topping> Toppings { get; set; }
         public DbSet<ProductTopping> ProductToppings { get; set; }
-        public DbSet<Message> Messages { get; set; }
+        public DbSet<UserMessage> Messages { get; set; }
 		protected override async void OnModelCreating(ModelBuilder builder)
 		{
 			builder.ApplyConfiguration<User>(new UserCFG());
@@ -37,7 +37,7 @@ namespace Hamburger.DAL
             builder.ApplyConfiguration<Menu>(new MenuCFG());         
             builder.ApplyConfiguration<Size>(new SizeCFG());
             builder.ApplyConfiguration<Status>(new StatusCFG());
-            builder.ApplyConfiguration<Message>(new MessageCFG());
+            builder.ApplyConfiguration<UserMessage>(new MessageCFG());
            
 
             builder.Entity<Role>().HasData(

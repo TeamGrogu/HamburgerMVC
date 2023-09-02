@@ -123,7 +123,7 @@ namespace Hamburger.Controllers
         public void SendEmail(string email,string content,string subject)
         {
             var message = new Message(new string[] {email},subject,content);
-            _emailService.SendEmail(message);        
+            _emailService.SendEmail(message);
         }
         public IActionResult ForgotPassword()
         {

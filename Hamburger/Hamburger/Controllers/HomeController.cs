@@ -53,11 +53,11 @@ namespace Hamburger.Controllers
         public async Task<IActionResult> CreateMessage(MenuProductVM model)
         {
             User user = await _context.Users.FindAsync(User);
-            Message message = new Message()
+            UserMessage message = new UserMessage()
             {
                 UserID = user.Id,
                 OrderID = model.OrderID,
-                UserMessage = model.message
+                MessageOfUser = model.message
             };
             _context.Messages.Add(message); //Burası Yapılacak...
             _context.SaveChanges();
