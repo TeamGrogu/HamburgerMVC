@@ -3,12 +3,13 @@
     "",
     "\\Hamburger",
     "\\Hamburger\\Hamburger",
+    "\\Hamburger\\Hamburger\\Controllers",
     "\\Hamburger\\Hamburger\\Views",
     "\\Hamburger\\Hamburger\\Views\\Home",
     "\\Hamburger\\Hamburger\\Views\\Shared",
     "\\Hamburger\\Hamburger\\wwwroot",
     "\\Hamburger\\Hamburger\\wwwroot\\css"
   ],
-  "SelectedNode": "\\Hamburger\\Hamburger\\wwwroot\\css\\register.css",
+  "SelectedNode": "\\Hamburger\\Hamburger\\Views\\Shared\\NavBarPartialView.cshtml",
   "PreviewInSolutionExplorer": false
 }

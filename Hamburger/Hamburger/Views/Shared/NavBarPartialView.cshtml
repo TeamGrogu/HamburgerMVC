@@ -4,14 +4,14 @@
 
     <nav>
         <div class="logo">
-            <img src="~/image/logo.png">
+            <img src="https://media.istockphoto.com/id/1356778093/tr/vektör/delicious-burger-flat-logo-icon-sticker-vector.jpg?s=612x612&w=0&k=20&c=W94Yn7N3g0x3bxe3v8Cy0Xuw6dDEqUY_x2nKhkDb8Rk= ">
         </div>
 
         <ul>
             <li><a asp-controller="Home" asp-action="Index">Home</a></li>
             <li><a href="#About">About</a></li>
             <li><a href="#Menu">Menu</a></li>
-            <li><a href="#Gallary">Gallery</a></li>
+            <li><a href="#Gallary">Commercials</a></li>
             <li><a href="#Review">Review</a></li>
             <li><a href="#Order">Order</a></li>
             @if (User.IsInRole("Admin"))
@@ -25,8 +25,9 @@
             {
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-heart"></i>
-                <a asp-controller="User" asp-action="ShoppingCart" class="side-panel-toggle"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a asp-controller="User" asp-action="ShoppingCart" class="side-panel-toggle"><i class="fa-solid fa-cart-shopping" ></i></a>
             }
+        
             @if (!User.Identity.IsAuthenticated)
             {
                 <a asp-controller="Account" asp-action="Register">

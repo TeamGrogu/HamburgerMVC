@@ -47,6 +47,7 @@ namespace Hamburger.Controllers
                 }
                 _shoppingCartVM.Sizes = _context.Sizes.ToList();
             }
+         
             return View(_shoppingCartVM);
         }
         [HttpPost]
