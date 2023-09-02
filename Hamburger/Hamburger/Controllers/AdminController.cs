@@ -146,10 +146,6 @@ namespace Hamburger.Controllers
             return RedirectToAction("ListProducts");
         }
 
-<<<<<<< HEAD
-=======
-
-
         public IActionResult EditMenu(int id = 0)
         {
             MenuProductVM menuProductVM = new MenuProductVM
@@ -262,7 +258,6 @@ namespace Hamburger.Controllers
             _context.SaveChanges();
             return RedirectToAction("ListMenus");
         }
->>>>>>> a2332d740eccba117ce541d613019f079ef0a1ee
         #endregion
 
 
