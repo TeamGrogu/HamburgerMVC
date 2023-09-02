@@ -238,6 +238,7 @@ C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Hamburger.
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Hamburger.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Hamburger.pdb
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Humanizer.dll
+C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\MailKit.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -260,7 +261,10 @@ C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Microsoft.
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\MimeKit.dll
+C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\NETCore.MailKit.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\BouncyCastle.Crypto.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\sabri\Desktop\MVC Proje\Hamburger\Hamburger\bin\Debug\net6.0\System.Drawing.Common.dll

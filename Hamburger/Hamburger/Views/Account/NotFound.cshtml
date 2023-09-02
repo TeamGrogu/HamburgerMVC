@@ -1,0 +1,13 @@
+﻿@model UserVM
+@{
+	Layout = null;
+}
+
+<link rel="stylesheet" href="~/css/register.css">
+
+<partial name="~/Views/Shared/NavBarPartialView.cshtml" />
+
+@if (ViewBag.ErrorMessage != null)
+{
+	<h3 style="color:orangered;"><i>@ViewBag.ErrorMessage</i></h3>
+}

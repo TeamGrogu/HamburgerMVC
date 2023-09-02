@@ -3,10 +3,10 @@
 	Layout =null;
 }
 
-
 <link rel="stylesheet" href="~/css/register.css">
 
 <partial name="~/Views/Shared/NavBarPartialView.cshtml" />
+
 @if (TempData["error"] != null)
 {
 	<h3 style="color:orangered;"><i>@TempData["error"]</i></h3>
@@ -35,10 +35,10 @@
 		<form asp-action="Login" asp-controller="Account" method="post">
 			<h1>Sign in</h1>
 	
-			<input type="email" placeholder="Email" asp-for="Email" />
-			<span asp-validation-for="Email" style="color:red;"></span>
-			<input type="password" placeholder="Password" asp-for="Password" />
-			<span asp-validation-for="Password" style="color:red;"></span>
+			<input type="email" placeholder="Email" asp-for="LoginVM.Email" />
+			<span asp-validation-for="LoginVM.Email" style="color:red;"></span>
+			<input type="password" placeholder="Password" asp-for="LoginVM.Password" />
+			<span asp-validation-for="LoginVM.Password" style="color:red;"></span>
 			<a href="#">Forgot your password?</a>
 			<button>Sign In</button>
 		</form>

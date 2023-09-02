@@ -24,5 +24,6 @@ namespace Hamburger.Models.ViewModels
 		public string Address { get; set; }
 		[Required]
 		public string PhoneNumber { get; set; }
+        public LoginVM LoginVM { get; set; }
     }
 }
