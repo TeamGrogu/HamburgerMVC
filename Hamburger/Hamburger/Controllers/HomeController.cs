@@ -59,7 +59,7 @@ namespace Hamburger.Controllers
                 OrderID = model.OrderID,
                 UserMessage = model.message
             };
-            _context.Messages.Add(message);
+            _context.Messages.Add(message); //Burası Yapılacak...
             _context.SaveChanges();
 
             return RedirectToAction("Index");
