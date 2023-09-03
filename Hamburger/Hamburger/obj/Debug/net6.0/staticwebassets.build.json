@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6QSAh44QECibFrwFZQUXqzB+izTQTMGLFlTQp4i7VPs=",
+  "Hash": "vcNyzw/ToCG/2b7J2nX5S2USzuUN7gAnXW34mRuENe0=",
   "Source": "Hamburger",
   "BasePath": "_content/Hamburger",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Hamburger.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\403error.css",
+      "SourceId": "Hamburger",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\",
+      "BasePath": "_content/Hamburger",
+      "RelativePath": "css/403error.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\403error.css"
     },
     {
       "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\css\\admincrud.css",
