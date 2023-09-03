@@ -64,7 +64,7 @@
 
 <!--Menu-->
 
-<div class="menu" id="Menu">
+<div class="menu" id="Menu" style="height:auto;">
     <h1><span>Our Products</span></h1>
 
     <div class="tm-paging-links" style="list-style: none; display: flex; justify-content:center;">
@@ -74,6 +74,7 @@
                 @foreach (var category in Model.Categories)
                 {
                     <li class="tm-paging-item"><a href="#" class="tm-paging-link">@category.CategoryName</a></li>
+                    ViewData[category.CategoryName.Replace(" ", "").ToLower()] = category.ID;
                 }
             </ul>
         </nav>
@@ -95,100 +96,27 @@
             </div>
         }
     </div>
-    <div class="menu_box" id="tm-gallery-page-hamburgers" style="display: none;">
-        @foreach (var item in Model.Products)
-        {
-            @if (item.CategoryID == 1)
+    @foreach (Category cat in Model.Categories)
+    {
+        <div class="menu_box" id="tm-gallery-page-@cat.CategoryName.Replace(" ","").ToLower()" style="display: none;">
+            @foreach (var item in Model.Products)
             {
-                <div class="card card-renk" style="width: 18rem;">
-                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                @if (item.CategoryID == (int)ViewData[cat.CategoryName.Replace(" ", "").ToLower()])
+                {
+                    <div class="card card-renk" style="width: 18rem;">
+                        <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
+                        </div>
+                        <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
+                        <div class="text-center">
+                            <a asp-controller="@(User.Identity.IsAuthenticated == true ? "User" : "Account")" asp-action="@(User.Identity.IsAuthenticated == true ? "CreateOrder" : "AddCartWithoutLogin")" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:100%">Add to Cart</a>
+                        </div>
                     </div>
-                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
-                    <div class="text-center">
-                        <a asp-controller="@(User.Identity.IsAuthenticated == true ? "User" : "Account")" asp-action="@(User.Identity.IsAuthenticated == true ? "CreateOrder" : "AddCartWithoutLogin")" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:100%">Add to Cart</a>
-                    </div>
-
-                </div>
+                }
             }
-        }
-    </div>
-    <div class="menu_box" id="tm-gallery-page-sides" style="display: none;">
-        @foreach (var item in Model.Products)
-        {
-            @if (item.CategoryID == 2)
-            {
-                <div class="card card-renk" style="width: 18rem;">
-                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
-                    </div>
-                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
-                    <div class="text-center">
-                        <a asp-controller="@(User.Identity.IsAuthenticated == true ? "User" : "Account")" asp-action="@(User.Identity.IsAuthenticated == true ? "CreateOrder" : "AddCartWithoutLogin")" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:100%">Add to Cart</a>
-                    </div>
-
-                </div>
-            }
-        }
-    </div>
-    <div class="menu_box" id="tm-gallery-page-beverages" style="display: none;">
-        @foreach (var item in Model.Products)
-        {
-            @if (item.CategoryID == 3)
-            {
-                <div class="card card-renk" style="width: 18rem;">
-                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
-                    </div>
-                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
-                    <div class="text-center">
-                        <a asp-controller="@(User.Identity.IsAuthenticated == true ? "User" : "Account")" asp-action="@(User.Identity.IsAuthenticated == true ? "CreateOrder" : "AddCartWithoutLogin")" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:100%">Add to Cart</a>
-                    </div>
-
-                </div>
-            }
-        }
-    </div>
-    <div class="menu_box" id="tm-gallery-page-deserts" style="display: none;">
-        @foreach (var item in Model.Products)
-        {
-            @if (item.CategoryID == 4)
-            {
-                <div class="card card-renk" style="width: 18rem;">
-                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
-                    </div>
-                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
-                    <div class="text-center">
-                        <a asp-controller="@(User.Identity.IsAuthenticated == true ? "User" : "Account")" asp-action="@(User.Identity.IsAuthenticated == true ? "CreateOrder" : "AddCartWithoutLogin")" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:100%">Add to Cart</a>
-                    </div>
-
-                </div>
-            }
-        }
-    </div>
-    <div class="menu_box" id="tm-gallery-page-sauces" style="display: none;">
-        @foreach (var item in Model.Products)
-        {
-            @if (item.CategoryID == 5)
-            {
-                <div class="card card-renk" style="width: 18rem;">
-                    <img class="card-img-top" src="@item.ProductImage" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title text-center fw-bold">@item.ProductName</h5>
-                    </div>
-                    <h5 class="text-black text-center">@item.Price<span>&#8378</span></h5>
-                    <div class="text-center">
-                        <a asp-controller="@(User.Identity.IsAuthenticated == true ? "User" : "Account")" asp-action="@(User.Identity.IsAuthenticated == true ? "CreateOrder" : "AddCartWithoutLogin")" asp-route-id="@item.ID" class="btn btn-outline-danger float-end" style="width:100%">Add to Cart</a>
-                    </div>
-                </div>
-            }
-        }
-    </div>
+        </div>
+    }
 </div>
 
 
@@ -199,7 +127,7 @@
         $('.tm-paging-link').click(function (e) {
             e.preventDefault();
 
-            var page = $(this).text().toLowerCase();
+            var page = $(this).text().split(" ").join("").toLowerCase();
             $('.menu_box').hide();
             $('#tm-gallery-page-' + page).show();
             $('.tm-paging-link').removeClass('active');
