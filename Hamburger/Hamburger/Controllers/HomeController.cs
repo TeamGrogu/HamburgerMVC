@@ -31,9 +31,9 @@ namespace Hamburger.Controllers
 
         public async Task<IActionResult> Index()
         {
-            menuProductVM.Products = _context.Products.ToList();
-            menuProductVM.Menus = _context.Menus.ToList();
-            menuProductVM.Categories = _context.Categories.ToList();
+            menuProductVM.Products = _context.Products.Where(x => x.isActive == true).ToList();
+            menuProductVM.Menus = _context.Menus.Where(x => x.isActive == true).ToList();
+            menuProductVM.Categories = _context.Categories.Where(x => x.isActive == true).ToList();
             if(User.Identity.IsAuthenticated)
             {
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
@@ -52,10 +52,10 @@ namespace Hamburger.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateMessage(MenuProductVM model)
         {
-            User user = await _context.Users.FindAsync(User);
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             UserMessage message = new UserMessage()
             {
-                UserID = user.Id,
+                UserID = int.Parse(userId),
                 OrderID = model.OrderID,
                 MessageOfUser = model.message
             };
@@ -75,8 +75,10 @@ namespace Hamburger.Controllers
         public IActionResult Error(int statusCode)
         {
             if (statusCode == 404) { ViewBag.ErrorMessage = "Üzgünüm ama böyle bir sayfa yok..."; }
+            else if (statusCode == 403) { return View("Error403"); }
             return View();
         }
+    
         //404 page bitiş
     }
 }
