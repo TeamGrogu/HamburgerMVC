@@ -600,16 +600,18 @@ section .main_btn:hover i{
 
 /*Order*/
 
-.order{
-    width: 100%;
+.order {
+     width: 100%;
     height: 100vh;
     padding: 70px 0;
     background-image: url(image/bg2.jpg);
     background-size: cover;
     background-position: center;
+
 }
 
-.order h1{
+
+    .order h1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -651,6 +653,81 @@ section .main_btn:hover i{
     grid-gap: 0 10px;
 }
 
+
+label[id=label_id] {
+    width: 350px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    font-family: 'Sniglet', cursive;
+    font-size: 1em;
+    color: #676767;
+    transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    border: solid 3px #98d4f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom:10px;
+}
+input[id=input_id] {
+    width: 500px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    font-family: 'Sniglet', cursive;
+    font-size: 1em;
+    color: #676767;
+    transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    border: solid 3px #98d4f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+textarea[id=textarea_id] {
+    width: 500px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    font-family: 'Sniglet', cursive;
+    font-size: 1em;
+    color: #676767;
+    transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    -moz-transition: border 0.5s;
+    -o-transition: border 0.5s;
+    border: solid 3px #98d4f3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #F90;
+    color: white;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    font-size: 1.29em;
+    font-family: 'Sniglet', cursive;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    transition: background-color 0.5s;
+}
+
+    input[type="submit"]:hover {
+        background-color: #e58f0e;
+    }
+    /*
 .order .order_main form .input p{
     line-height: 25px;
 }
@@ -671,7 +748,7 @@ section .main_btn:hover i{
 
 .order .order_main form .input input:focus{
     border: 2px solid #fac031;
-}
+}*/
 
 .order .order_main form .order_btn{
     padding: 10px 0;
