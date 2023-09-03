@@ -1,6 +1,6 @@
 ﻿namespace Hamburger.Models.Entities
 {
-	public class Topping
+	public class Topping : BaseEntity
 	{
         public int ID { get; set; }
         public string ToppingName { get; set; }

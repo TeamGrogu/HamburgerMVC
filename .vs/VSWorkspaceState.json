@@ -1,21 +1,6 @@
 {
   "ExpandedNodes": [
-<<<<<<< HEAD
     ""
   ],
-  "SelectedNode": "\\Hamburger.sln",
-=======
-    "",
-    "\\Hamburger",
-    "\\Hamburger\\Hamburger",
-    "\\Hamburger\\Hamburger\\Controllers",
-    "\\Hamburger\\Hamburger\\Views",
-    "\\Hamburger\\Hamburger\\Views\\Home",
-    "\\Hamburger\\Hamburger\\Views\\Shared",
-    "\\Hamburger\\Hamburger\\wwwroot",
-    "\\Hamburger\\Hamburger\\wwwroot\\css"
-  ],
-  "SelectedNode": "\\Hamburger\\Hamburger\\Views\\Shared\\NavBarPartialView.cshtml",
->>>>>>> b9957808fed3ce07e39284f92b38ba827a1ff382
   "PreviewInSolutionExplorer": false
 }
