@@ -75,8 +75,10 @@ namespace Hamburger.Controllers
         public IActionResult Error(int statusCode)
         {
             if (statusCode == 404) { ViewBag.ErrorMessage = "Üzgünüm ama böyle bir sayfa yok..."; }
+            else if (statusCode == 403) { return View("Error403"); }
             return View();
         }
+    
         //404 page bitiş
     }
 }

@@ -9,17 +9,18 @@
 
         <ul>
             <li><a asp-controller="Home" asp-action="Index"><i class="fa-solid fa-house-chimney"></i>Home</a></li>
-            <li><a href="#Menu"><i class="fa-solid fa-bell-concierge"></i>Menu</a></li>
-            <li><a href="#Gallary"><i class="fa-solid fa-clapperboard"></i>Commercials</a></li>
-            <li><a href="#Review"><i class="fa-solid fa-comment"></i>Review</a></li>
-            <li><a href="#Order"><i class="fa-solid fa-file-signature"></i>Write Us</a></li>
-            <li><a href="#About"><i class="fa-solid fa-address-card"></i>About</a></li>
+            <li><a href="http://localhost:5069/#Menu"><i class="fa-solid fa-bell-concierge"></i>Menu</a></li>
+            <li><a href="http://localhost:5069/#Gallary"><i class="fa-solid fa-clapperboard"></i>Commercials</a></li>
+            <li><a href="http://localhost:5069/#Review"><i class="fa-solid fa-comment"></i>Review</a></li>
+            <li><a href="http://localhost:5069/#Order"><i class="fa-solid fa-file-signature"></i>Write Us</a></li>
+            <li><a href="http://localhost:5069/#About"><i class="fa-solid fa-address-card"></i>About</a></li>
             @if (User.IsInRole("Admin"))
             {
                 <li><a asp-controller="Admin" asp-action="AdminPanel"><i class="fa-solid fa-gears"></i>Admin Panel</a></li>
             }
         </ul>
-
+     
+    
         <div class="icon">
             @if (!User.IsInRole("Admin") && User.Identity.IsAuthenticated)
             {
