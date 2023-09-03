@@ -2,6 +2,7 @@
 using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis;
@@ -28,7 +29,7 @@ namespace Hamburger.Controllers
 		[Route("categoryList")]
 		public IActionResult ListCategories()
         {
-            ICollection<Category> categoryList = _context.Categories.ToList();
+            ICollection<Category> categoryList = _context.Categories.Where(x=>x.isActive.Equals(true)).ToList();
             return View(categoryList);
         }
 
@@ -39,19 +40,19 @@ namespace Hamburger.Controllers
 		[Route("productList")]
 		public IActionResult ListProducts()
         {
-            var productList = _context.Products.Include(x => x.Category).OrderBy(y => y.CategoryID).ToList();
+            var productList = _context.Products.Where(x => x.isActive.Equals(true)).Include(x => x.Category).OrderBy(y => y.CategoryID).ToList();
             return View(productList);
         }
 		[Route("menuList")]
 		public IActionResult ListMenus()
         {
-            var menuList = _context.Menus.ToList();
+            var menuList = _context.Menus.Where(x => x.isActive.Equals(true)).ToList();
             return View(menuList);
         }
 		[Route("toppingList")]
 		public IActionResult ListToppings()
         {
-            ICollection<Topping> toppingList = _context.Toppings.ToList();
+            ICollection<Topping> toppingList = _context.Toppings.Where(x => x.isActive.Equals(true)).ToList();
             return View(toppingList);
         }
         #endregion
@@ -59,25 +60,25 @@ namespace Hamburger.Controllers
         #region DELETE
         public IActionResult DeleteCategory(int id)
         {
-            _context.Categories.Remove(_context.Categories.Find(id));
+            _context.Categories.Find(id).isActive=false;
             _context.SaveChanges();
             return RedirectToAction("ListCategories");
         }
         public IActionResult DeleteProduct(int id)
         {
-            _context.Products.Remove(_context.Products.Find(id));
+            _context.Products.Find(id).isActive=false;
             _context.SaveChanges();
             return RedirectToAction("ListProducts");
         }
         public ActionResult DeleteMenu(int id)
         {
-            _context.Menus.Remove(_context.Menus.Find(id));
+            _context.Menus.Find(id).isActive = false;
             _context.SaveChanges();
             return RedirectToAction("ListMenus");
         }
         public ActionResult DeleteTopping(int id)
         {
-            _context.Toppings.Remove(_context.Toppings.Find(id));
+            _context.Toppings.Find(id).isActive = false;
             _context.SaveChanges();
             return RedirectToAction("ListToppings");
         }
@@ -95,10 +96,21 @@ namespace Hamburger.Controllers
 		[Route("{Action}")]
 		public ActionResult EditCategory(Category category)
         {
+            bool categoryExists = _context.Categories.Any(c => c.CategoryName.Replace(" ", "").ToLower() == category.CategoryName.Replace(" ", "").ToLower());
+           
             if (category.ID == 0)
             {
                 // Create category
-                _context.Categories.Add(category);
+                if (categoryExists)
+                {
+                    _context.Categories.FirstOrDefault(c => c.CategoryName.Replace(" ", "").ToLower() == category.CategoryName.Replace(" ", "").ToLower()).isActive= true;
+
+                }
+                else
+                {
+                    _context.Categories.Add(category);
+                }
+                
             }
             else
             {
@@ -106,6 +118,7 @@ namespace Hamburger.Controllers
                 var existingCategory = _context.Categories.Find(category.ID);
                 if (existingCategory != null)
                 {
+                   
                     existingCategory.CategoryName = category.CategoryName;
                 }
             }
@@ -114,6 +127,8 @@ namespace Hamburger.Controllers
 
             return RedirectToAction("ListCategories");
         }
+
+
 		[Route("{Action}")]
 		public IActionResult EditProduct(int id = 0)
         {
@@ -131,17 +146,37 @@ namespace Hamburger.Controllers
 		[Route("{Action}")]
 		public IActionResult EditProduct(MenuProductVM model)
         {
+            bool productExists = _context.Products.Any(c => c.ProductName.Replace(" ", "").ToLower() == model.Product.ProductName.Replace(" ", "").ToLower());
             if (model.Product.ID == 0)
             {
                 // Create product
-                Product product = new Product()
+                if (productExists)
                 {
-                    ProductName = model.Product.ProductName,
-                    Price = model.Product.Price,
-                    Description = model.Product.Description,
-                    CategoryID = model.Product.CategoryID
-                };
-                _context.Products.Add(product);
+                    var inactiveProduct = _context.Products.FirstOrDefault(c => c.ProductName.Replace(" ", "").ToLower() == model.Product.ProductName.Replace(" ", "").ToLower());
+                    if (inactiveProduct != null)
+                    {
+                       // inactiveProduct.ProductName = model.Product.ProductName;
+                        inactiveProduct.Price = model.Product.Price;
+                        inactiveProduct.Description = model.Product.Description;
+                        inactiveProduct.CategoryID = model.Product.CategoryID;
+                        inactiveProduct.ProductImage = model.Product.ProductImage;
+                    }
+                    inactiveProduct.isActive = true;
+
+                }
+                else
+                {
+                    Product product = new Product()
+                    {
+                        ProductName = model.Product.ProductName,
+                        Price = model.Product.Price,
+                        Description = model.Product.Description,
+                        CategoryID = model.Product.CategoryID,
+                        ProductImage = model.Product.ProductImage
+                    };
+                    _context.Products.Add(product);
+                }
+
             }
             else
             {
@@ -153,6 +188,7 @@ namespace Hamburger.Controllers
                     existingProduct.Price = model.Product.Price;
                     existingProduct.Description = model.Product.Description;
                     existingProduct.CategoryID = model.Product.CategoryID;
+                    existingProduct.ProductImage = model.Product.ProductImage;
                 }
             }
 
@@ -199,6 +235,7 @@ namespace Hamburger.Controllers
 		[Route("{Action}")]
 		public IActionResult EditMenu(MenuProductVM model)
         {
+            bool menuExists = _context.Menus.Any(c => c.MenuName.Replace(" ", "").ToLower() == model.Menu.MenuName.Replace(" ", "").ToLower());
             Product Hamburger = new Product();
             Product Side = new Product();
             Product Beverage = new Product();
@@ -209,35 +246,71 @@ namespace Hamburger.Controllers
             if (model.Menu.ID == 0)
             {
                 //Create menu
-                Menu menu = new Menu()
+                if (menuExists)
                 {
-                    MenuName = model.Menu.MenuName,
-                    Price = model.Menu.Price,
-                    Description = model.Menu.Description,
-                };
+                    var inactiveMenu = _context.Menus.FirstOrDefault(c => c.MenuName.Replace(" ", "").ToLower() == model.Menu.MenuName.Replace(" ", "").ToLower());
+                    if (inactiveMenu != null)
+                    {
+                       // inactiveMenu.MenuName = model.Menu.MenuName;
+                        inactiveMenu.Price = model.Menu.Price;
+                        inactiveMenu.Description = model.Menu.Description;
+                        inactiveMenu.MenuImage = model.Menu.MenuImage;
+                    }
+                    var menuProductsList = _context.MenuProducts.Include(x => x.Product).Where(x => x.MenuID == inactiveMenu.ID).ToList();
+                    foreach (MenuProduct menuProduct in menuProductsList)
+                    {
+                        if (menuProduct.Product.CategoryID == 1)
+                        {
+                            menuProduct.ProductID = model.SelectedHamburgerID;
+                        }
+                        else if (menuProduct.Product.CategoryID == 2)
+                        {
+                            menuProduct.ProductID = model.SelectedSideID;
 
-                _context.Menus.Add(menu);
-                _context.SaveChanges();
+                        }
+                        else if (menuProduct.Product.CategoryID == 3)
+                        {
+                            menuProduct.ProductID = model.SelectedBeverageID;
 
-                if (menu.ID > 0)
-                {
-                    MenuProduct menuProduct1 = new MenuProduct()
-                    {
-                        MenuID = menu.ID,
-                        ProductID = Hamburger.ID,
-                    };
-                    MenuProduct menuProduct2 = new MenuProduct()
-                    {
-                        MenuID = menu.ID,
-                        ProductID = Side.ID,
-                    };
-                    MenuProduct menuProduct3 = new MenuProduct()
-                    {
-                        MenuID = menu.ID,
-                        ProductID = Beverage.ID,
-                    };
-                    _context.MenuProducts.AddRange(menuProduct1, menuProduct2, menuProduct3);
+                        }
+                    }
+                    inactiveMenu.isActive= true;
                 }
+                else
+                {
+                    Menu menu = new Menu()
+                    {
+                        MenuName = model.Menu.MenuName,
+                        Price = model.Menu.Price,
+                        Description = model.Menu.Description,
+                        MenuImage = model.Menu.MenuImage
+                    };
+
+                     _context.Menus.Add(menu);
+                    _context.SaveChanges();
+
+                    if (menu.ID > 0)
+                    {
+                        MenuProduct menuProduct1 = new MenuProduct()
+                        {
+                            MenuID = menu.ID,
+                            ProductID = Hamburger.ID,
+                        };
+                        MenuProduct menuProduct2 = new MenuProduct()
+                        {
+                            MenuID = menu.ID,
+                            ProductID = Side.ID,
+                        };
+                        MenuProduct menuProduct3 = new MenuProduct()
+                        {
+                            MenuID = menu.ID,
+                            ProductID = Beverage.ID,
+                        };
+                        _context.MenuProducts.AddRange(menuProduct1, menuProduct2, menuProduct3);
+                    }
+                }
+
+                
             }
             else
             {
@@ -249,6 +322,7 @@ namespace Hamburger.Controllers
                     existingMenu.MenuName = model.Menu.MenuName;
                     existingMenu.Price = model.Menu.Price;
                     existingMenu.Description = model.Menu.Description;
+                    existingMenu.MenuImage = model.Menu.MenuImage;
                 }
                 var menuProductsList = _context.MenuProducts.Include(x => x.Product).Where(x => x.MenuID == existingMenu.ID).ToList();
                 foreach (MenuProduct menuProduct in menuProductsList)
@@ -280,14 +354,31 @@ namespace Hamburger.Controllers
             return PartialView("ToppingPartialView", topping);
         }
 
+
         [HttpPost]
 		[Route("{Action}")]
 		public ActionResult EditTopping(Topping topping)
         {
+            bool toppingExists = _context.Toppings.Any(c => c.ToppingName.Replace(" ","").ToLower() == topping.ToppingName.Replace(" ", "").ToLower());
+
             if (topping.ID == 0)
             {
                 // Create topping
-                _context.Toppings.Add(topping);
+                if (toppingExists)
+                {
+                   var inactiveTopping = _context.Toppings.FirstOrDefault(c => c.ToppingName.Replace(" ", "").ToLower() == topping.ToppingName.Replace(" ", "").ToLower());
+                    if (inactiveTopping != null)
+                    {
+                        //inactiveTopping.ToppingName = topping.ToppingName;
+                        inactiveTopping.Price = topping.Price;
+                    }
+                    inactiveTopping.isActive= true;
+                }
+                else
+                {
+                    _context.Toppings.Add(topping);
+                }
+                
             }
             else
             {
@@ -305,6 +396,10 @@ namespace Hamburger.Controllers
             return RedirectToAction("ListToppings");
         }
         #endregion
+
+
+
+
 
 
     }
