@@ -31,19 +31,20 @@ namespace Hamburger.Controllers
 
         public async Task<IActionResult> Index()
         {
-            menuProductVM.Products = _context.Products.ToList();
-            menuProductVM.Menus = _context.Menus.ToList();
-            menuProductVM.Categories = _context.Categories.ToList();
+            menuProductVM.Products = _context.Products.Where(x => x.isActive == true).ToList();
+            menuProductVM.Menus = _context.Menus.Where(x => x.isActive == true).ToList();
+            menuProductVM.Categories = _context.Categories.Where(x => x.isActive == true).ToList();
             if(User.Identity.IsAuthenticated)
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+                menuProductVM.Orders = _context.Orders.Where(o => o.UserID == userId).ToList();
                 if (menuProductVM.DropdownOrder != null)
                 {
                     menuProductVM.DropdownOrder.Clear();
                 }
                 if (userId != null)
                 {
-                    menuProductVM.DropdownOrder = _context.Orders.Where(x => x.UserID == int.Parse(userId)).Select(x => new SelectListItem() { Text = $"{x.ID} - Price={x.TotalPrice} - OrderDate={x.UpdateDate.Day}/{x.UpdateDate.Month}/{x.UpdateDate.Year}", Value = x.ID.ToString() }).ToList();
+                    menuProductVM.DropdownOrder = _context.Orders.Where(x => x.UserID == userId).Select(x => new SelectListItem() { Text = $"{x.ID} - Price={x.TotalPrice} - OrderDate={x.UpdateDate.Day}/{x.UpdateDate.Month}/{x.UpdateDate.Year}", Value = x.ID.ToString() }).ToList();
                 }
             }
             return View(menuProductVM);
@@ -52,10 +53,10 @@ namespace Hamburger.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateMessage(MenuProductVM model)
         {
-            User user = await _context.Users.FindAsync(User);
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             UserMessage message = new UserMessage()
             {
-                UserID = user.Id,
+                UserID = int.Parse(userId),
                 OrderID = model.OrderID,
                 MessageOfUser = model.message
             };

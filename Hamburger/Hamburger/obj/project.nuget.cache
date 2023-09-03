@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "envixJ2iET2AXq81AeO4WEX2KKLtSXQW5pVIhXYh+lzm+Cq0qHnYnt1tbtdXlyHG/4VTwXT6xmr1TYhHx1MPQw==",
+  "dgSpecHash": "bf1aPCRosF/aNvxWswHXLGDKSsF1Zv77oQbxwObTLX6KGZ02dFBKpZNO6dGzv6BpuFCOUVzb7VZ6fwQQUQ/9Lw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\omerf\\source\\repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
+  "projectFilePath": "C:\\Users\\omerf\\Source\\Repos\\HamburgerMVC\\Hamburger\\Hamburger\\Hamburger.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omerf\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\omerf\\.nuget\\packages\\mailkit\\3.2.0\\mailkit.3.2.0.nupkg.sha512",
