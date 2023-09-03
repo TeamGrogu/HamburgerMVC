@@ -1,13 +1,16 @@
 ﻿using Hamburger.DAL;
 using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace Hamburger.Controllers
 {
+    [Authorize(Roles = "Standard")]
     public class UserController : Controller
     {
         private readonly UserManager<User> _userManager;
@@ -19,7 +22,12 @@ namespace Hamburger.Controllers
             _context = context;
             _shoppingCartVM = shoppingCartVM;
         }
-		[Route("{Action}")]
+        [HttpGet("/admin/adminpanel")]
+        public IActionResult UnauthorizedAccess()
+        {
+            return RedirectToAction("403", "SenBuralaraNerdenGeldin");
+        }
+        [Route("{Action}")]
 		public async Task<IActionResult> ShoppingCart()
         {
             User user = await _userManager.GetUserAsync(User);
