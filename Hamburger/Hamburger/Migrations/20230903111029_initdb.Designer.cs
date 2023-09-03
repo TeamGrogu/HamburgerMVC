@@ -12,13 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hamburger.Migrations
 {
     [DbContext(typeof(Context))]
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-    [Migration("20230903064456_init")]
-    partial class init
-========
-    [Migration("20230903090141_initialdb")]
-    partial class initialdb
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+    [Migration("20230903111029_initdb")]
+    partial class initdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -59,65 +54,40 @@ namespace Hamburger.Migrations
                         {
                             ID = 1,
                             CategoryName = "Hamburgers",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2457),
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2458),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1800),
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1809),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1328),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1328),
                             isActive = true
                         },
                         new
                         {
                             ID = 2,
                             CategoryName = "Sides",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2459),
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2459),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1813),
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1813),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1330),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1330),
                             isActive = true
                         },
                         new
                         {
                             ID = 3,
                             CategoryName = "Beverages",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2460),
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2460),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1814),
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1815),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1331),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1332),
                             isActive = true
                         },
                         new
                         {
                             ID = 4,
-                            CategoryName = "Deserts",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2461),
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2461),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1815),
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1816),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CategoryName = "Desserts",
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1332),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1333),
                             isActive = true
                         },
                         new
                         {
                             ID = 5,
                             CategoryName = "Sauces",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2462),
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2462),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1816),
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1817),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1333),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1334),
                             isActive = true
                         });
                 });
@@ -160,229 +130,133 @@ namespace Hamburger.Migrations
                         new
                         {
                             ID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2900),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2394),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2839),
                             Description = "Whopper eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan bir Burger klasiği. Enfes patates kızartması ve içeceğiyle birlikte Whopper® Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/whopper-menu.png?v=285",
                             MenuName = "Whopper Menü",
                             Price = 189.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2901),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2394),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2840),
                             isActive = true
                         },
                         new
                         {
                             ID = 2,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2903),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2396),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2843),
                             Description = "Whopper® eti, büyük boy susamlı sandviç ekmeği, mayonez, doğranmış marul, soğan halkaları, nefis barbekü sosu ve cheddar peynirinden oluşan Whopper lezzeti. Enfes patates kızartması ve içeceğiyle birlikte Rodeo Whopper® Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/rodeo-whopper-menu.png?v=285",
                             MenuName = "Rodeo Whopper Menü",
                             Price = 189.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2903),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2397),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2844),
                             isActive = true
                         },
                         new
                         {
                             ID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2904),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2398),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2845),
                             Description = "Hamburger eti, küçük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan, Whopper lezzetinden vazgeçemeyenlere nefis bir seçim. Enfes patates kızartması ve içeceğiyle birlikte Whopper Jr. Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/whopper-jr-menu.png?v=285",
                             MenuName = "Whopper Jr. Menü",
                             Price = 159.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2904),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2398),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2845),
                             isActive = true
                         },
                         new
                         {
                             ID = 4,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2905),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2399),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2846),
                             Description = "Fish Royale® eti, küçük boy susamlı sandviç ekmeği, doğranmış marul ve Burger klasiğine lezzetini veren tartar sosun birleşimi olan Fish Royale®, balık eti sevenlerin tercihi olacak. Enfes patates kızartması ve içeceği ile istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/fish-royale-menu.png?v=285",
                             MenuName = "Fish Royale Menü",
                             Price = 169.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2905),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2399),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2846),
                             isActive = true
                         },
                         new
                         {
                             ID = 5,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2906),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2400),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2847),
                             Description = "King Chicken eti, susamlı sandviç ekmeği, mayonez ve doğranmış maruldan oluşan bu son derece sade alternatifi, enfes patates kızartması ve içeceğiyle birlikte istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/king-chicken-menu.png?v=285",
                             MenuName = "King Chicken Menü",
                             Price = 169.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2906),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2401),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2848),
                             isActive = true
                         },
                         new
                         {
                             ID = 6,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2907),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2401),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2849),
                             Description = "Kocaman Steakhouse eti, özel sosu, cheddar peyniri, domatesi, mayonezi, marulu ve çıtır kaplamalı soğanlarıyla sabrınızı zorlayacak bir lezzet. Enfes patates kızartması ve içeceğiyle birlikte BK Steakhouse Burger® Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/bk-steakhouse-burger-menu.png?v=285",
                             MenuName = "Steakhouse Menü",
                             Price = 209.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2907),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2402),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2849),
                             isActive = true
                         },
                         new
                         {
                             ID = 7,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2908),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2403),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2850),
                             Description = "4 adet Hamburger eti, 3 katlı özel ekmeği, cheddar peyniri, salatalık turşusu, doğranmış marul ve soğana eşlik eden özel Big King sosun birleşimi. Enfes patates kızartması ve içeceğiyle birlikte Double Menü keyfini istediğin gibi yaşa",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/double-big-king-menu.png?v=285",
                             MenuName = "Double King Menü",
                             Price = 219.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2909),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2403),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2850),
                             isActive = true
                         },
                         new
                         {
                             ID = 8,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2909),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2404),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2851),
                             Description = "İki adet Whopper eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğanla, klasik Whopper® lezzetini ikiye katlamak için ideal. Enfes patates kızartması ve içeceğiyle birlikte Double Whopper Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/double-whopper-menu.png?v=285",
                             MenuName = "Double Whopper Menü",
                             Price = 210.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2910),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2404),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2852),
                             isActive = true
                         },
                         new
                         {
                             ID = 9,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2910),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2405),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2853),
                             Description = "Özel kaplamasıyla tavuk göğüs fileto, mısır irmiği ile süslemeli özel ekmeği, spicy sosu, domatesi ve doğranmış maruldan oluşan yeni bir lezzet. Enfes patates kızartması ve içeceğiyle birlikte Spicy Gurme Tavuk Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/spicy-gurme-tavuk-menu.png?v=285",
                             MenuName = "Spicy Gurme Tavuk Menü",
                             Price = 170.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2911),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2405),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2853),
                             isActive = true
                         },
                         new
                         {
                             ID = 10,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2911),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2406),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2855),
                             Description = "2 adet Whopper eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, cheddar peyniri, hardal ve ketçaptan oluşan oluşan lezzet. Enfes patates kızartması ve içeceğiyle birlikte Mega Double Cheeseburger Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/mega-double-cheeseburger-menu.png?v=285",
                             MenuName = "Mega Double Cheeseburger Menü",
                             Price = 170.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2912),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2407),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2855),
                             isActive = true
                         },
                         new
                         {
                             ID = 11,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2913),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2407),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2856),
                             Description = "Enfes patates kızartması ve içeceğiyle birlikte 6'lı Nuggets Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/6li-bk-king-nuggets-menu.png?v=285",
                             MenuName = "6 lı Nuggets Menü",
                             Price = 100.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2913),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2408),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2857),
                             isActive = true
                         },
                         new
                         {
                             ID = 12,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2915),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2409),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2858),
                             Description = "Enfes patates kızartması ve içeceğiyle birlikte 6'lı Tenders Menü keyfini istediğin gibi yaşa!",
                             MenuImage = "https://www.burgerking.com.tr/cmsfiles/products/6li-chicken-tenders-menu-1.png?v=285",
                             MenuName = "6 lı Tenders Menü",
                             Price = 130.99m,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2915),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2409),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2858),
                             isActive = true
                         });
                 });
@@ -749,840 +623,504 @@ namespace Hamburger.Migrations
                         {
                             ID = 101,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2516),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1906),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1412),
                             Description = "Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan bir Burger King® klasiği.",
                             Price = 134.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/whopper.png?v=285",
                             ProductName = "Whopper Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2516),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1907),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1413),
                             isActive = true
                         },
                         new
                         {
                             ID = 102,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2536),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1936),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1440),
                             Description = "King Chicken eti, susamlı sandviç ekmeği, mayonez ve doğranmış maruldan oluşan son derece sade bir lezzet alternatifi.",
                             Price = 124.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/king-chicken-1.png?v=285",
                             ProductName = "King Chicken Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2537),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1936),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1441),
                             isActive = true
                         },
                         new
                         {
                             ID = 103,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2538),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1939),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1443),
                             Description = "Kocaman Steakhouse eti, özel sosu, cheddar peyniri, domatesi, mayonezi, marulu ve çıtır kaplamalı soğanlarıyla sabrınızı zorlayacak bir lezzet.",
                             Price = 174.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/bk-steakhouse-burger.png?v=285",
                             ProductName = "Steakhouse Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2539),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1939),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1443),
                             isActive = true
                         },
                         new
                         {
                             ID = 104,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2540),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1941),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1445),
                             Description = "4 adet Hamburger eti, 3 katlı özel ekmeği, cheddar peyniri, salatalık turşusu, doğranmış marul ve soğana eşlik eden özel Big King® sosun birleşimi",
                             Price = 184.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/double-big-king.png?v=285",
                             ProductName = "Double Big King Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2541),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1941),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1445),
                             isActive = true
                         },
                         new
                         {
                             ID = 105,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2542),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1943),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1447),
                             Description = "Whopper® eti, büyük boy susamlı sandviç ekmeği, mayonez, doğranmış marul, soğan halkaları, nefis barbekü sosu ve 2 adet cheddar peynirinden oluşan Whopper® lezzeti.",
                             Price = 159.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/rodeo-whopper.png?v=285",
                             ProductName = "Rodeo Whopper Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2543),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1943),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1448),
                             isActive = true
                         },
                         new
                         {
                             ID = 106,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2544),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1945),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1450),
                             Description = "İki adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğanla klasik Whopper® lezzetini ikiye katlamak için ideal.",
                             Price = 194.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/double-whopper-1.png?v=285",
                             ProductName = "Double Whopper Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2545),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1946),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1450),
                             isActive = true
                         },
                         new
                         {
                             ID = 107,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2546),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1947),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1452),
                             Description = "Hamburger eti, küçük boy susamlı sandviç ekmeği, salatalık turşusu, ketçap, mayonez, doğranmış marul, domates ve soğandan oluşan, Whopper® lezzetinden vazgeçemeyenlere nefis bir seçim.",
                             Price = 119.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/whopper-jr.png?v=285",
                             ProductName = "Whopper Jr. Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2546),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1948),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1452),
                             isActive = true
                         },
                         new
                         {
                             ID = 108,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2548),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1992),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1454),
                             Description = "Özel kaplamasıyla tavuk göğüs fileto, mısır irmiği ile süslemeli özel ekmeği, spicy sosu, domatesi ve doğranmış maruldan oluşan yeni bir lezzet.",
                             Price = 129.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/spicy-gurme-tavuk.png?v=285",
                             ProductName = "Spicy Gurme Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2548),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1993),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1454),
                             isActive = true
                         },
                         new
                         {
                             ID = 109,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2549),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1995),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1459),
                             Description = "Fish Royale® eti, küçük boy susamlı sandviç ekmeği, doğranmış marul ile burger klasiğine lezzetini veren tartar sosun birleşimi.",
                             Price = 159.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/fish-royale-1.png?v=285",
                             ProductName = "Fish Royale Burger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2550),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1996),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1459),
                             isActive = true
                         },
                         new
                         {
                             ID = 110,
                             CategoryID = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2551),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1997),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1461),
                             Description = "2 adet Whopper® eti, büyük boy susamlı sandviç ekmeği, salatalık turşusu, 4 adet cheddar peyniri, hardal ve ketçaptan oluşan lezzet.",
                             Price = 159.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mega-double-cheeseburger.png?v=285",
                             ProductName = "Mega Double CheeseBurger",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2551),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(1998),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1462),
                             isActive = true
                         },
                         new
                         {
                             ID = 201,
                             CategoryID = 2,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2554),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2000),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1463),
                             Description = "Doğal, soyulmuş, gevrek kızarmış patates",
                             Price = 59.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/patates.png?v=285",
                             ProductName = "Patates",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2554),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2000),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1464),
                             isActive = true
                         },
                         new
                         {
                             ID = 202,
                             CategoryID = 2,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2555),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2002),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1466),
                             Description = "Çıtır Mı Çıtır Altın Sarısı Tırtıklı Patates",
                             Price = 69.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/tirtikli-patates.png?v=285",
                             ProductName = "Tırtıklı  Patates",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2556),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2002),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1466),
                             isActive = true
                         },
                         new
                         {
                             ID = 203,
                             CategoryID = 2,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2557),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2004),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1468),
                             Description = "Çıtır çıtır 8’li, 12’li ya da 16’lı Soğan Halka lezzeti",
                             Price = 79.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/sogan-halkasi.png?v=285",
                             ProductName = "Soğan Halkası",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2557),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2004),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1469),
                             isActive = true
                         },
                         new
                         {
                             ID = 204,
                             CategoryID = 2,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2559),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2007),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1473),
                             Description = "Dışı çıtır çıtır, içi sıcacık peyniriyle Çıtır Peynir!",
                             Price = 75.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/citir-peynir.png?v=285",
                             ProductName = "Çıtır Peynir",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2559),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2007),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1473),
                             isActive = true
                         },
                         new
                         {
                             ID = 205,
                             CategoryID = 2,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2561),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2009),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1475),
                             Description = "Dışı çıtır çıtır Nuggets...",
                             Price = 75.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/bk-king-nuggets-1.png?v=285",
                             ProductName = "Çıtır Nuggets",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2561),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2009),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1475),
                             isActive = true
                         },
                         new
                         {
                             ID = 206,
                             CategoryID = 2,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2563),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2012),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1477),
                             Description = "Özel harcıyla nar gibi kızarmış  beyaz tavuk eti.",
                             Price = 85.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/chicken-tenders.png?v=285",
                             ProductName = "Çıtır Tavuk Tenders",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2563),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2012),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1478),
                             isActive = true
                         },
                         new
                         {
                             ID = 301,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2599),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2014),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1479),
                             Description = "Şeftalili Fuse Tea ve Limonlu Fuse Tea seçenekleri ile",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/fuse-tea.png?v=285",
                             ProductName = "Fuse Tea",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2600),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2015),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1480),
                             isActive = true
                         },
                         new
                         {
                             ID = 302,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2602),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2016),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1482),
                             Description = "Cola cola ",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/coca-cola.png?v=285",
                             ProductName = "Coca Cola",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2602),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2017),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1482),
                             isActive = true
                         },
                         new
                         {
                             ID = 303,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2604),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2018),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1484),
                             Description = "Cola cola Zero ",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/coca-cola-zero-sugar.png?v=285",
                             ProductName = "Coca Cola Zero",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2604),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2019),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1485),
                             isActive = true
                         },
                         new
                         {
                             ID = 304,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2605),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2020),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1487),
                             Description = "Fanta",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/fanta.png?v=285",
                             ProductName = "Fanta",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2606),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2021),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1487),
                             isActive = true
                         },
                         new
                         {
                             ID = 305,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2607),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2022),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1489),
                             Description = "Sprite",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/sprite.png?v=285",
                             ProductName = "Sprite",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2607),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2023),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1489),
                             isActive = true
                         },
                         new
                         {
                             ID = 306,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2609),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2024),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1491),
                             Description = "Ayran",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/ayran-300-ml.png?v=285",
                             ProductName = "Ayran",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2610),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2025),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1491),
                             isActive = true
                         },
                         new
                         {
                             ID = 307,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2611),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2027),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1493),
                             Description = "Elma Suyu",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/elma-suyu.png?v=285",
                             ProductName = "Cappy Elma Suyu",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2611),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2027),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1493),
                             isActive = true
                         },
                         new
                         {
                             ID = 308,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2613),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2029),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1786),
                             Description = "Atom Suyu",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/cappy-atom-200-ml.png?v=285",
                             ProductName = "Cappy Atom",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2614),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2029),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1786),
                             isActive = true
                         },
                         new
                         {
                             ID = 309,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2616),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2031),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1789),
                             Description = "Kahve Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/espresso.png?v=285",
                             ProductName = "Espresso",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2617),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2031),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1790),
                             isActive = true
                         },
                         new
                         {
                             ID = 310,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2619),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2033),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1792),
                             Description = "Kahve Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/nescafe-black.png?v=285",
                             ProductName = "Filtre Kahve",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2619),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2033),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1792),
                             isActive = true
                         },
                         new
                         {
                             ID = 311,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2620),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2036),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1795),
                             Description = "Karadeniz Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/cay.png?v=285",
                             ProductName = "Çay",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2621),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2036),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1796),
                             isActive = true
                         },
                         new
                         {
                             ID = 312,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2622),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2037),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1797),
                             Description = "İtalyan Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/vanilyali-cappuccino.png?v=285",
                             ProductName = "Cappuccino",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2622),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2038),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1798),
                             isActive = true
                         },
                         new
                         {
                             ID = 313,
                             CategoryID = 3,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2624),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2040),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1873),
                             Description = "Çikolata Lezzeti",
                             Price = 35.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/nestle-sicak-cikolata.png?v=285",
                             ProductName = "Sıcak Çikolata",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2624),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2040),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1873),
                             isActive = true
                         },
                         new
                         {
                             ID = 401,
                             CategoryID = 4,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2626),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2042),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2083),
                             Description = "Çikolata Lezzeti",
                             Price = 45.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/cikolatali-cookie.png?v=285",
                             ProductName = "Çikolatalı Cookie",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2626),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2042),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2083),
                             isActive = true
                         },
                         new
                         {
                             ID = 402,
                             CategoryID = 4,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2628),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2044),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2086),
                             Description = "Çikolata Lezzeti",
                             Price = 45.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/sufle.png?v=285",
                             ProductName = "Sufle",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2628),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2044),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2086),
                             isActive = true
                         },
                         new
                         {
                             ID = 403,
                             CategoryID = 4,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2630),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2047),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2089),
                             Description = "Vişne Lezzeti",
                             Price = 55.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/visneli-tatli.png?v=285",
                             ProductName = "Vişneli Tatlı",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2631),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2047),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2089),
                             isActive = true
                         },
                         new
                         {
                             ID = 404,
                             CategoryID = 4,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2632),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2050),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2091),
                             Description = "Vanilyalı, Çilekli, Çikolatalı, Espressolu, Limonlu çeşitleriyle.",
                             Price = 55.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/espressolu-milkshake.png?v=285",
                             ProductName = "Espresso Milkshake",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2632),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2051),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2091),
                             isActive = true
                         },
                         new
                         {
                             ID = 405,
                             CategoryID = 4,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2634),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2052),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2093),
                             Description = "Vanilyalı, Çikolata Soslu, Böğürtlen Soslu, Karamel Soslu, Çilek Soslu, Limonlu",
                             Price = 65.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/king-sundae.png?v=285",
                             ProductName = "King Sundae",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2634),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2053),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2094),
                             isActive = true
                         },
                         new
                         {
                             ID = 406,
                             CategoryID = 4,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2635),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2055),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2095),
                             Description = "Çikolata Parçacıklı, Renkli Çikolata Drajeleri, Limonlu",
                             Price = 75.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/bkool.png?v=285",
                             ProductName = "Bkool",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2636),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2055),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2096),
                             isActive = true
                         },
                         new
                         {
                             ID = 501,
                             CategoryID = 5,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2637),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2057),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2098),
                             Description = "Acı Sos",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-aci-sos.png?v=285",
                             ProductName = "Mini Acı Sos",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2637),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2057),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2098),
                             isActive = true
                         },
                         new
                         {
                             ID = 502,
                             CategoryID = 5,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2639),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2059),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2100),
                             Description = "Mayonez",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-mayonez.png?v=285",
                             ProductName = "Mayonez",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2639),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2059),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2100),
                             isActive = true
                         },
                         new
                         {
                             ID = 503,
                             CategoryID = 5,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2641),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2062),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2102),
                             Description = "Ranch Sos",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-ranch.png?v=285",
                             ProductName = "Mini Ranch",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2641),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2062),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2102),
                             isActive = true
                         },
                         new
                         {
                             ID = 504,
                             CategoryID = 5,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2643),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2064),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2104),
                             Description = "Sarımsaklı Sos",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-sarimsakli-mayonez-1.png?v=285",
                             ProductName = "Sarımsaklı Sos",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2643),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2064),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2105),
                             isActive = true
                         },
                         new
                         {
                             ID = 505,
                             CategoryID = 5,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2644),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2066),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2106),
                             Description = "Mini Ketçap",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-ketcap.png?v=285",
                             ProductName = "Mini Ketçap",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2645),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2066),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2107),
                             isActive = true
                         },
                         new
                         {
                             ID = 506,
                             CategoryID = 5,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2647),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2068),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2109),
                             Description = "Buffalo Sos",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-buffalo-1.png?v=285",
                             ProductName = "Buffalo Sos",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2647),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2068),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2109),
                             isActive = true
                         },
                         new
                         {
                             ID = 507,
                             CategoryID = 5,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2649),
-========
-                            CreateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2070),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2111),
                             Description = "Mini BBQ",
                             Price = 10.99m,
                             ProductImage = "https://www.burgerking.com.tr/cmsfiles/products/mini-bbq.png?v=285",
                             ProductName = "Mini BBQ",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2650),
-========
-                            UpdateDate = new DateTime(2023, 9, 3, 12, 1, 40, 749, DateTimeKind.Local).AddTicks(2070),
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(2111),
                             isActive = true
                         });
                 });
@@ -1915,22 +1453,14 @@ namespace Hamburger.Migrations
                         new
                         {
                             Id = 1,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            ConcurrencyStamp = "042bdeac-0439-4853-87a7-bb420a4de5af",
-========
-                            ConcurrencyStamp = "529fab61-2513-46e4-a2dd-bf7d02927dfe",
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            ConcurrencyStamp = "a7f00ab9-3439-4972-9d54-3bd570cdf2aa",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
                             Id = 2,
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            ConcurrencyStamp = "8b6aced7-620e-4196-8850-9ce45053f948",
-========
-                            ConcurrencyStamp = "ea1e082c-cee2-4e1f-acb3-846cbf67da20",
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            ConcurrencyStamp = "136ea0e2-c398-4b1c-9dcc-7d8ba986ae1b",
                             Name = "Standard",
                             NormalizedName = "STANDARD"
                         });
@@ -2057,145 +1587,145 @@ namespace Hamburger.Migrations
                         new
                         {
                             ID = 1,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2269),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1099),
                             Price = 4.99m,
                             ToppingName = "Domates",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2279),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1108),
                             isActive = true
                         },
                         new
                         {
                             ID = 2,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2282),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1113),
                             Price = 5.99m,
                             ToppingName = "Salatalık Turşusu",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2283),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1114),
                             isActive = true
                         },
                         new
                         {
                             ID = 3,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2284),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1115),
                             Price = 3.99m,
                             ToppingName = "Soğan",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2284),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1115),
                             isActive = true
                         },
                         new
                         {
                             ID = 4,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2285),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1116),
                             Price = 2.99m,
                             ToppingName = "Marul",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2285),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1117),
                             isActive = true
                         },
                         new
                         {
                             ID = 5,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2286),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1118),
                             Price = 6.99m,
                             ToppingName = "Cheddar Peyniri",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2286),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1118),
                             isActive = true
                         },
                         new
                         {
                             ID = 6,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2287),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1119),
                             Price = 7.99m,
                             ToppingName = "Trüf Mantarı",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2287),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1119),
                             isActive = true
                         },
                         new
                         {
                             ID = 7,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2288),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1120),
                             Price = 5.99m,
                             ToppingName = "Çıtır Soğan",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2288),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1121),
                             isActive = true
                         },
                         new
                         {
                             ID = 8,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2289),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1121),
                             Price = 1.99m,
                             ToppingName = "Ketçap",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2289),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1122),
                             isActive = true
                         },
                         new
                         {
                             ID = 9,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2290),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1123),
                             Price = 1.99m,
                             ToppingName = "Mayonez",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2290),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1123),
                             isActive = true
                         },
                         new
                         {
                             ID = 10,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2291),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1124),
                             Price = 1.99m,
                             ToppingName = "Steakhouse Burger Sos",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2291),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1124),
                             isActive = true
                         },
                         new
                         {
                             ID = 11,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2292),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1125),
                             Price = 1.99m,
                             ToppingName = "BigKing Burger Sos",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2292),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1126),
                             isActive = true
                         },
                         new
                         {
                             ID = 12,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2293),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1126),
                             Price = 3.99m,
                             ToppingName = "Soğan Halkaları",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2293),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1127),
                             isActive = true
                         },
                         new
                         {
                             ID = 13,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2294),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1128),
                             Price = 2.99m,
                             ToppingName = "Barbekü Sos",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2294),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1128),
                             isActive = true
                         },
                         new
                         {
                             ID = 14,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2295),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1129),
                             Price = 2.99m,
                             ToppingName = "Spicy Sos",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2295),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1129),
                             isActive = true
                         },
                         new
                         {
                             ID = 15,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2295),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1130),
                             Price = 2.99m,
                             ToppingName = "Tartar Sos",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2296),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1131),
                             isActive = true
                         },
                         new
                         {
                             ID = 16,
-                            CreateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2296),
+                            CreateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1131),
                             Price = 2.99m,
                             ToppingName = "Hardal Sos",
-                            UpdateDate = new DateTime(2023, 9, 3, 9, 44, 56, 605, DateTimeKind.Local).AddTicks(2297),
+                            UpdateDate = new DateTime(2023, 9, 3, 14, 10, 28, 895, DateTimeKind.Local).AddTicks(1132),
                             isActive = true
                         });
                 });
@@ -2289,11 +1819,7 @@ namespace Hamburger.Migrations
                             AccessFailedCount = 0,
                             Address = "Kadikoy",
                             BirthDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            ConcurrencyStamp = "cdb3659c-1333-446f-98e4-86d6fc5065ff",
-========
-                            ConcurrencyStamp = "8c40a14d-92b6-40ba-ae22-7532229abfa8",
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            ConcurrencyStamp = "68e43130-9ad1-4426-ad86-0292b968e81d",
                             Email = "overthinkerst@gmail.com",
                             EmailConfirmed = true,
                             FirstName = "overthinkers",
@@ -2301,15 +1827,9 @@ namespace Hamburger.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "OVERTHINKERST@GMAIL.COM",
                             NormalizedUserName = "OVERTHINKERS",
-<<<<<<<< HEAD:Hamburger/Hamburger/Migrations/20230903064456_init.Designer.cs
-                            PasswordHash = "AQAAAAEAACcQAAAAEJdKjtR0gjuSddSY2cG/eVz0kJ92ENEJArksNb6N4x8YfyH0WDjqtI5LliWs7NAiRQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAECQGRUc4t/zsNLMeF4w75kgg34AOf00febHel3L0F/d6+GqwX8xu725+HWvGPkDRcA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b95c8253-2873-49c6-a517-2caf05e481f7",
-========
-                            PasswordHash = "AQAAAAEAACcQAAAAEFFnjS/7bETI4ViP1kQz9WUM30rDz5FLBIhDDwEcF1uW6Xj6N9qYFnj08Mt8hO1Cnw==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "9e04ef55-ec7d-4fb5-9d37-387fc6236753",
->>>>>>>> 621cd44459feb588912b411c30d8adc12bf4c888:Hamburger/Hamburger/Migrations/20230903090141_initialdb.Designer.cs
+                            SecurityStamp = "3b2fcae9-9441-4a18-8d80-6db9f6f07d90",
                             TwoFactorEnabled = false,
                             UserName = "overthinkers"
                         });
@@ -2364,16 +1884,15 @@ namespace Hamburger.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("MessageOfUser")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("OrderID")
+                    b.Property<int?>("OrderID")
                         .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("UserID")
+                    b.Property<int?>("UserID")
                         .HasColumnType("int");
 
                     b.Property<bool>("isActive")
@@ -2618,15 +2137,11 @@ namespace Hamburger.Migrations
                 {
                     b.HasOne("Hamburger.Models.Entities.Order", "Order")
                         .WithMany("Messages")
-                        .HasForeignKey("OrderID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OrderID");
 
                     b.HasOne("Hamburger.Models.Entities.User", "User")
                         .WithMany("Messages")
-                        .HasForeignKey("UserID")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UserID");
 
                     b.Navigation("Order");
 
