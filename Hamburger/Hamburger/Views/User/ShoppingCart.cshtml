@@ -1,8 +1,8 @@
 ﻿@model ShoppingCartVM
 <link rel="stylesheet" href="~/css/cart.css">
 
-<div class="h-100 gradient-custom">
-    <div class="container py-5">
+<div class="h-100 gradient-custom" style="border-radius:10px;">
+    <div class="container py-5" style="width:1000px;">
         <div class="row d-flex justify-content-center my-4">
             <div class="col-md-8">
                 <div class="card mb-4">
@@ -38,12 +38,7 @@
 
                                     <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                                     
-                                        <p><strong>@menu.MenuName</strong></p>
-                                 
-                                        <button type="button" class="btn btn-danger btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
-                                                title="Remove item">
-                                            <i class="fas fa-trash-alt text-white"></i>
-                                        </button>
+                                        <p><strong>@menu.MenuName</strong></p>                              
                                        
                                         @foreach (var menuProduct in menu.MenuProducts)
                                         {
@@ -88,7 +83,7 @@
                                         <!-- Quantity -->
                                         <button type="button" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip"
                                                 title="Remove item">
-                                            <i class="fas fa-trash-alt text-white"></i>Remove Item
+                                            <a asp-controller="User" asp-action="RemoveItem" asp-route-id="@menu.ID" class="text-white text-decoration-none"><i class="fas fa-trash-alt text-white"></i>Remove Item</a>
                                         </button>
                                         <!-- Price -->
                                         <p class="text-start text-md-center" style="margin-top:0px;">
@@ -129,12 +124,6 @@
                                     <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
                        
                                         <p><strong>@product.ProductName</strong></p>
-
-                             
-                                        <button type="button" class="btn btn-danger btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
-                                                title="Remove item">
-                                            <i class="fas fa-trash-alt text-white"></i>
-                                        </button>
                                    
                                     </div>
 
@@ -160,7 +149,7 @@
                                         <!-- Quantity -->
                                         <button type="button" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip"
                                                 title="Remove item">
-                                            <i class="fas fa-trash-alt text-white"></i>Remove Item
+                                            <a asp-controller="User" asp-action="RemoveItem" asp-route-id="@product.ID" class="text-white text-decoration-none"><i class="fas fa-trash-alt text-white"></i>Remove Item</a>
                                         </button>
                                         <!-- Price -->
 
@@ -204,7 +193,9 @@
                                 <div>
                                     <strong>Total amount</strong>
                                 </div>
-                                <span><strong>@Model.Order.TotalPrice <span>&#8378</span></strong></span>
+                                @if(Model.Order!=null){
+                                    <span><strong>@Model.Order.TotalPrice<span> &#8378</span></strong></span>
+                                }
                             </li>
                         </ul>
 

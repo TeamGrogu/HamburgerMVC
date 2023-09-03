@@ -352,56 +352,42 @@
 
 
 
-<!--Order-->
+@if(User.Identity.IsAuthenticated)
+{
+    <div class="order" id="Order">
+        <h1><span>Order Now</span></h1>
 
-<div class="order" id="Order">
-    <h1><span>Order Now</span></h1>
+        <div class="order_main">
 
-    <div class="order_main">
+            <div class="order_image">
+                <img src="~/image/order_image.png">
+            </div>
 
-        <div class="order_image">
-            <img src="/image/order_image.png">
+            <form asp-action="CreateMessage">
+
+                <div class="input">
+                    <p>Email</p>
+                    <input type="text" placeholder="Email">
+                </div>
+                <br>
+                <div class="formbold-mb-3" style="width:stretch">
+                    <label class="formbold-form-label" asp-for="Orders">Order:</label>
+                    @Html.DropDownListFor(x => x.OrderID, Model.DropdownOrder, new { @class="formbold-form-input" })
+                </div>
+                <br>
+                <div>
+                    <p>Mesaj</p>
+                    <textarea asp-for="message" placeholder="Enter your message here" rows="8" cols="50"></textarea>
+                    <a asp-action="CreateMessage" class="text-black float-end order_btn" style="height:50px; margin-top:10px;">Send Message</a>
+                </div>
+
+            </form>
+
         </div>
 
-        <form action="#">
-
-            <div class="input">
-                <p>Name</p>
-                <input type="text" placeholder="you name">
-            </div>
-
-            <div class="input">
-                <p>Email</p>
-                <input type="email" placeholder="you email">
-            </div>
-
-            <div class="input">
-                <p>Number</p>
-                <input placeholder="you number">
-            </div>
-
-            <div class="input">
-                <p>How Much</p>
-                <input type="number" placeholder="how many order">
-            </div>
-
-            <div class="input">
-                <p>You Order</p>
-                <input placeholder="food name">
-            </div>
-
-            <div class="input">
-                <p>Address</p>
-                <input placeholder="you Address">
-            </div>
-
-            <a href="#" class="order_btn">Order Now</a>
-
-        </form>
-
     </div>
+}
 
-</div>
 
 <!--About-->
 

@@ -1,13 +1,16 @@
 ﻿using Hamburger.DAL;
 using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace Hamburger.Controllers
 {
+    [Authorize(Roles = "Standard")]
     public class UserController : Controller
     {
         private readonly UserManager<User> _userManager;
@@ -19,8 +22,13 @@ namespace Hamburger.Controllers
             _context = context;
             _shoppingCartVM = shoppingCartVM;
         }
-
-        public async Task<IActionResult> ShoppingCart()
+        [HttpGet("/admin/adminpanel")]
+        public IActionResult UnauthorizedAccess()
+        {
+            return RedirectToAction("403", "SenBuralaraNerdenGeldin");
+        }
+        [Route("{Action}")]
+		public async Task<IActionResult> ShoppingCart()
         {
             User user = await _userManager.GetUserAsync(User);
             _shoppingCartVM.User = user;
@@ -64,6 +72,16 @@ namespace Hamburger.Controllers
             Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
             ICollection<OrderDetails> orderDetails = _context.OrderDetails.Where(x => x.OrderID == model.Order.ID).ToList();
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult RemoveItem(ShoppingCartVM model,int id)
+        {
+            OrderDetails orderDetailsP = _context.OrderDetails.FirstOrDefault(x => x.ProductID == id && x.OrderID == model.Order.ID);
+            OrderDetails orderDetailsM = _context.OrderDetails.FirstOrDefault(m => m.MenuID == id && m.OrderID == model.Order.ID);
+            _ = orderDetailsP == null ? _context.OrderDetails.Remove(orderDetailsM) : _context.OrderDetails.Remove(orderDetailsP);
+            _context.SaveChanges();
+            return RedirectToAction("ShoppingCart");
         }
 
 

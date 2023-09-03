@@ -25,12 +25,14 @@ namespace Hamburger.Controllers
             this._userService = userService;
             this._emailService = emailService;
         }
-        public IActionResult Register()
+		[Route("{Action}")]
+		public IActionResult Register()
         {
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Register(UserVM vm)
+		[Route("{Action}")]
+		public async Task<IActionResult> Register(UserVM vm)
         {
             if (ModelState.IsValid)
             {
@@ -64,12 +66,14 @@ namespace Hamburger.Controllers
             TempData["error"] = "An error occurred.";
             return View(vm);
         }
-        public async Task<IActionResult> Login()
+		[Route("{Action}")]
+		public async Task<IActionResult> Login()
         {
             return RedirectToAction("Register");
         }
         [HttpPost]
-        public async Task<IActionResult> Login(UserVM vm)
+		[Route("{Action}")]
+		public async Task<IActionResult> Login(UserVM vm)
         {
             if (string.IsNullOrWhiteSpace(vm.LoginVM.Email) || string.IsNullOrWhiteSpace(vm.LoginVM.Password))
             {
@@ -90,7 +94,8 @@ namespace Hamburger.Controllers
             }
             return RedirectToAction("Login");
         }
-        public async Task<IActionResult> Logout()
+		[Route("{Action}")]
+		public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
@@ -99,7 +104,7 @@ namespace Hamburger.Controllers
         {
             return View();
         }
-        public async Task<IActionResult> ConfirmEmail(string userId, string token)
+		public async Task<IActionResult> ConfirmEmail(string userId, string token)
         {
             if (userId == null || token == null)
             {
@@ -123,13 +128,15 @@ namespace Hamburger.Controllers
         public void SendEmail(string email,string content,string subject)
         {
             var message = new Message(new string[] {email},subject,content);
-            _emailService.SendEmail(message);        
+            _emailService.SendEmail(message);
         }
-        public IActionResult ForgotPassword()
+		[Route("{Action}")]
+		public IActionResult ForgotPassword()
         {
             return View();
         }
         [HttpPost]
+		[Route("{Action}")]
 		public async Task<IActionResult> ForgotPassword(UserVM vm)
 		{
 			var user = await userManager.FindByEmailAsync(vm.Email);
@@ -146,6 +153,7 @@ namespace Hamburger.Controllers
 			}	 
 			return View();
 		}
+		[Route("{Action}")]
 		public async Task<IActionResult> ResetPassword(string token, string email)
 		{
             if (token == null || email == null)
@@ -156,6 +164,7 @@ namespace Hamburger.Controllers
 			return View();
 		}
         [HttpPost]
+		[Route("{Action}")]
 		public async Task<IActionResult> ResetPassword(ResetPasswordVM vm)
 		{
             if (ModelState.IsValid)
@@ -163,17 +172,25 @@ namespace Hamburger.Controllers
 				var user = await userManager.FindByEmailAsync(vm.Email);
                 if (user != null)
                 {
-                    var result = await userManager.ResetPasswordAsync(user,vm.Token,vm.Password);
-                    if (result.Succeeded)
+                    if (vm.Password == vm.ConfirmPassword)
                     {
-                        ViewBag.ErrorMessage = "Your Password has been successfully changed.";
-                        return View("NotFound");
-                    }
-                    foreach (var error in result.Errors)
+						var result = await userManager.ResetPasswordAsync(user, vm.Token, vm.Password);
+						if (result.Succeeded)
+						{
+							ViewBag.ErrorMessage = "Your Password has been successfully changed.";
+							return View("NotFound");
+						}
+						foreach (var error in result.Errors)
+						{
+							ModelState.AddModelError("", error.Description);
+						}
+						return View(vm);
+					}
+                    else
                     {
-                        ModelState.AddModelError("", error.Description);
-                    }
-                    return View(vm);
+						ModelState.AddModelError("", "Passwords don't match.");
+                        return View(vm);
+					}
                 }
                 ViewBag.ErrorMessage = "User not found.";
                 return View("NotFound");

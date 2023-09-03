@@ -11,6 +11,7 @@ namespace Hamburger.Models.Entities
         public string Address { get; set; }
         public ICollection<Order>? Orders { get; set; }
 		public ICollection<UserFavorites> UserFavorites { get; set; }
+        public ICollection<UserMessage> Messages { get; set; }
 
     }
 }
