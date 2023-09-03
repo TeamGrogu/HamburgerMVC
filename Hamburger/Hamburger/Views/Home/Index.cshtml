@@ -161,9 +161,6 @@
 
 </div>
 
-
-
-
 <!--Review-->
 
 <div class="review" id="Review">
@@ -209,10 +206,10 @@
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
-                </div>         
+                </div>
 
                 <p>
-                   Ben Sivaslıyım arkadaş...Hamburger falan bilmem ama bu hamburger bir başka...Sivas'da bu hamburger yüzünden millet şehrimizin lezzeti olan Sivas köfte yemeyi bıraktı.Bu hizmeti bize sağlayanları tebrik ederim.Mük olmuş MÜK!
+                    Ben Sivaslıyım arkadaş...Hamburger falan bilmem ama bu hamburger bir başka...Sivas'da bu hamburger yüzünden millet şehrimizin lezzeti olan Sivas köfte yemeyi bıraktı.Bu hizmeti bize sağlayanları tebrik ederim.Mük olmuş MÜK!
                 </p>
 
             </div>
@@ -236,7 +233,7 @@
                     <i class="fa-solid fa-star-half-stroke"></i>
                 </div>
                 <p>
-                   Bayılıyorum bu hamburgere....Pati Reyiz'e de söylüyorum bir tane afiyetle bitiriyor.Ayrıca Bingöl'e de şube istiyoruz.
+                    Bayılıyorum bu hamburgere....Pati Reyiz'e de söylüyorum bir tane afiyetle bitiriyor.Ayrıca Bingöl'e de şube istiyoruz.
                 </p>
 
             </div>
@@ -272,14 +269,12 @@
 </div>
 
 
-
-@if(User.Identity.IsAuthenticated)
+@if (User.Identity.IsAuthenticated)
 {
     <div class="order" id="Order">
         <h1><span>Contact Us</span></h1>
 
         <div class="order_main">
-
             <div class="order_image">
                 <img src="~/image/order_image.png">
             </div>
@@ -287,19 +282,20 @@
                 @if(@Model.Orders.Count != 0)
                 {
                 <div class="formbold-mb-3" style="width:stretch">
-                    <label class="formbold-form-label" asp-for="Orders">Order:</label>
-                    @Html.DropDownListFor(x => x.OrderID, Model.DropdownOrder, new { @class="formbold-form-input" })
-                </div>
+                    <label id="label_id" asp-for="Orders"></label>
+                        <label id="label_id"> 
+                            @Html.DropDownListFor(x => x.OrderID, Model.DropdownOrder, new { @class="formbold-form-input" })</label>
+                    </div>
                 <br>
                 }
-                <div>
-                    <p>Mesaj</p>
-                    <textarea asp-for="message" placeholder="Enter your message here" rows="8" cols="50"></textarea>
-                    <input type="submit" value="Send Message" class="text-black float-end order_btn" style="height:50px; margin-top:10px;" />
+                <div>                 
+                    <textarea id="textarea_id" asp-for="message" placeholder="Enter your message here" rows="8" cols="50"  id="form_button"></textarea>
+                    <input id="input_id" type="submit" value="Send Message"  />
                 </div>
             </form>
         </div>
     </div>
+    
 }
 
 
