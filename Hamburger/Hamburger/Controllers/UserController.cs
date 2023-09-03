@@ -76,15 +76,34 @@ namespace Hamburger.Controllers
         }
 
         [HttpPost]
-        public IActionResult RemoveItem(ShoppingCartVM model,int id)
+        public async Task<IActionResult> RemoveItem(ShoppingCartVM model, int? menuID, int? productID)
         {
-            OrderDetails orderDetailsP = _context.OrderDetails.FirstOrDefault(x => x.ProductID == id && x.OrderID == model.Order.ID);
-            OrderDetails orderDetailsM = _context.OrderDetails.FirstOrDefault(m => m.MenuID == id && m.OrderID == model.Order.ID);
-            _ = orderDetailsP == null ? _context.OrderDetails.Remove(orderDetailsM) : _context.OrderDetails.Remove(orderDetailsP);
+            User user = await _userManager.GetUserAsync(User);
+            Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
+            OrderDetails orderDetailsP = _context.OrderDetails.FirstOrDefault(x => x.ProductID == productID && x.OrderID == order.ID);
+            OrderDetails orderDetailsM = _context.OrderDetails.FirstOrDefault(m => m.MenuID == menuID && m.OrderID == order.ID);
+            _ = orderDetailsP != null ? 
+                _context.OrderDetails.Remove(orderDetailsP) : _context.OrderDetails.Remove(orderDetailsM);
+            _context.SaveChanges();
+            var orderDetailsList = _context.OrderDetails.Where(o => o.OrderID == order.ID).ToList();
+
+                
+            if (orderDetailsList != null)
+            {
+                decimal totalPrice = 0;
+                foreach (OrderDetails od in orderDetailsList)
+                {
+                    totalPrice += od.Price;
+                }
+                order.TotalPrice = totalPrice;
+            }
+            if (order.TotalPrice == 0)
+            {
+                _context.Orders.Remove(order);
+            }
             _context.SaveChanges();
             return RedirectToAction("ShoppingCart");
         }
-
 
         public async Task<IActionResult> CreateOrder(int id)
         {

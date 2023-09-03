@@ -355,22 +355,22 @@
             <div class="order_image">
                 <img src="~/image/order_image.png">
             </div>
-
             <form asp-action="CreateMessage" method="post">
+                @if(@Model.Orders.Count != 0)
+                {
                 <div class="formbold-mb-3" style="width:stretch">
                     <label class="formbold-form-label" asp-for="Orders">Order:</label>
                     @Html.DropDownListFor(x => x.OrderID, Model.DropdownOrder, new { @class="formbold-form-input" })
                 </div>
                 <br>
+                }
                 <div>
                     <p>Mesaj</p>
                     <textarea asp-for="message" placeholder="Enter your message here" rows="8" cols="50"></textarea>
                     <input type="submit" value="Send Message" class="text-black float-end order_btn" style="height:50px; margin-top:10px;" />
                 </div>
             </form>
-
         </div>
-
     </div>
 }
 

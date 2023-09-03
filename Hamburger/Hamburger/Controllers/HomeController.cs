@@ -36,14 +36,15 @@ namespace Hamburger.Controllers
             menuProductVM.Categories = _context.Categories.Where(x => x.isActive == true).ToList();
             if(User.Identity.IsAuthenticated)
             {
-                var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+                menuProductVM.Orders = _context.Orders.Where(o => o.UserID == userId).ToList();
                 if (menuProductVM.DropdownOrder != null)
                 {
                     menuProductVM.DropdownOrder.Clear();
                 }
                 if (userId != null)
                 {
-                    menuProductVM.DropdownOrder = _context.Orders.Where(x => x.UserID == int.Parse(userId)).Select(x => new SelectListItem() { Text = $"{x.ID} - Price={x.TotalPrice} - OrderDate={x.UpdateDate.Day}/{x.UpdateDate.Month}/{x.UpdateDate.Year}", Value = x.ID.ToString() }).ToList();
+                    menuProductVM.DropdownOrder = _context.Orders.Where(x => x.UserID == userId).Select(x => new SelectListItem() { Text = $"{x.ID} - Price={x.TotalPrice} - OrderDate={x.UpdateDate.Day}/{x.UpdateDate.Month}/{x.UpdateDate.Year}", Value = x.ID.ToString() }).ToList();
                 }
             }
             return View(menuProductVM);
