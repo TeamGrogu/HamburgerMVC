@@ -16,7 +16,6 @@
                         {
                             @foreach (Menu menu in Model.Menus)
                             {
-                                
                                 <div class="row">
                                     <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
                               
@@ -83,7 +82,7 @@
                                         <!-- Quantity -->
                                         <button type="button" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip"
                                                 title="Remove item">
-                                            <i class="fas fa-trash-alt text-white"></i>Remove Item
+                                            <a asp-controller="User" asp-action="RemoveItem" asp-route-id="@menu.ID" class="text-white text-decoration-none"><i class="fas fa-trash-alt text-white"></i>Remove Item</a>
                                         </button>
                                         <!-- Price -->
                                         <p class="text-start text-md-center" style="margin-top:0px;">
@@ -149,7 +148,7 @@
                                         <!-- Quantity -->
                                         <button type="button" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip"
                                                 title="Remove item">
-                                            <i class="fas fa-trash-alt text-white"></i>Remove Item
+                                            <a asp-controller="User" asp-action="RemoveItem" asp-route-id="@product.ID" class="text-white text-decoration-none"><i class="fas fa-trash-alt text-white"></i>Remove Item</a>
                                         </button>
                                         <!-- Price -->
 
@@ -193,7 +192,9 @@
                                 <div>
                                     <strong>Total amount</strong>
                                 </div>
-                                <span><strong>@Model.Order.TotalPrice <span>&#8378</span></strong></span>
+                                @if(Model.Order!=null){
+                                    <span><strong>@Model.Order.TotalPrice<span> &#8378</span></strong></span>
+                                }
                             </li>
                         </ul>
 

@@ -28,13 +28,13 @@ namespace Hamburger.Controllers
 		[Route("{Action}")]
 		public IActionResult Register()
         {
-            return View();
+			return View();
         }
         [HttpPost]
 		[Route("{Action}")]
 		public async Task<IActionResult> Register(UserVM vm)
         {
-            if (ModelState.IsValid)
+			if (ModelState.IsValid)
             {
                 User appUser = new User()
                 {
@@ -128,7 +128,7 @@ namespace Hamburger.Controllers
         public void SendEmail(string email,string content,string subject)
         {
             var message = new Message(new string[] {email},subject,content);
-            _emailService.SendEmail(message);        
+            _emailService.SendEmail(message);
         }
 		[Route("{Action}")]
 		public IActionResult ForgotPassword()
@@ -197,5 +197,11 @@ namespace Hamburger.Controllers
 			}					
 			return View(vm);
 		}
+
+        public IActionResult AddCartWithoutLogin()
+        {
+			TempData["message"] = "Please Login before adding items to cart.";
+			return RedirectToAction("Register");
+        }
 	}
 }
