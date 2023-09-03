@@ -348,7 +348,7 @@
 @if(User.Identity.IsAuthenticated)
 {
     <div class="order" id="Order">
-        <h1><span>Order Now</span></h1>
+        <h1><span>Contact Us</span></h1>
 
         <div class="order_main">
 
@@ -356,13 +356,7 @@
                 <img src="~/image/order_image.png">
             </div>
 
-            <form asp-action="CreateMessage">
-
-                <div class="input">
-                    <p>Email</p>
-                    <input type="text" placeholder="Email">
-                </div>
-                <br>
+            <form asp-action="CreateMessage" method="post">
                 <div class="formbold-mb-3" style="width:stretch">
                     <label class="formbold-form-label" asp-for="Orders">Order:</label>
                     @Html.DropDownListFor(x => x.OrderID, Model.DropdownOrder, new { @class="formbold-form-input" })
@@ -371,9 +365,8 @@
                 <div>
                     <p>Mesaj</p>
                     <textarea asp-for="message" placeholder="Enter your message here" rows="8" cols="50"></textarea>
-                    <a asp-action="CreateMessage" class="text-black float-end order_btn" style="height:50px; margin-top:10px;">Send Message</a>
+                    <input type="submit" value="Send Message" class="text-black float-end order_btn" style="height:50px; margin-top:10px;" />
                 </div>
-
             </form>
 
         </div>

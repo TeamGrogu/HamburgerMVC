@@ -6,11 +6,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-<<<<<<< HEAD
 using Microsoft.Extensions.Configuration.UserSecrets;
-=======
 using System.Data;
->>>>>>> d554c5d3365f4a2b58e9dae1b23b7efff942045c
 
 namespace Hamburger.Controllers
 {

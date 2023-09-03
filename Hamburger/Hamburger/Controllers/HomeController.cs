@@ -52,10 +52,10 @@ namespace Hamburger.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateMessage(MenuProductVM model)
         {
-            User user = await _context.Users.FindAsync(User);
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             UserMessage message = new UserMessage()
             {
-                UserID = user.Id,
+                UserID = int.Parse(userId),
                 OrderID = model.OrderID,
                 MessageOfUser = model.message
             };
