@@ -31,9 +31,9 @@ namespace Hamburger.Controllers
 
         public async Task<IActionResult> Index()
         {
-            menuProductVM.Products = _context.Products.ToList();
-            menuProductVM.Menus = _context.Menus.ToList();
-            menuProductVM.Categories = _context.Categories.ToList();
+            menuProductVM.Products = _context.Products.Where(x => x.isActive == true).ToList();
+            menuProductVM.Menus = _context.Menus.Where(x => x.isActive == true).ToList();
+            menuProductVM.Categories = _context.Categories.Where(x => x.isActive == true).ToList();
             if(User.Identity.IsAuthenticated)
             {
                 var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;

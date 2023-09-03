@@ -61,6 +61,10 @@
       "PackagePath": "staticwebassets\\image\\logo.png"
     },
     {
+      "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\order_image.png",
+      "PackagePath": "staticwebassets\\image\\order_image.png"
+    },
+    {
       "Id": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\js\\register.js",
       "PackagePath": "staticwebassets\\js\\register.js"
     },

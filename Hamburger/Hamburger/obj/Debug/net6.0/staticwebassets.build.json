@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "F4Pq1iIHrFIEfKho6+1FGvLUDdJxfK7mpUUGxhS7hzs=",
+  "Hash": "6QSAh44QECibFrwFZQUXqzB+izTQTMGLFlTQp4i7VPs=",
   "Source": "Hamburger",
   "BasePath": "_content/Hamburger",
   "Mode": "Default",
@@ -1307,6 +1307,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\image\\order_image.png",
+      "SourceId": "Hamburger",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\",
+      "BasePath": "_content/Hamburger",
+      "RelativePath": "image/order_image.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\order_image.png"
     },
     {
       "Identity": "C:\\Users\\DELL\\Desktop\\Hamburger\\Hamburger\\Hamburger\\wwwroot\\js\\register.js",
