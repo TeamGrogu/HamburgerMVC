@@ -7,7 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration.UserSecrets;
+using Newtonsoft.Json;
 using System.Data;
+using System.Security.Claims;
 
 namespace Hamburger.Controllers
 {
@@ -67,23 +69,20 @@ namespace Hamburger.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CompleteOrder(ShoppingCartVM model)
+        public async Task<IActionResult> CompleteOrder(ShoppingCartVM sc)
         {
             User user = await _userManager.GetUserAsync(User);
             Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
-            ICollection<OrderDetails> orderDetails = _context.OrderDetails.Where(x => x.OrderID == model.Order.ID).ToList();
+            var orderDetails = _context.OrderDetails.Where(od => od.OrderID == order.ID).ToList();
             return View();
         }
 
         [HttpPost]
-        public async Task<IActionResult> RemoveItem(ShoppingCartVM model, int? menuID, int? productID)
+        public async Task<IActionResult> RemoveItem(int ID)
         {
-            User user = await _userManager.GetUserAsync(User);
-            Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
-            OrderDetails orderDetailsP = _context.OrderDetails.FirstOrDefault(x => x.ProductID == productID && x.OrderID == order.ID);
-            OrderDetails orderDetailsM = _context.OrderDetails.FirstOrDefault(m => m.MenuID == menuID && m.OrderID == order.ID);
-            _ = orderDetailsP != null ? 
-                _context.OrderDetails.Remove(orderDetailsP) : _context.OrderDetails.Remove(orderDetailsM);
+            _context.OrderDetails.Remove(_context.OrderDetails.Find(ID));
+            var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
+            Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == userId);
             _context.SaveChanges();
             var orderDetailsList = _context.OrderDetails.Where(o => o.OrderID == order.ID).ToList();
 
