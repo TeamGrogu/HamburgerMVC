@@ -69,18 +69,19 @@ namespace Hamburger.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CompleteOrder(ShoppingCartVM sc)
+        public async Task<IActionResult> CompleteOrder()
         {
             User user = await _userManager.GetUserAsync(User);
             Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
-            var orderDetails = _context.OrderDetails.Where(od => od.OrderID == order.ID).ToList();
-            return View();
+            order.StatusID = 102;
+            _context.SaveChanges();
+            return RedirectToAction("ShoppingCart");
         }
 
         [HttpPost]
         public async Task<IActionResult> RemoveItem(int ID)
         {
-            _context.OrderDetails.Remove(_context.OrderDetails.Find(ID));
+            _context.OrderDetails.Remove(_context.OrderDetails.FirstOrDefault(o => o.ID == ID));
             var userId = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value);
             Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == userId);
             _context.SaveChanges();

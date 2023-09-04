@@ -16,80 +16,81 @@
                         {
                             @foreach (Menu menu in Model.Menus)
                             {
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                                <form asp-action="RemoveItem" method="post">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
 
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                            <img src="@menu.MenuImage"
-                                                    class="w-100" />
-                                            <a href="#!">
-                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                            </a>
+                                            <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                                <img src="@menu.MenuImage"
+                                                     class="w-100" />
+                                                <a href="#!">
+                                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <!-- Image -->
+                                            <div class="form-group">
+                                                <label class="control-label"></label>
+                                                @Html.DropDownListFor(x => x.Size.SizeID, Model.Dropdown, new { @class = "form-control text-center" })
+                                                <span class="text-danger"></span>
+                                            </div>
                                         </div>
-                                        <!-- Image -->
-                                        <div class="form-group">
-                                            <label class="control-label"></label>
-                                            @Html.DropDownListFor(x => x.Size.SizeID, Model.Dropdown, new { @class = "form-control text-center" })
-                                            <span class="text-danger"></span>
-                                        </div>
-                                    </div>
+                                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
 
+                                            <p><strong>@menu.MenuName</strong></p>
 
-                                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-
-                                        <p><strong>@menu.MenuName</strong></p>
-
-                                        @foreach (var menuProduct in menu.MenuProducts)
-                                        {
-                                            if (menuProduct.Product.CategoryID == 1)
+                                            @foreach (var menuProduct in menu.MenuProducts)
                                             {
-                                                foreach (var topping in Model.Toppings)
+                                                if (menuProduct.Product.CategoryID == 1)
                                                 {
-                                                    bool isToppingSelected = menuProduct.Product.ProductToppings
-                                                    .Any(productTopping => productTopping.ToppingID == topping.ID);
-                                                    if (isToppingSelected)
+                                                    foreach (var topping in Model.Toppings)
                                                     {
-                                                        <input type="checkbox" checked="true" /> @topping.ToppingName <br />
-                                                    }
+                                                        bool isToppingSelected = menuProduct.Product.ProductToppings
+                                                        .Any(productTopping => productTopping.ToppingID == topping.ID);
+                                                        if (isToppingSelected)
+                                                        {
+                                                            <input type="checkbox" checked="true" /> @topping.ToppingName <br />
+                                                        }
 
+                                                    }
                                                 }
                                             }
-                                        }
-                                        <!-- Data -->
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-
-                                        <div class="d-flex mb-4" style="max-width: 300px">
-                                            <button class="btn gradient-custom px-3 me-2" style="height:45px;"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                <i class="fas fa-minus text-white"></i>
-                                            </button>
-                                            <div class="form-outline">
-                                                <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control text-center" />
-                                                <label class="form-label" for="form1">Quantity</label>
-
-                                            </div>
-
-                                            <button class="btn gradient-custom px-3 ms-2" style="height:45px;"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="fas fa-plus text-white"></i>
-                                            </button>
+                                            <!-- Data -->
                                         </div>
 
-                                        <p class="text-start text-md-center">
-                                            <!-- Quantity -->
-                                            <button type="submit" name="menuID" value="@menu.ID" asp-controller="User" asp-action="RemoveItem" asp-route-id="@Model.OrderDetails.FirstOrDefault(o => o.MenuID == menu.ID).ID" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip" title="Remove item">
-                                                <i class="fas fa-trash-alt text-white"></i> Remove Item
-                                            </button>
-                                            <!-- Price -->
-                                        <p class="text-start text-md-center" style="margin-top:0px;">
-                                            <strong>@menu.Price <span>&#8378</span></strong>
-                                        </p>
+                                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
 
+                                            <div class="d-flex mb-4" style="max-width: 300px">
+                                                <button type="button" class="btn gradient-custom px-3 me-2" style="height:45px;"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                                    <i class="fas fa-minus text-white"></i>
+                                                </button>
+                                                <div class="form-outline">
+                                                    <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control text-center" />
+                                                    <label class="form-label" for="form1">Quantity</label>
+
+                                                </div>
+
+                                                <button type="button" class="btn gradient-custom px-3 ms-2" style="height:45px;"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                    <i class="fas fa-plus text-white"></i>
+                                                </button>
+                                            </div>
+
+                                            <p class="text-start text-md-center">
+                                                <!-- Quantity -->
+                                                <button name="menuID" value="@menu.ID" asp-controller="User" asp-action="RemoveItem" asp-route-id="@(Model.OrderDetails.FirstOrDefault(o => o.MenuID == menu.ID).ID)" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip" title="Remove item">
+                                                    <i class="fas fa-trash-alt text-white"></i> Remove Item
+                                                </button>
+                                                <!-- Price -->
+                                            <p class="text-start text-md-center" style="margin-top:0px;">
+                                                <strong>@menu.Price <span>&#8378</span></strong>
+                                            </p>
+                                            </p>
+
+                                        </div>
                                     </div>
-                                </div>
-                                <hr class="my-4" />
+                                    <hr class="my-4" />
+                                </form>
                             }
                         }
 
@@ -97,64 +98,66 @@
                         {
                             @foreach (Product product in Model.Products)
                             {
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                                <form asp-action="RemoveItem" method="post">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
 
-                                        <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
-                                            <img src="@product.ProductImage"
-                                                    class="w-100" />
-                                            <a href="#!">
-                                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
-                                            </a>
-                                        </div>
-
-                                        <!-- Image -->
-                                        <div class="form-group">
-                                            <label class="control-label"></label>
-                                            @Html.DropDownListFor(x => x.OrderDetails.FirstOrDefault(o => o.ProductID == product.ID).SizeID, Model.Dropdown, new { @class = "form-control text-center" })
-                                            <span class="text-danger"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
-
-                                        <p><strong>@product.ProductName</strong></p>
-
-                                    </div>
-
-                                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
-
-                                        <div class="d-flex mb-4" style="max-width: 300px">
-                                            <button type="button" class="btn gradient-custom px-3 me-2" style="height:45px;"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                                                <i class="fas fa-minus text-white"></i>
-                                            </button>
-
-                                            <div class="form-outline">
-                                                <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control text-center" />
-                                                <label class="form-label" for="form1">Quantity</label>
+                                            <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                                <img src="@product.ProductImage"
+                                                     class="w-100" />
+                                                <a href="#!">
+                                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
                                             </div>
 
-                                            <button type="button" class="btn gradient-custom px-3 ms-2" style="height:45px;"
-                                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                                                <i class="fas fa-plus text-white"></i>
-                                            </button>
+                                            <!-- Image -->
+                                            <div class="form-group">
+                                                <label class="control-label"></label>
+                                                @Html.DropDownListFor(x => x.OrderDetails.FirstOrDefault(o => o.ProductID == product.ID).SizeID, Model.Dropdown, new { @class = "form-control text-center" })
+                                                <span class="text-danger"></span>
+                                            </div>
                                         </div>
 
-                                        <!-- Quantity -->
-                                        <p class="text-start text-md-center">
-                                            <!-- Quantity -->
-                                            <button type="submit" name="productID" value="@product.ID" asp-action="RemoveItem" asp-route-id="@Model.OrderDetails.FirstOrDefault(o => o.ProductID == product.ID).ID" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip" title="Remove item">
-                                                <i class="fas fa-trash-alt text-white"></i> Remove Item
-                                            </button>
-                                            <!-- Price -->
-                                        <p class="text-start text-md-center" style="margin-top:0px;">
-                                            <strong>@product.Price <span>&#8378</span></strong>
-                                        </p>
-                                    </div>
-                                </div>
+                                        <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
 
-                                <hr class="my-4" />
+                                            <p><strong>@product.ProductName</strong></p>
+
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+
+                                            <div class="d-flex mb-4" style="max-width: 300px">
+                                                <button class="btn gradient-custom px-3 me-2" style="height:45px;"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                                    <i class="fas fa-minus text-white"></i>
+                                                </button>
+
+                                                <div class="form-outline">
+                                                    <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control text-center" />
+                                                    <label class="form-label" for="form1">Quantity</label>
+                                                </div>
+
+                                                <button class="btn gradient-custom px-3 ms-2" style="height:45px;"
+                                                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                                    <i class="fas fa-plus text-white"></i>
+                                                </button>
+                                            </div>
+
+                                            <!-- Quantity -->
+                                            <p class="text-start text-md-center">
+                                                <!-- Quantity -->
+                                                <button type="submit" name="productID" value="@product.ID" asp-action="RemoveItem" asp-route-id="@Model.OrderDetails.FirstOrDefault(o => o.ProductID == product.ID).ID" class="btn btn-danger btn-sm me-1 mb-2 float-end" data-mdb-toggle="tooltip" title="Remove item">
+                                                    <i class="fas fa-trash-alt text-white"></i> Remove Item
+                                                </button>
+                                                <!-- Price -->
+                                            <p class="text-start text-md-center" style="margin-top:0px;">
+                                                <strong>@product.Price <span>&#8378</span></strong>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <hr class="my-4" />
+                                </form>
                             }
                         }
                     </div>
@@ -163,14 +166,14 @@
                     <div class="card-body">
                         <p><strong>We accept</strong></p>
                         <img class="me-2" width="45px"
-                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
-                                alt="Visa" />
+                             src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                             alt="Visa" />
                         <img class="me-2" width="45px"
-                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
-                                alt="American Express" />
+                             src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                             alt="American Express" />
                         <img class="me-2" width="45px"
-                                src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
-                                alt="Mastercard" />
+                             src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                             alt="Mastercard" />
 
                     </div>
                 </div>
@@ -193,10 +196,11 @@
                                 }
                             </li>
                         </ul>
-
-                        <button asp-action="CompleteOrder" type="submit" class="btn gradient-custom btn-lg btn-block">
-                            <p style="color:antiquewhite; margin:0px;">Complete Order</p>
-                        </button>
+                        <form asp-action="CompleteOrder" method="post">
+                            <button asp-action="CompleteOrder" type="submit" class="btn gradient-custom btn-lg btn-block">
+                                <p style="color:antiquewhite; margin:0px;">Complete Order</p>
+                            </button>
+                        </form>
                     </div>
                 </div>
 
