@@ -2,6 +2,7 @@
 using Hamburger.Models;
 using Hamburger.Models.Entities;
 using Hamburger.Models.ViewModels;
+using MailKit.Search;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -57,9 +58,9 @@ namespace Hamburger.Controllers
             UserMessage message = new UserMessage()
             {
                 UserID = int.Parse(userId),
-                OrderID = model.OrderID,
                 MessageOfUser = model.message
             };
+            _ = model.OrderID != 0 ? message.OrderID = model.OrderID : message.OrderID = null ;
             _context.Messages.Add(message); //Burası Yapılacak...
             _context.SaveChanges();
 
