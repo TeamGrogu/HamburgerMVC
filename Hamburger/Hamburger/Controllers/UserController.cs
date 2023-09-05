@@ -73,8 +73,11 @@ namespace Hamburger.Controllers
         {
             User user = await _userManager.GetUserAsync(User);
             Order order = _context.Orders.FirstOrDefault(x => x.StatusID == 101 && x.UserID == user.Id);
-            order.StatusID = 102;
-            _context.SaveChanges();
+            if(order!=null)
+            {
+                order.StatusID = 102;
+                _context.SaveChanges();
+            }          
             return RedirectToAction("ShoppingCart");
         }
 
