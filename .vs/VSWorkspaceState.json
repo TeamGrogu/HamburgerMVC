@@ -1,7 +1,16 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Hamburger",
+    "\\Hamburger\\Hamburger",
+    "\\Hamburger\\Hamburger\\DAL",
+    "\\Hamburger\\Hamburger\\DAL\\EntityConfigurations",
+    "\\Hamburger\\Hamburger\\Models",
+    "\\Hamburger\\Hamburger\\Models\\Entities",
+    "\\Hamburger\\Hamburger\\Validations",
+    "\\Hamburger\\Hamburger\\Views",
+    "\\Hamburger\\Hamburger\\Views\\Home"
   ],
-  "SelectedNode": "\\Hamburger.sln",
+  "SelectedNode": "\\Hamburger\\Hamburger.sln",
   "PreviewInSolutionExplorer": false
 }
